@@ -4,4 +4,13 @@
   * Internet Basics, a review
   * APIs
   * Events
+  * Coupling
   * Event-based systems
+
+* Introduction to Events
+  * what is an event
+  * event detection
+  * event processing
+  * event processing examples
+
+ 
