@@ -1,0 +1,10 @@
+
+Lab 1: 
+
+* Build a web application on your AWS server that does the following:
+
+** Has multiple accounts with a profile page for each user
+** Allows a user to authorize access to an account for a specific application on Foursquare using OAuth 
+** Retrieves user checkin information from Foursquare
+** Displays detailed checkin data to the user when they logged in
+** Displays only the latest checkin location when the user is NOT logged in.  

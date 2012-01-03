@@ -1,0 +1,5 @@
+
+Lab 0:
+
+* Get an AWS instance running
+* Set up a simple static Web page that displays your name 
