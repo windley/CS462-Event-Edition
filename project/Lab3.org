@@ -7,10 +7,10 @@
 - Store information about the last checkin locally
 - Create multiple, unique Event Signal URLs (ESLs) for each flower shop the drive wants to deliver for
 - respond to _bid_needed_ events by
--- automatically responding if the driver is within N miles of the flower shop and sending the driver a SMS notification of the flowershop to go to and details of the bid
--- sending the driver and SMS if the bid can't be processed automatically. If the driver responds to the SMS with the keyword "bid anyway" the system submits a bid.
+  - automatically responding if the driver is within N miles of the flower shop and sending the driver a SMS notification of the flowershop to go to and details of the bid
+  - sending the driver and SMS if the bid can't be processed automatically. If the driver responds to the SMS with the keyword "bid anyway" the system submits a bid.
 - Bids are submitted by sending a _bid_available_ event to the flowershop's ESL.
--- When a driver registers with the flowershop, the flowershop should give each driver an ESL to use.
--- The driver puts the Flowershop ESL in their delivery system in such a way that it is associated with the ELS the driver gave the flower shop. 
+  - When a driver registers with the flowershop, the flowershop should give each driver an ESL to use.
+  - The driver puts the Flowershop ESL in their delivery system in such a way that it is associated with the ELS the driver gave the flower shop. 
 
 
