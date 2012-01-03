@@ -1,5 +1,135 @@
 
-Lab 0:
+* Lab 0:
 
-* Get an AWS instance running
-* Set up a simple static Web page that displays your name 
+The purpose of this lab is to create a base server confirmation that will be used in future labs. You will modify an existing AMI and configure it with a web server and a bootstrapping mechanism.
+
+- Get an AWS instance running
+- Set up a simple static Web page that displays your name 
+
+
+* Lab Requirements 
+
+- Create a new AMI based on [http://aws.amazon.com/amis/4347 ami-a403f7cd (Ubuntu 10.04 LTS)]
+- Add bootstrapping procedure based on UserData supplied at instance launch
+- Bootstrapped package (zip file on S3) must be password protected
+- Install web server with basic configuration
+- A simple script should echo the name given in the optional query parameter
+- Persist and register your AMI
+
+* Passoff Procedure 
+
+- Prepare a bootstrapping package with a custom default page for the web server
+- The TA will modify the default page in the bootstrap package
+- Launch server with the modified bootstrap package
+- Test default page with your "Hello, #{name}" script
+
+* Related Reading 
+- [[BootStrapping Explained]]
+- [[Security Credentials]]
+
+The following reading in [http://proquest.safaribooksonline.com/9780596515812 Programming Amazon Web Services] will prove useful for this lab (links are to Safari Books Online):
+
+- [http://proquest.safaribooksonline.com/book/web-development/web-services/9780596515812/infrastructure-in-the-cloud/ch01 Chapter 1: Infrastructure in the Cloud]
+- [http://proquest.safaribooksonline.com/book/web-development/web-services/9780596515812/s3-simple-storage-service/ch03 Chapter 3: S3: Simple Storage Service]
+- [http://proquest.safaribooksonline.com/book/web-development/web-services/9780596515812/ec2-elastic-compute-cloud-beta/ch05 Chapter 5: EC2: Elastic Compute Cloud]
+- [http://proquest.safaribooksonline.com/book/web-development/web-services/9780596515812/using-ec2-instances-and-images/ch06 Chapter 6: Using EC2 Instances and Images]
+
+* Booting an AMI 
+
+The [https://console.aws.amazon.com/ AWS Management Console] is the easiest way to control EC2 Instances. Amazon also provides [http://aws.amazon.com/developertools/351 command line tools], or you can use [http://aws.amazon.com/developertools/609 ElasticFox] (a Firefox plugin).
+
+You will need to create a key pair that will allow you to login to the server after it has launched. If you use the AWS Management Console, this is part of the process to launch a new instance and is very simple to do. If you'd rather use another tool, [http://aws.amazon.com/developertools/583 this screencast] (for Windows) or [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/index.html?setting-up-your-tools.html this documentation] (Windows or *nix) details how to get the certificates and set up your system properly.
+
+Find your AMI in the provided list and launch it. Although Amazon allows you to launch more then one server at a time, you will only be launching one for this lab.
+
+* Basic Web Server 
+
+Use Apache to create a basic webserver. It must be able to use Python or another language to make the page dynamic.
+
+Install the necessary packages for Apache (or your server of choice) and your programming language.
+
+Your website code will need to be deployed as part of the bootstrapping process. During passoff, the TA will want to see you change a file in your local code, deploy your code package, and launch your bootstrapped code. The TA will check to make sure the changes were included as part of the bootstrap process.
+
+* Simple echo script 
+
+If accessed, the webserver should respond with <tt>Hello, World!</tt>. If you provide it with a URL param of name, (e.g., <tt><nowiki>http://yourami/?name=Indigo%20Montoya</nowiki></tt>) it should respond with <tt>Hello, Indigo Montoya!</tt>.
+
+This script should be a part of your bootstrap package, not your AMI itself. The TA will need to see that you have a script that performs this function during the passoff.
+
+The purpose of this script is simply to demonstrate that your web server is configured properly to run programs in your language of choice.
+
+* Creating and Registering your AMI 
+
+After you are done modifying your custom AMI, you will need to persist the machine image and register it as an AMI. Store your machines in the <tt>cs462-machines</tt> bucket. Name your AMI with your username or netid, or something that will keep it from colliding with the names chosen by other students.
+
+'''Read [[Security Credentials]] for information on the credentials you will need at the various stages of the project.'''
+
+If you make a mistake the first time you create your sever, you can always re-persist the machine image. But this is a tedious and rather time-consuming task; careful thinking and planning will help you avoid doing it too many times.
+
+[http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/index.html?creating-an-ami-s3-linux.html This documentation] describes how to create an AMI. The basic steps are these:
+
+# Bundle the volume
+# Upload the bundle to S3
+# Register the AMI
+
+Useful screencast demonstrating the same thing: [http://aws.amazon.com/developertools/938 Video: Create Your Own Customized AMI]
+
+You can also read the [http://globalconstant.scnay.com/2011/01/07/building-up-an-ami-from-ubuntu-10-04-lts/ TA's blog post] that has some more details.
+
+* Bootstrapping the Server 
+
+You will be creating 3 servers during the semester, and you have better things to do then persist an AMI for each of them. You will need to add some bootstrapping scripts so that you can customize your server on launch to run the desired services, install packages, and download code.
+
+The bootstrapping process consists of several pieces:
+
+** Package Upload Script
+This script will package your local code into a zip file and upload it to S3. This script should upload the package to the cs462-packages bucket, with a name not likely to conflict with the package(s) of another student. Each of the servers you create in the labs will have it's own package, and you can save versions of each package if you wish.
+
+Because these packages are available for anyone with the class credentials, you need to password protect the package files you upload. This upload script will need to create the zip file with the password in place prior to upload.
+
+** UserData Script 
+This script is copied into the UserData field (or passed as a command line argument) when launching an AMI. This script knows how to download the package from S3 and expand it onto the local disk. After expanding the package, the Server Config Script is executed.
+
+This script will need to know the password that was used to create the package.
+
+** Server Config Script
+This script is inside your local code, and is included in the package on S3. This script is executed by the UserData Script, and is used to install packages, [re]start services, and copy files from the package to various places in the system.
+
+** Notes 
+If you would rather put your code in a Subversion or Git repository you host yourself, that is allowed. Doing so may make testing easier in future labs. This way, you can just commit your code to the repository and then launch the instance which will pull directly from your repository.
+
+Learning how to use S3 now, however, will benefit you in [[Lab 4]], in which we will programmatically use S3 to store image files. You'll have to weigh these benefits and decide which way you want to do it.
+
+More information can be found in [[BootStrapping Explained]].
+
+Related Article: [http://aws.amazon.com/articles/531 Introduction to Parameterized Launches]
+
+Related Article: [http://aws.amazon.com/articles/1085 Using Parameterized Launches to Customize Your AMIs]
+
+* Misc Notes 
+** Python 
+
+If you will be writing in Python, you may want these packages (install with the <tt>sudo apt-get install <package></tt> command):
+
+ libapache2-mod-python
+ python-cheetah         #Templating engine
+ python-dev
+ python-setuptools
+ python-simplejson
+ python-pycurl
+ python-imaging
+
+** nEC2 AMI and API Tools 
+If you are using the Ubuntu image, you will need to add the following two lines to your <tt>/etc/apt/sources.list.d/multiverse.list</tt> file:
+
+ <nowiki>
+deb http://us.ec2.archive.ubuntu.com/ubuntu/ karmic multiverse
+deb-src http://us.ec2.archive.ubuntu.com/ubuntu/ karmic main</nowiki>
+
+Then you will need to run the following commands:
+
+ sudo apt-get update
+ sudo apt-get install ec2-ami-tools ec2-api-tools
+
+More information about this can be found on [http://groups.google.com/group/ec2ubuntu/browse_thread/thread/dd7317f157eed834 this thread].
+

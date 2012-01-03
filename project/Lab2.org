@@ -1,15 +1,14 @@
 
-Lab 2:
+* Lab 2:
+
+*Objective:* Introduce the concepts of events, event signal URLs, and registration. 
 
 * Flower Shop
 Build a Web site to represent the Flower Shop owners
 
-The site should support multi-tenancy
+- The site should support multi-tenancy
+- Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop
+- Add a form that the owner can use to submit a request for delivery. 
+- When a request for deliver is made, signal every registered delivery driver
 
-Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop
-
-Add a form that the owner can use to submit a request for delivery. 
-
-When a request for deliver is made, signal every registered delivery driver
-
-Use the Event Consumer site to test your site. 
+Use the [http://consumer.eventedapi.org/| Example Event Consumer] site to test your site. 
