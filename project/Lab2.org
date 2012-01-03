@@ -1,0 +1,12 @@
+
+Lab 2:
+
+* Build an event consumer to listen for and process Foursquare "events"
+* Store information about the last checkin locally
+
+* Build a Web site to represent the Flower Shop owners
+* The site should support multi-tenancy
+* Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop
+* Add a form that the owner can use to submit a request for delivery. 
+* When a request for deliver is made, signal every registered delivery driver
+* Use the Event Consumer site to test your site. 
