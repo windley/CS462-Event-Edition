@@ -1,14 +1,6 @@
 
 Lab 2:
 
-* Delivery Driver
-Build an event consumer to listen for and process Foursquare "events"
-
-Store information about the last checkin locally
-
-Create multiple, unique Event Signal URLs
-
-
 * Flower Shop
 Build a Web site to represent the Flower Shop owners
 
