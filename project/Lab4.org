@@ -1,5 +1,5 @@
 
-* Lab 4
+* Lab 4: Event Intermediaries
 
 Introduces intermediaries in the form of a driver's guild that represents drivers, keeps track of driver performance, and distributes _bid_needed_ events.
 

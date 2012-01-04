@@ -1,5 +1,5 @@
 
-* Lab 2:
+* Lab 2: Events, Event Generation, and Multi-Tenancy
 
 *Objective:* Introduce the concepts of events, event signal URLs, and registration. 
 

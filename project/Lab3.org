@@ -1,5 +1,5 @@
 
-* Lab 3
+* Lab 3: Consuming and Processing Events
 
 * Delivery Driver
 

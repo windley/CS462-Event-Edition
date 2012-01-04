@@ -1,5 +1,5 @@
 
-* Lab 1: 
+* Lab 1: APIs and OAuth
 
 * Build a web application on your AWS server that does the following:
 
