@@ -7,3 +7,15 @@ Amazon: http://www.amazon.com/Event-Processing-Action-Opher-Etzion/dp/1935182218
 Associated site: http://www.ep-ts.com/content/blogcategory/32/109/
 
 If you learn nothing else in this class, you might at least learn to use Git. :)
+
+* Project objectives
+
+ - how to access APIs
+ - OAuth
+ - Evented API Specification
+ - building event generators
+ - building event consumers
+ - using multiple event generators in a single program
+ - complex event processing
+
+
