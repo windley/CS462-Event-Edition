@@ -1,0 +1,13 @@
+
+* Learning objectives
+
+ - how to access APIs
+ - OAuth
+ - Evented API Specification
+ - building event generators
+ - building event consumers
+ - using multiple event generators in a single program
+ - complex event processing
+
+
+ 
