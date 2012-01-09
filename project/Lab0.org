@@ -7,7 +7,7 @@ The purpose of this lab is to create a base server confirmation that will be use
 
 * Lab Requirements 
 
-- Boot an EC2 instance based on an Ubuntu 11.10 AMI (https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-bf62a9d6)
+- Boot an EC2 instance based on an Ubuntu 11.10 AMI (ami-bf62a9d6)
 - Add a bootstrapping procedure based on the User Data script supplied at launch
 - Install a web server with a basic configuration
 - Serve a static web page that displays your name
@@ -19,11 +19,11 @@ The purpose of this lab is to create a base server confirmation that will be use
 
 * Booting an AMI 
 
-The [https://console.aws.amazon.com/ AWS Management Console] is the easiest way to control EC2 Instances. Amazon also provides [http://aws.amazon.com/developertools/351 command line tools], or you can use [http://aws.amazon.com/developertools/609 ElasticFox] (a Firefox plugin).
+The AWS Management Console is the easiest way to control EC2 Instances. Amazon also provides command line tools, or you can use ElasticFox (a Firefox plugin).
 
-You will need to create a key pair that will allow you to login to the server after it has launched. If you use the AWS Management Console, this is part of the process to launch a new instance and is very simple to do. If you'd rather use another tool, [http://aws.amazon.com/developertools/583 this screencast] (for Windows) or [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/index.html?setting-up-your-tools.html this documentation] (Windows or *nix) details how to get the certificates and set up your system properly.
+You will need to create a key pair that will allow you to login to the server after it has launched. If you use the AWS Management Console, this is part of the process to launch a new instance and is very simple to do.
 
-Find your AMI in the provided list and launch it. If you are using the standard Ubuntu 11.10 AMI, you can follow this link: https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-bf62a9d6
+Find your AMI in the provided list and launch it. If you are using the standard Ubuntu Server 11.10 AMI, you can follow this link: https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-bf62a9d6
 
 * Basic Web Server 
 
