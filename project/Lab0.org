@@ -11,10 +11,11 @@ The purpose of this lab is to create a base server confirmation that will be use
 - Add a bootstrapping procedure based on the User Data script supplied at launch
 - Install a web server with a basic configuration
 - Serve a static web page that displays your name
+- Create a custom AMI with your basic server configuration
 
 * Passoff Procedure 
 
-- An automated passoff procedure will be linked here soon.
+- An automated passoff procedure will be linked here soon. You will be required to provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your NetID.
 
 * Booting an AMI 
 
@@ -54,16 +55,16 @@ If you make a mistake the first time you create your sever, you can always re-pe
 
 This documentation describes how to create an AMI: http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/index.html?creating-an-ami-s3-linux.html. The basic steps are these:
 
-1. Bundle the volume
-2. Upload the bundle to S3
-3. Register the AMI
+- Bundle the volume
+- Upload the bundle to S3
+- Register the AMI
 
 Useful screencast demonstrating the same thing: Video: Create Your Own Customized AMI (http://aws.amazon.com/developertools/938)
 
 You can also read the TA's blog post that has some more details: http://globalconstant.scnay.com/2011/01/07/building-up-an-ami-from-ubuntu-10-04-lts/
 
 
-** Notes 
+* Notes 
 You may find it useful to put your code in a Subversion or Git repository and have your bootstrap script copy the code from there to your server. This makes it very easy to update your server.
 
 ** Security Credentials
