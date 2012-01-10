@@ -47,28 +47,24 @@ One good solution is to have the script be very simple, downloading the full cod
 
 * Creating and registering an AMI
 
-After you are done modifying your custom AMI, you will need to persist the machine image and register it as an AMI. Store your machines in the cs462-machines bucket on S3. Name your AMI with your username or netid, or something that will keep it from colliding with the names chosen by other students.
+After you are done modifying your custom AMI, you will need to persist the machine image and register it as an AMI. If you're using an EBS-backed instance (which is the default), this process is very easy. If you chose to use instance-store instead, talk to the TA for more detailed instructions on how to create the AMI.
 
-Read Security Credentials below for information on the credentials you will need at the various stages of the project.
+With your instance running, right-click on it in the AWS Console and choose "Create Image (EBS AMI)". Name the image with your NetID and provide a description if you wish. Creating the image will take several minutes. When it finishes, you should see it in the AMIs section of the console.
 
-If you make a mistake the first time you create your sever, you can always re-persist the machine image. But this is a tedious and rather time-consuming task; careful thinking and planning will help you avoid doing it too many times.
-
-This documentation describes how to create an AMI: http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/index.html?creating-an-ami-s3-linux.html. The basic steps are these:
-
-- Bundle the volume
-- Upload the bundle to S3
-- Register the AMI
-
-Useful screencast demonstrating the same thing: Video: Create Your Own Customized AMI (http://aws.amazon.com/developertools/938)
-
-You can also read the TA's blog post that has some more details: http://globalconstant.scnay.com/2011/01/07/building-up-an-ami-from-ubuntu-10-04-lts/
-
+Make note of your AMI ID, since you will need it for the passoff procedure.
 
 * Notes 
 You may find it useful to put your code in a Subversion or Git repository and have your bootstrap script copy the code from there to your server. This makes it very easy to update your server.
 
 ** Security Credentials
-You will need some key information of the account. There are several different keys you will need at various steps of the project. These are the following:
+Everything in this lab can be done through the AWS Console online. The only key you will need to download to your computer is the keypair for logging into an EC2 instance.
+
+This information will be useful if you choose to use AWS for the other labs in this class. Read through this information to become familiar with it, even though you may not need it.
+
+*** Keypair for launching EC2 instances
+This is your personal private key used for launching and logging in to EC2 instances. You can create it the first time you launch an EC2 instance. When you do so, Amazon keeps a copy of the associated public key (which you will never see) and puts it in the appropriate place on every instance you launch. This allows you (and only you) to log in to your instances without needing to send a password.
+
+You are the only person with this private key. If you lose it, you will have to create a new one. You will never use this key for anything except launching and logging in to EC2 instances.
 
 *** Access Key and Secret Access Key
 These can be found in the Security Credentials page of the AWS Portal. They are used primarily for access to S3, whether via a scripting interface (e.g., boto) or via the command line (e.g., ec2-upload-bundle).
@@ -80,11 +76,6 @@ The TA has a copy of this private key. Contact him to get it.
 
 *** Account number
 This is found in the top right corner of the Security Credentials page. When you use it as a command-line argument for things like ec2-bundle-vol, you will need to remove the dashes.
-
-*** Keypair for launching EC2 instances
-This is your personal private key used for launching and logging in to EC2 instances. You can create it the first time you launch an EC2 instance. When you do so, Amazon keeps a copy of the associated public key (which you will never see) and puts it in the appropriate place on every instance you launch. This allows you (and only you) to log in to your instances without needing to send a password.
-
-You are the only person with this private key. If you lose it, you will have to create a new one. You will never use this key for anything except launching and logging in to EC2 instances.
 
 *** More information
 
