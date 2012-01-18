@@ -1,10 +1,32 @@
-
 * Lab 1: APIs and OAuth
 
 * Build a web application on your AWS server that does the following:
 
-- Has multiple accounts with a profile page for each user. This includes the ability to create accounts and login. 
-- Allows a user to authorize access to an account for a specific application on Foursquare using OAuth 
-- Retrieves user checkin information from Foursquare
-- Displays detailed checkin data to the user when they logged in
+- Has multiple accounts with a profile page for each user. This includes the ability to create accounts, log in, and log out.
+- Allows a user to authorize the application to access their account on Foursquare using OAuth.
+- Retrieves user checkin information from Foursquare.
+- Displays detailed checkin data to the user when they logged in.
 - Displays only the latest checkin location when the user is NOT logged in.  
+
+* Foursquare API
+
+The Foursquare API documentation is here:
+- OAuth: https://developer.foursquare.com/overview/auth
+- API endpoints: https://developer.foursquare.com/docs/
+
+* Implementation notes
+
+You may use any language (e.g., Ruby, Python, PHP, C#, Racket, Perl, or assembly), framework, or libraries you wish.
+
+All requests to the Foursquare API must go over HTTPS. Make sure your server supports it for incoming requests, and ensure that you make all requests that way.
+
+Foursquare uses OAuth 2, not 1.0a. Make sure your library (if you use one) supports that version of the protocol.
+
+The public DNS of your EC2 instance will change every time the machine is launched or started. That means you will need to update the application (consumer) details on Foursquare every time the server's name changes.
+
+* Grading
+- Multiple accounts supported: 33%
+- Foursquare OAuth properly executed: 33%
+- Foursquare checkins properly retrieved and displayed: 34%
+
+
