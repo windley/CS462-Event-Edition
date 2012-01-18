@@ -15,7 +15,7 @@ The purpose of this lab is to create a base server confirmation that will be use
 
 * Passoff Procedure 
 
-- An automated passoff procedure will be linked here soon. You will be required to provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your NetID.
+- An automated passoff procedure is here: http://75.101.147.215:4567/ You will be required to provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your NetID.
 
 * Booting an AMI 
 
