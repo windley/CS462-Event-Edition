@@ -27,6 +27,8 @@ If you use EC2, the public DNS of your EC2 instance will change every time the m
 
 While your Web application /must/ support multiple accounts, it doesn't have to provide authentication for those accounts. 
 
+You will probably want to have your server persist accounts so that you can start and stop it without having to recreate everything. A simple way to do that is to write the account data as JSON into a file and then read and decode that file when you start up. You can easily flush the data from memory to the file on any change to the data. For what we're doing this will work fine. If you like, you're also welcome to use a simple database like Berkeley DB or a hosted database like the one from MongoLab.com. 
+
 * Grading
 - Multiple accounts supported: 33%
 - Foursquare OAuth properly executed: 33%
