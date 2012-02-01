@@ -1,14 +1,30 @@
-
 * Lab 2: Events, Event Generation, and Multi-Tenancy
 
-*Objective:* Introduce the concepts of events, event signal URLs, and registration. 
+*Objective:* Introduce the concepts of events, event signal URLs (ESLs), and registration. 
+
+Before you start implementing, read the Evented API Specification. You will be implementing the Generator portion of that specification in this lab. http://www.eventedapi.org/spec
 
 * Flower Shop
-Build a Web site to represent the Flower Shop owners
+Build a website to represent the Flower Shop owners
 
-- The site should support multi-tenancy
-- Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop
-- Add a form that the owner can use to submit a request for delivery. 
-- When a request for deliver is made, signal every registered delivery driver
+- The site should support multi-tenancy. You will have an administrator (the flower shop owner) and users (the drivers).
+- Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop.
+- Add a form that the owner can use to submit a request for delivery.
+- When a request for delivery is made, signal every registered delivery driver.
 
-Use the [http://consumer.eventedapi.org/| Example Event Consumer] site to test your site. 
+For this lab, you can create an ESL for each driver using the Example Event Consumer (linked below). You will implement one yourself in the next lab.
+
+You will be signaling one event in this lab. The event domain and name must be the following:
+- Event domain: *rfq*
+- Event name: *delivery_ready*
+
+That event will need several parameters, such as the following:
+- Address of the flower shop
+- Pickup time (may be now or some time in the future)
+- Delivery address
+- Delivery time (if the delivery is urgent; otherwise you could leave this unspecified)
+
+The following sites will be a great help in testing your site and learning how the events should be signaled:
+- http://generator.eventedapi.org/ Example Event Generator (for generating events and sending them to any URL)
+- http://consumer.eventedapi.org/ Example Event Consumer (for receiving events from any generator)
+- http://postbin.org/ Postbin (for inspecting HTTP POST requests)
