@@ -2,13 +2,13 @@
 
 *Objective:* Introduce the concepts of events, event signal URLs (ESLs), and registration. 
 
-Before you start implementing, read the Evented API Specification. You will be implementing the Generator portion of that specification in this lab. http://www.eventedapi.org/spec
+Before you start implementing, read the Evented API Specification (http://www.eventedapi.org/spec). You will be implementing the Generator portion of that specification in this lab. 
 
 * Flower Shop
 Build a website to represent the Flower Shop owners
 
 - The site should support multi-tenancy. You will have an administrator (the flower shop owner) and users (the drivers).
-- Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop.
+- Add a form that delivery drivers can use to register their event signal URL (ESL) and other information with the flower shop.
 - Add a form that the owner can use to submit a request for delivery.
 - When a request for delivery is made, signal every registered delivery driver.
 
@@ -18,11 +18,23 @@ You will be signaling one event in this lab. The event domain and name must be t
 - Event domain: *rfq*
 - Event name: *delivery_ready*
 
-That event will need several parameters, such as the following:
+That event will need several attributes, such as the following:
 - Address of the flower shop
 - Pickup time (may be now or some time in the future)
 - Delivery address
 - Delivery time (if the delivery is urgent; otherwise you could leave this unspecified)
+
+When you have successfully completed this lab you will be able to:
+
+1. Create event signal URLs (ESLs) using the Example Event Consumer (see below) and register them with the flow shop.
+2. Fill out the form indicating a delivery is needed and see the resulting *rfq:delivery_ready* event along with the attributes at the Example Event Consumer.
+
+* Notes
+
+- Signaling an event requires making an HTTP call to the ESL. The event is signaled whenever a flower shop owner completes the deliver form. Some attributes come from the form and others are hard coded or configured elsewhere in the Flower Shop site.
+- Registering an ESL implies that the ESL and related information will be held persistently by the Flower Shop site.
+- The /other information/ that is registered with the ESL should contain at least the name of the driver. As you progress in the project, you may discover that you need additional information, so implement the registration form in a flexible manner that allows for future expansion.
+
 
 The following sites will be a great help in testing your site and learning how the events should be signaled:
 - http://generator.eventedapi.org/ Example Event Generator (for generating events and sending them to any URL)
