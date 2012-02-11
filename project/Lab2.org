@@ -7,13 +7,14 @@ Before you start implementing, read the Evented API Specification. You will be i
 * Flower Shop
 Build a website to represent the Flower Shop owners
 
-- The site should support multi-tenancy. You will have an administrator (the flower shop owner) and users (the drivers).
-- Add a form that delivery drivers can use to register their event signal URL and other information with the flower shop.
+- The site should support multi-tenancy. You will have accounts for an administrator (the flower shop owner) and users (the drivers).
+- Add a form that delivery drivers can use (once they are logged in) to register their event signal URL and other information with the flower shop.
 - Add a form that the owner can use to submit a request for delivery.
-- When a request for delivery is made, signal every registered delivery driver.
+- When a request for delivery is made, signal the event to every registered delivery driver via their ESL.
 
-For this lab, you can create an ESL for each driver using the Example Event Consumer (linked below). You will implement one yourself in the next lab.
+For this lab, you can create an ESL for each driver using the Example Event Consumer (linked below). You will implement your own event consumer in the next lab.
 
+* Signaling events
 You will be signaling one event in this lab. The event domain and name must be the following:
 - Event domain: *rfq*
 - Event name: *delivery_ready*
@@ -24,7 +25,15 @@ That event will need several parameters, such as the following:
 - Delivery address
 - Delivery time (if the delivery is urgent; otherwise you could leave this unspecified)
 
+* Resources
 The following sites will be a great help in testing your site and learning how the events should be signaled:
 - http://generator.eventedapi.org/ Example Event Generator (for generating events and sending them to any URL)
 - http://consumer.eventedapi.org/ Example Event Consumer (for receiving events from any generator)
 - http://postbin.org/ Postbin (for inspecting HTTP POST requests)
+
+* Grading
+- Multiple accounts of the proper types supported: 20%
+- ESL registration: 20%
+- Delivery request form: 20%
+- Proper event signaling: 40%
+
