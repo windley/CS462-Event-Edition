@@ -2,23 +2,16 @@
 
 *Objective:* Solidify the concepts of events, event signal URLs (ESLs), and registration. Become familiar with Foursquare's Real-Time API.
 
-You will need a working implementation of the Flower Shop website from Lab 2 to successfully complete this lab.
-
-* Flower Shop website
-
-You will need to modify your flower shop implementation from Lab 2:
-- When a driver registers with the flower shop, the flower shop gives each driver a unique ESL to use for raising _bid_available_ events.
-
 * Delivery Driver website
 
 - Build an event consumer to listen for and process Foursquare "events"
 - Store on your server information about the last checkin
 - Create multiple, unique Event Signal URLs (ESLs) for each flower shop the driver wants to deliver for
   - The driver will associate these ESLs with the ones received from the individual flower shops during the registration process.
-- Respond to _bid_needed_ events as follows:
-  - If the driver is within _n_ miles of the flower shop, submit a bid automatically to the flower shop and send the driver an SMS notification about the details of the bid.
+- Respond to /bid_needed/ events as follows:
+  - If the driver is within /n/ miles of the flower shop, submit a bid automatically to the flower shop and send the driver an SMS notification about the details of the bid.
   - If the bid can't be processed automatically, send the driver an SMS. If the driver responds to the SMS with "bid anyway", submit a bid to the flower shop.
-- Submit bids by signaling a _bid_available_ event to the flower shop's ESL.
+- Submit bids by signaling a /bid_available/ event to the flower shop's ESL.
 
 * Foursquare Real-Time API
 
@@ -44,10 +37,15 @@ That event will need several attributes, such as the following:
 
 Passoff process TBD. Will require at least a code review.
 
+Items needed for the review:
+- A screenshot of your app's registration page from https://foursquare.com/oauth
+- A copy of all the code for your delivery driver website
+- Any explanation necessary to understand the structure or behavior of your code
+
 * Grading
 
 - Proper registration with Foursquare Real-Time API, including SSL support: 15%
 - Foursquare "events" properly received and stored: 25%
 - Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop: 25%
-- Proper _bid_available_ event signaling: 35%
+- Proper /bid_available/ event signaling: 35%
 
