@@ -1,16 +1,40 @@
 
 * Lab 3: Consuming and Processing Events
 
+*Objective:* Understand event consumption and subscription. 
+
+Review the Evented API specification (http://www.eventedapi.org/spec). You will be implementing an event consumer in this lab. The event consumer will need to provide ESLs for the Flowershop. 
+
+The flowershop and delivery driver will play both consumer and generator roles in this lab in order to effect a negotiation about whether the driver will deliver the flowers or not. 
+
 * Delivery Driver
 
-- Build an event consumer to listen for and process Foursquare "events"
+Build a website to represent delivery drivers.
+
+- The site will receive two kinds of events
+  - Foursquare checkins as you processed them in Lab1
+  - *rfq:delivery_ready* events from the flowershops
+- The site should support the creation of multiple, unique Event Signal URLs (ESLs) for each flower shop the driver wants to deliver for. 
+
+Build an event consumer to listen for and process Foursquare "events"
 - Store information about the last checkin locally
-- Create multiple, unique Event Signal URLs (ESLs) for each flower shop the drive wants to deliver for
+- Create multiple, unique
 - respond to _bid_needed_ events by
   - automatically responding if the driver is within N miles of the flower shop and sending the driver a SMS notification of the flowershop to go to and details of the bid
-  - sending the driver and SMS if the bid can't be processed automatically. If the driver responds to the SMS with the keyword "bid anyway" the system submits a bid.
+  - sending the driver an SMS if the bid can't be processed automatically. If the driver responds to the SMS with the keyword "bid anyway" the system submits a bid.
 - Bids are submitted by sending a _bid_available_ event to the flowershop's ESL.
   - When a driver registers with the flowershop, the flowershop should give each driver an ESL to use.
   - The driver puts the Flowershop ESL in their delivery system in such a way that it is associated with the ELS the driver gave the flower shop. 
+
+* Listening for Events *
+
+* Deliverables *
+
+* Implementation Notes *
+
+- There can be multiple flowershops and multiple drivers. Your system should respond not only to events from your flowershop and drivers, but should be able to connect in shops or drivers from other student's implementations. This implies that you are following the Evented API specification carefully as well as using standard event domains and types.
+- Use the implementation of Foursquare from Lab1. 
+
+
 
 
