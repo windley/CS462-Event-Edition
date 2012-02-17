@@ -1,16 +1,53 @@
-
 * Lab 3: Consuming and Processing Events
 
-* Delivery Driver
+*Objective:* Solidify the concepts of events, event signal URLs (ESLs), and registration. Become familiar with Foursquare's Real-Time API.
+
+You will need a working implementation of the Flower Shop website from Lab 2 to successfully complete this lab.
+
+* Flower Shop website
+
+You will need to modify your flower shop implementation from Lab 2:
+- When a driver registers with the flower shop, the flower shop gives each driver a unique ESL to use for raising _bid_available_ events.
+
+* Delivery Driver website
 
 - Build an event consumer to listen for and process Foursquare "events"
-- Store information about the last checkin locally
-- Create multiple, unique Event Signal URLs (ESLs) for each flower shop the drive wants to deliver for
-- respond to _bid_needed_ events by
-  - automatically responding if the driver is within N miles of the flower shop and sending the driver a SMS notification of the flowershop to go to and details of the bid
-  - sending the driver and SMS if the bid can't be processed automatically. If the driver responds to the SMS with the keyword "bid anyway" the system submits a bid.
-- Bids are submitted by sending a _bid_available_ event to the flowershop's ESL.
-  - When a driver registers with the flowershop, the flowershop should give each driver an ESL to use.
-  - The driver puts the Flowershop ESL in their delivery system in such a way that it is associated with the ELS the driver gave the flower shop. 
+- Store on your server information about the last checkin
+- Create multiple, unique Event Signal URLs (ESLs) for each flower shop the driver wants to deliver for
+  - The driver will associate these ESLs with the ones received from the individual flower shops during the registration process.
+- Respond to _bid_needed_ events as follows:
+  - If the driver is within _n_ miles of the flower shop, submit a bid automatically to the flower shop and send the driver an SMS notification about the details of the bid.
+  - If the bid can't be processed automatically, send the driver an SMS. If the driver responds to the SMS with "bid anyway", submit a bid to the flower shop.
+- Submit bids by signaling a _bid_available_ event to the flower shop's ESL.
 
+* Foursquare Real-Time API
+
+You will use the Foursquare Real-Time API to receive the driver's location updates. It is documented here: https://developer.foursquare.com/overview/realtime
+
+A few things to keep in mind:
+
+- Your system must support SSL
+- You will give Foursquare a URL to your server, which acts as the event consumer for Foursquare
+  - This consumer will receive the driver's location updates from Foursquare and store them on your server.
+
+* Signaling events
+
+You will be signaling one event in this lab. The event domain and name must be the following:
+- Event domain: *rfq*
+- Event name: *bid_available*
+
+That event will need several attributes, such as the following:
+- Driver name
+- Estimated arrival time
+
+* Passing off
+
+Passoff process TBD. Will require at least a code review.
+
+* Grading
+
+- Proper registration with Foursquare Real-Time API, including SSL support: 15%
+- Foursquare "events" properly received and stored: 25%
+- Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop: 25%
+- Proper _bid_available_ event signaling: 35%
 
