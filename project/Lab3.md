@@ -76,9 +76,9 @@ Modify your flower shop website to
   - You will give Foursquare a URL to your server, which acts as the event consumer for Foursquare.
   - This consumer will receive the driver's location updates from Foursquare and store them on your server.
 - Use the **Twilio API** for processing SMS messages. Note that Twilio's Webhooks can be thought of as event signals.
-  - The API is documented [here](http://www.twilio.com/docs/api/rest)
+  - The API is documented [here](http://www.twilio.com/docs/api/rest).
   - Twilio provides libraries for Python, Java, C#, PHP, and Ruby.
-  - KRL has a [Twilio module](http://apps.kynetx.com/modules/a8x115)
+  - KRL has a [Twilio module](http://apps.kynetx.com/modules/a8x115).
 - Hint: use great circle math for determining distance between lat-long coordinates
 
 # Passing off
@@ -101,12 +101,12 @@ The TA may also ask you to walk through your code and explain critical pieces. H
 
 # Grading
 
-- 10% Proper registration with Foursquare Real-Time API, including SSL support
-- 15% Foursquare checkin "events" properly received and stored
-- 20% Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop
-- 20% Proper **rfq:bid_available** event signaling
+- 10% &mdash; Proper registration with Foursquare Real-Time API, including SSL support
+- 15% &mdash; Foursquare checkin "events" properly received and stored
+- 20% &mdash; Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop
+- 20% &mdash; Proper **rfq:bid_available** event signaling
   - Signal automatically if the driver is within _n_ miles of the flower shop
   - Signal manually if the driver texts "bid anyway"
-- 20% Proper setup with Twilio; sending and receiving SMS messages
-- 15% Proper **rfq:bid_available** event consumption
+- 20% &mdash; Proper setup with Twilio; sending and receiving SMS messages
+- 15% &mdash; Proper **rfq:bid_available** event consumption
 

@@ -1,9 +1,9 @@
+# Lab 4: Event Intermediaries
 
-* Lab 4: Event Intermediaries
-
-Introduces intermediaries in the form of a driver's guild that represents drivers, keeps track of driver performance, and distributes _bid_needed_ events.
+**Objective:** Introduces intermediaries in the form of a driver's guild that represents drivers, keeps track of driver performance, and distributes **rfq:bid_needed** events.
 
 - Flowershop now just has the guild ESL and signals it. 
 - Guild knows about all drivers
-- Drivers send a _delivery_complete_ event when they're done with the delivery. The guild ranks drivers in terms of their on-time performance.
-- _bid_needed_ events are distributed to the top three drivers automatically as well as any that are within N miles of the shop.  
+- Drivers signal a **delivery_complete** event when they're done with the delivery. The guild ranks drivers in terms of their on-time performance.
+- **rfq:bid_needed** events are distributed to the top three drivers automatically as well as any that are within _n_ miles of the shop.  
+

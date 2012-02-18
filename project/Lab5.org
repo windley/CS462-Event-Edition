@@ -1,2 +1,1 @@
-
-* Lab 5: Final Product
+# Lab 5: Final Product
