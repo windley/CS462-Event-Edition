@@ -1,37 +1,36 @@
 * Lab 3: Consuming and Processing Events
 
-*Objective:* Understand the concepts of event consumption, event signal URLs (ESLs), and subscription. Use Foursquare's Real-Time API.
+*Objective:* Understand the concepts of event consumption, event signal URLs (ESLs), and subscription. Use APIs from Foursquare and Twilio.
 
-Review the Evented API specification (http://www.eventedapi.org/spec). You will be implementing an event consumer in this lab. The event consumer will need to provide ESLs for the Flowershop. 
+Review the Evented API specification (http://www.eventedapi.org/spec). You will be implementing an event consumer in this lab. The event consumer will need to provide ESLs for the flower shop.
 
-The flowershop and delivery driver will play both consumer and generator roles in this lab in order to effect a negotiation about whether the driver will deliver the flowers or not. 
+The flower shop and delivery driver will play both consumer and generator roles in this lab in order to effect a negotiation about whether or not the driver will deliver the flowers.
 
-
-* Delivery Driver 
+* Delivery driver 
 
 Build a website to represent delivery drivers.
 
 - The site will receive three kinds of events
   - Foursquare checkins as you processed them in Lab1
-  - *rfq:delivery_ready* events from the flowershops
+  - *rfq:delivery_ready* events from the flower shops
   - Twilio SMS message notifications 
-- The site must support the creation of multiple, unique Event Signal URLs (ESLs) for each flower shop the driver wants to deliver for. 
-
-The site must support the creation of multiple, unique Event Signal URLs (ESLs) for each flower shop for whom the driver wants to deliver
-- The ESLs represent a channel by which the flower shop will send events to the driver. 
-- The website will have to be able to identify a flowershop by ESL 
-- For each flowershop you will need to know 
+- The site must support the creation of multiple, unique Event Signal URLs (ESLs) for each flower shop for whom the driver wants to deliver 
+- The ESLs represent a channel by which the flower shop will send events to the driver 
+- The website must be able to identify a flower shop by ESL 
+- For each flower shop, you will need to know and store the following:
   - name
-  - location (lat-long coordinates) for calculating distance from driver location
-  - the flower shops ESL for sending events back
+  - location (lat-long coordinates), for calculating distance from driver location
+  - the flower shop's ESL, for sending events back
 
-** Listening for Events 
+** Listening for events 
 
 The Website should 
-- include an event consumer to listen for and process Foursquare "events" Store lat-long information about the last checkin locally for use in determining response to an *rfq:delivery_ready* event
-- include an event consumer to listen for /bid_needed/ events as follows:
+- Include an event consumer to listen for and process Foursquare "events"
+  - Store lat-long information about the last checkin for use in determining response to an *rfq:delivery_ready* event.
+- Include an event consumer to listen for *rfq:delivery_ready* events as follows:
   - If the driver is within /n/ miles of the flower shop, submit a bid automatically to the flower shop and send the driver an SMS notification about the details of the bid.
   - If the bid can't be processed automatically, send the driver an SMS. If the driver responds to the SMS with "bid anyway", submit a bid to the flower shop.
+- Include an event consumer to listen for Twilio SMS notifications, as explained above
 
 ** Signaling events
 
@@ -43,31 +42,34 @@ That event will need several attributes, such as the following:
 - Driver name
 - Estimated delivery time
 
-When the delivery driver site receives an *rfq:delivery_needed* event, it
-- runs the algorithm given above to determine whether or not to respond
-- if a response is needed signals a *rfq:bid_available* event to the flower shop's ESL.
+When the delivery driver site receives an *rfq:delivery_ready* event, it
+- Runs the algorithm given above to determine whether or not to respond
+- If a response is needed, signals a *rfq:bid_available* event to the flower shop's ESL.
 
 * Flower shop
 
-Modify your flowershop website to 
-- add and track a unique identifier for each *rfq:deliver_ready* event. The identifier should be included as an attribute when the event is raised. 
-- support the creation of multiple unique ESLs that can be given to the drivers. 
-- listen for *rfq:bid_available* events.
-- process *rfq:bid_available* events by posting them to a Web form. The form should
-  - showing relevant information (the driver name and estimated delivery time)
-  - include a means for the flowershop owner to select one of the bids. 
-  - separate different *bid_available* events based on which *delivery_ready* event they are a response to (hint: use the identifier discussed above)
+Modify your flower shop website to 
+- Add and track a unique identifier for each *rfq:deliver_ready* event. The identifier should be included as an attribute when the event is signaled
+- Support the creation of multiple unique ESLs that can be given to the drivers
+- Listen for *rfq:bid_available* events
+- Process *rfq:bid_available* events by posting them to a Web form. The form should
+  - Show relevant information (the driver name and estimated delivery time).
+  - Include a means for the flower shop owner to select one of the bids. 
+  - Separate different *bid_available* events based on their corresponding *rfq:delivery_ready* events (hint: use the identifier discussed above).
 
 * Implementation Notes
 
-- There can be multiple flowershops and multiple drivers. Your system should respond not only to events from your flowershop and drivers, but should be able to connect in shops or drivers from other student's implementations. This implies that you are following the Evented API specification carefully as well as using standard event domains and types.
-- Use the implementation of Foursquare from Lab1. You will use the Foursquare Real-Time API to receive the driver's location updates. It is documented here: https://developer.foursquare.com/overview/realtime  A few things to keep in mind:
-  - Your system must support SSL
-  - You will give Foursquare a URL to your server, which acts as the event consumer for Foursquare
+- There can be multiple flower shops and multiple drivers. Your system should respond not only to events from your flower shop and drivers, but should be able to connect shops or drivers from other student's implementations. This requires that you follow the Evented API specification carefully and use standard event domains and types.
+- You will use the *Foursquare Real-Time API* to receive the driver's location updates. Some of your code from Lab 1 (especially OAuth) will be necesary to do this. A few things to keep in mind:
+  - The API is documented here: https://developer.foursquare.com/overview/realtime  
+  - Your system must support SSL.
+  - You will give Foursquare a URL to your server, which acts as the event consumer for Foursquare.
   - This consumer will receive the driver's location updates from Foursquare and store them on your server.
+- Use the *Twilio API* for processing SMS messages. Note that Twilio's Webhooks can be thought of as event signals.
+  - The API is documented here: http://www.twilio.com/docs/api/rest
+  - Twilio provides libraries for Python, Java, C#, PHP, and Ruby.
+  - KRL has a Twilio module: http://apps.kynetx.com/modules/a8x115
 - Hint: use great circle math for determining distance between lat-long coordinates
-- Use the Twilio API for processing SMS messages. Note that Twilio's Webhooks can be thought of as event signals. 
-
 
 * Passing off
 
