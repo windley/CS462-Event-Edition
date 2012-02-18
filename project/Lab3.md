@@ -9,7 +9,9 @@ The flower shop and delivery driver will play both consumer and generator roles 
 
 This is a diagram of the entities and events in this system:
 
-[<img src="./Lab3-architecture.png" alt="Lab 3 architecture" style="width: 90%" />](./Lab3-architecture.png)
+<a href="./Lab3-architecture.png"><img src="../../../raw/master/project/Lab3-architecture.png" alt="Lab 3 architecture" style="width: 90%" /></a>
+
+---
 
 # Delivery driver 
 
@@ -55,6 +57,8 @@ When the delivery driver site receives an **rfq:delivery_ready** event, it
 - Runs the algorithm given above to determine whether or not to respond
 - If a response is needed, signals a **rfq:bid_available** event to the flower shop's ESL.
 
+---
+
 # Flower shop
 
 Modify your flower shop website to
@@ -66,6 +70,8 @@ Modify your flower shop website to
   - Show relevant information (the driver name and estimated delivery time).
   - Include a means for the flower shop owner to select one of the bids. 
   - Separate different **bid_available** events based on their corresponding **rfq:delivery_ready** events (hint: use the identifier discussed above).
+
+---
 
 # Implementation Notes
 
