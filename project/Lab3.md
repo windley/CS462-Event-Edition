@@ -9,7 +9,7 @@ The flower shop and delivery driver will play both consumer and generator roles 
 
 This is a diagram of the entities and events in this system:
 
-![Lab 3 architecture](Lab3-architecture.png)
+[<img src="./Lab3-architecture.png" alt="Lab 3 architecture" style="width: 90%" />](./Lab3-architecture.png)
 
 # Delivery driver 
 
