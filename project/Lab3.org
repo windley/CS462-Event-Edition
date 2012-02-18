@@ -11,7 +11,7 @@ The flower shop and delivery driver will play both consumer and generator roles 
 Build a website to represent delivery drivers.
 
 - The site will receive three kinds of events
-  - Foursquare checkins as you processed them in Lab1
+  - Foursquare checkins (similar to what you did in Lab 1)
   - *rfq:delivery_ready* events from the flower shops
   - Twilio SMS message notifications 
 - The site must support the creation of multiple, unique Event Signal URLs (ESLs) for each flower shop for whom the driver wants to deliver 
@@ -73,17 +73,30 @@ Modify your flower shop website to
 
 * Passing off
 
-Passoff process TBD. Will require at least a code review.
+You will need to pass off this lab in person. The TA will ask you to demonstrate the following:
 
-Items needed for the review:
-- A screenshot of your app's registration page from https://foursquare.com/oauth
-- A copy of all the code for your delivery driver website
-- Any explanation necessary to understand the structure or behavior of your code
+- Registration process on the driver website
+  - OAuth with Foursquare for the Real-Time API
+  - Providing a phone number for SMS
+- Registration process with the flower shop
+  - Providing the flower shop the ESL from the driver
+  - Getting the flower shop's ESL, name, and location
+- Signaling the *rfq:delivery_ready* event
+- The driver properly receives an SMS
+  - If the bid was made automatically, the driver should not have to do anything else.
+  - If the bid was not made automatically, the driver should respond "bid anyway" and the bid should be made.
+- The flower shop should have record of the driver placing a bid
+
+The TA may also ask you to walk through your code and explain critical pieces. He may request to see your Twilio and Foursquare accounts to verify that you are using their APIs correctly.
 
 * Grading
 
-- Proper registration with Foursquare Real-Time API, including SSL support: 15%
-- Foursquare "events" properly received and stored: 25%
-- Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop: 25%
-- Proper /bid_available/ event signaling: 35%
+- 10% Proper registration with Foursquare Real-Time API, including SSL support
+- 15% Foursquare checkin "events" properly received and stored
+- 20% Driver website produces unique ESLs for each flower shop and stores the ESL received from the flower shop
+- 20% Proper *rfq:bid_available* event signaling
+  - Signal automatically if the driver is within /n/ miles of the flower shop
+  - Signal manually if the driver texts "bid anyway"
+- 20% Proper setup with Twilio; sending and receiving SMS messages
+- 15% Proper *rfq:bid_available* event consumption
 
