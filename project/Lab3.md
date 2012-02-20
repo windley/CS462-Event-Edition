@@ -37,7 +37,7 @@ The Website should
   - Store lat-long information about the last checkin for use in determining response to an **rfq:delivery_ready** event.
 - Include an event consumer to listen for **rfq:delivery_ready** events as follows:
   - If the driver is within _n_ miles of the flower shop, submit a bid automatically to the flower shop and send the driver an SMS notification about the details of the bid.
-  - If the bid can't be processed automatically, send the driver an SMS. If the driver responds to the SMS with "bid anyway", submit a bid to the flower shop.
+  - If the driver is outside that radius, then the bid can't be processed automatically. Send the driver an SMS. If the driver responds to the SMS with "bid anyway", submit a bid to the flower shop.
 - Include an event consumer to listen for Twilio SMS notifications, as explained above
 
 ## Signaling events
