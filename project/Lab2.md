@@ -46,7 +46,7 @@ The following sites will be a great help in testing your site and learning how t
 - [Example Event Consumer](http://consumer.eventedapi.org/) (for receiving events from any generator)
 - [Postbin](http://postbin.org/) (for inspecting HTTP POST requests)
 
-* Grading
+# Grading
 
 - 20% &mdash; Multiple accounts of the proper types supported
 - 20% &mdash; Driver and ESL registration
