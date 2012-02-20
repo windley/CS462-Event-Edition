@@ -6,7 +6,7 @@
 
 - Your group must have at least two and not more than three people
 - You must use at least two APIs listed at (http://programmableweb.com)
-- Your architecture must use events in some way
+- Your architecture must be primarily event-driven
 - You must get your project idea pre-approved by the TAs and then get final approval from Dr. Windley before you begin
 
 # Accomodations
