@@ -114,5 +114,5 @@ The TA may also ask you to walk through your code and explain critical pieces. H
   - Signal automatically if the driver is within _n_ miles of the flower shop
   - Signal manually if the driver texts "bid anyway"
 - 20% &mdash; Proper setup with Twilio; sending and receiving SMS messages
-- 15% &mdash; Proper **rfq:bid_available** event consumption
+- 15% &mdash; Proper **rfq:bid_available** event consumption, including complete implementation of the Evented API Specification
 
