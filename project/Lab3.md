@@ -28,6 +28,7 @@ Build a website to represent delivery drivers.
   - name
   - location (lat-long coordinates), for calculating distance from driver location
   - the flower shop's ESL, for sending events back
+- If you're writing this lab in KRL, see the [Driver Registration Helper app](http://globalconstant.scnay.com/2012/02/27/implementing-the-drivers-personal-event-network-with-kynetx/) for ideas on how to collect data from the driver.
 
 ## Listening for events 
 
