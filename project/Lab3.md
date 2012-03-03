@@ -86,7 +86,7 @@ Modify your flower shop website to
   - The API is documented [here](http://www.twilio.com/docs/api/rest).
   - Twilio provides libraries for Python, Java, C#, PHP, and Ruby.
   - KRL has a [Twilio module](http://apps.kynetx.com/modules/a8x115).
-- Hint: use great circle math for determining distance between lat-long coordinates
+- Hint: use great circle math for determining distance between lat-long coordinates. There's probably a library for your language. 
 
 # Passing off
 

@@ -10,6 +10,8 @@ The following diagram shows how this will work:
 
 <a href="./Lab4-architecture.png"><img src="../../../raw/master/project/Lab4-architecture.png" alt="Lab 4 architecture" style="width: 90%" /></a>
 
+---
+
 # Driver's Guild
 
 As you can see, the Driver's Guild is an organization that has it's own event network. 
@@ -27,12 +29,20 @@ When the guild receives a **rfq:delivery_ready** event from a flowershop it rais
 
 *Exercise:* determine the event attributes for the new events introduced above. 
 
+---
+
 # Drivers
 
 Your drivers will still maintain a database of flowershops and ESLs. When a driver sees a **rfq:deliver_ready** event from the guild, it will respond to the flowershop directly as it has in the past. The guild does not intermediate the bid process. 
+
+---
 
 # Implementation Notes
 
 - You're free to determine how this ranking works, but it might be based on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update is with random performance rankings for each delivery. _Note:_ you need to have a ranking system and update it, but you don't need to make it "real."
 
+---
+
 # Passing Off
+
+*Steve and Reed update please...*
