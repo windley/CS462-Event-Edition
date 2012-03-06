@@ -44,6 +44,8 @@ The driver needs some way to notify his system when he has completed the actual 
 
 - You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."
 - In Lab 3, you had direct subscriptions form the flowershops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the guild. 
+- The universal driver identifier maintained by the guild will need to be an attribute on any event referencing a driver. 
+- You may need transaction IDs or some other identifier to link events about a particular delivery. 
 
 ---
 
