@@ -28,10 +28,6 @@ The guild will maintain a ranking of delivery drivers based on performance.
 
 When the guild receives a **rfq:delivery_ready** event from a flower shop, it raises that event to the top three drivers based on performance (you can dummy up the data for testing purposes).  
 
-*Exercises:* 
-
-- determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
-- draw an event hierarchy showing how events flow. Here's an <a href="http://www.flickr.com/photos/windley/5580410158/sizes/o/">example</a> of an event hierarchy. Use ovals for the events and rectangles for the event processors. 
 
 ---
 
@@ -49,6 +45,14 @@ The driver needs some way to notify his system when he has completed the actual 
 - In Lab 3, you had direct subscriptions form the flowershops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the guild. 
 - The universal driver identifier maintained by the guild will need to be an attribute on any event referencing a driver. 
 - You may need transaction IDs or some other identifier to link events about a particular delivery. 
+
+---
+#Exercises
+
+*_N.B._ These are for in class use, you do _not_ have to turn them in with your project.*
+
+0. determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
+0. draw an event hierarchy showing how events flow. Here's an <a href="http://www.flickr.com/photos/windley/5580410158/sizes/o/">example</a> of an event hierarchy. Use ovals for the events and rectangles for the event processors. 
 
 ---
 
