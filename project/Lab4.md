@@ -31,7 +31,7 @@ When the guild receives a **rfq:delivery_ready** event from a flower shop, it ra
 *Exercises:* 
 
 - determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
-- draw an event hierarchy showing how events flow. 
+- draw an event hierarchy showing how events flow. Here's an <a href="http://www.flickr.com/photos/windley/5580410158/sizes/o/">example</a> of an event hierarchy. Use ovals for the events and rectangles for the event processors. 
 
 ---
 
