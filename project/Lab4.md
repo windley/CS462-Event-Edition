@@ -15,6 +15,7 @@ The following diagram shows how this will work:
 # Driver's Guild
 
 As you can see, the Driver's Guild is an organization that has it's own event network. 
+
 - The guild subscribes to flower shops so that it sees **rfq:delivery_ready** events
 - The drivers subscribe to the guild so that they see any **rfq:delivery_ready** events
 - The guild will maintain a universal identifier for each driver
@@ -42,6 +43,7 @@ The driver needs some way to notify his system when he has completed the actual 
 # Implementation Notes
 
 - You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."
+- In Lab 3, you had direct subscriptions form the flowershops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the guild. 
 
 ---
 
