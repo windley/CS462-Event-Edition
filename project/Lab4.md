@@ -28,7 +28,10 @@ The guild will maintain a ranking of delivery drivers based on performance.
 
 When the guild receives a **rfq:delivery_ready** event from a flower shop, it raises that event to the top three drivers based on performance (you can dummy up the data for testing purposes).  
 
-*Exercise:* determine the event attributes for the new events introduced above. 
+*Exercises:* 
+
+- determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
+- draw an event hierarchy showing how events flow. 
 
 ---
 
