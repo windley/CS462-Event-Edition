@@ -20,6 +20,8 @@ As you can see, the Driver's Guild is an organization that has it's own event ne
 - The drivers subscribe to the guild so that they see any **rfq:delivery_ready** events
 - The guild will maintain a universal identifier for each driver
 
+The flowershops will send an **rfq:bid_awarded** event to the guild with a driver ID to indicate they've selected a driver. The guild is responsible for passing that to the driver who won. 
+
 In addition, flower shops will signal a **delivery:picked_up** event to the guild when the delivery is picked up. The event will need to include the driver identifier.
 
 Drivers will signal a **delivery:complete** event to the guild _and_ the flower shop when they have finished a delivery. 
@@ -27,7 +29,6 @@ Drivers will signal a **delivery:complete** event to the guild _and_ the flower 
 The guild will maintain a ranking of delivery drivers based on performance. 
 
 When the guild receives a **rfq:delivery_ready** event from a flower shop, it raises that event to the top three drivers based on performance (you can dummy up the data for testing purposes).  
-
 
 ---
 
