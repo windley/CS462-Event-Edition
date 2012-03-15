@@ -1,5 +1,6 @@
-# Design exercise
+# Design exercise: Purchasing system
 
+## Scenario
 You will be designing a system to make online shopping easier. The user indicates to the system an intent to purchase an item. The system knows some of her preferences, vendor relationships, location, etc. It then submits a request for quote to several different merchants, along with relevant, anonymous information about the user. Each merchant then provides a personalized bid back to the system, based on the information in their own databases and the data provided in the RFQ. The user's system can then process those bids and notify the user about them according to her preferences.
 
 ## Events
@@ -46,3 +47,6 @@ Put the following on a single poster page for display:
 - Show the main events and their attributes
 - Display the event hierarchy for your system
 
+# Activity
+
+The instructor will give this to you at the appropriate time.
