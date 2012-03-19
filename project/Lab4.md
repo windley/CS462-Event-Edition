@@ -34,7 +34,7 @@ When the Guild receives a **rfq:delivery_ready** event from a flower shop, it ra
 
 # Drivers
 
-Your drivers will still maintain a database of flower shops and ESLs. When a driver sees a **rfq:deliver_ready** event from the Guild, it will respond to the flower shop directly as it has in the past. The Guild _does not_ intermediate the bid process.
+Your drivers will still maintain a database of flower shops and ESLs. When a driver sees a **rfq:deliver_ready** event from the Guild, it will respond to the flower shop directly as it has in the past. The Guild need not intermediate the bid process.
 
 The driver needs some way to notify his system when he has completed the actual delivery. You may use Twilio (as in Lab 3) or some other method.
 
@@ -43,26 +43,33 @@ The driver needs some way to notify his system when he has completed the actual 
 # Implementation Notes
 
 - You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."
-- I don't care if you want to have the Guild intermediate the **rfq:bid_available** event, but it's not required. 
-- In Lab 3, you had direct subscriptions form the flowershops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the Guild. 
+- You may have the Guild intermediate **rfq:bid_available** events if you find it necessary to maintain your driver rankings. However, that is not required, and you'll need to justify your decision.
+- In Lab 3, you had direct subscriptions from the flower shops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the Guild. 
 - The universal driver identifier maintained by the Guild will need to be an attribute on any event referencing a driver. 
 - You may need transaction IDs or some other identifier to link events about a particular delivery. 
 
 ---
 #Exercises
 
-*_N.B._ These are for in class use, you do _not_ have to turn them in with your project.*
+*_N.B._ These are for in class use; you do _not_ have to turn them in with your project.*
 
-0. determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
-0. draw an event hierarchy showing how events flow. Here's an <a href="http://www.flickr.com/photos/windley/5580410158/sizes/o/">example</a> of an event hierarchy. Use ovals for the events and rectangles for the event processors. 
+0. Determine the event attributes for the new events introduced above. Also determine what changes will be necessary for the attributes of the **rfq:deliver_ready** and **rfq:bid_available** events. 
+0. Draw an event hierarchy showing how events flow. Here's an <a href="http://www.flickr.com/photos/windley/5580410158/sizes/o/">example</a> of an event hierarchy. Use ovals for the events and rectangles for the event processors. 
 
 ---
 
+# Passing off
+You have two options for passing off this lab:
+
+1. Come in person and pass off with the TAs. They'll have you walk through the workflow and explain your design decisions.
+2. Package your code intelligbly and include a detailed writeup to explain the data and control flow, where the events are passed, and what design decisions you made. Email it to both TAs.
+
 # Grading
 
-- 30% &mdash; Guild properly distributes **rfq:delivery_ready** events to top three drivers
+- 25% &mdash; Guild properly distributes **rfq:delivery_ready** events to top three drivers
 - 10% &mdash; Driver properly raises **rfq:bid_available** event to flower shop
 - 20% &mdash; Flower shop properly raises **delivery:picked_up** event to Guild
 - 10% &mdash; Driver notifies his system that the delivery has been completed
-- 30% &mdash; Driver properly raises **delivery:complete** event to Guild and flower shop
+- 20% &mdash; Guild properly maintains driver rankings through an algorithm of your choice.
+- 15% &mdash; Driver properly raises **delivery:complete** event to Guild and flower shop
 
