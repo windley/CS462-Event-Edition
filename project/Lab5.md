@@ -7,12 +7,21 @@
 - Your group must have at least two and not more than three people
 - You must use at least two APIs listed at (http://programmableweb.com)
 - Your architecture must be primarily event-driven
-- You must get your project idea pre-approved by the TAs and then get final approval from Dr. Windley before you begin
+- You must get your project idea approved by the TAs Dr. Windley before you begin
 
 ## Accomodations
 
 - You may use any programming language(s), frameworks, or libraries that you choose
 - You may build the system anywhere you like
+
+## Proposal
+
+You are required to submit a written proposal (around half a page) to the TAs that includes the following information:
+
+- What the system will do
+- A high-level description of your event architecture
+- A list of the APIs you will use
+- Who is in your group
 
 ## Deliverables
 
