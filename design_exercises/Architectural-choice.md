@@ -31,13 +31,13 @@ BYU Graduate School wants a workflow system for managing grad student study list
 
 Requirements:
 
-- XML versions of documents
+- XML or JSON versions of documents
 - Digital signatures for approvals by
   - Student
   - Advisor
   - Department
   - Grad School
-- Completed, signed XML document is stored for legal purposes
+- Completed, signed document is archives for legal purposes
 - Ability to add new documents as necessary
 - Users choose how they're notified that document awaits their approval
   - Email
@@ -66,7 +66,7 @@ Additional requirements:
 
 ## Case 4: Social network for geeks
 
-Your task is to design and deploy a question and answer site where developers and sysadmins can ask questions about specific technologies that are answered by other users. Users get points/reputation for their actions and priviledges on the site are determined by reputation.
+Your task is to design and deploy a question and answer site where developers and sysadmins can ask questions about specific technologies that are answered by other users. Users get points/reputation for their actions and priviledges on the site are determined by reputation. (i.e. this is StackOverflow)
 
 ## Case 5: Product recommendation service
 
