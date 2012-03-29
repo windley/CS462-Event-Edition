@@ -40,7 +40,7 @@ You will also submit your code and a writeup describing the foregoing points. Th
 
 Your group will have seven minutes to make your presentation including set-up.  
 
-Ideally, you should use the class computer to access an online presentation of your project to cut down on setup time. 
+Ideally, you should use the class computer to access an online presentation of your project to cut down on setup time. Google presentation, Presi, Slideshare, or even just plain old Web pages will work. 
 
 ## Twilio
 
