@@ -38,6 +38,8 @@ You will present your project to class during the final 2-3 class periods. You p
 
 You will also submit your code and a writeup describing the foregoing points. That is due on the last day of class and will be graded separately from your presentation.
 
+Your group will have seven minutes to make your presentation including set-up. 
+
 ## Twilio
 
 You're not required to use any particular technology for this project. However, a developer evangelist from Twilio will be visiting during one of the presentation days. If you use Twilio, we'll have you present your project on that day. The guy from Twilio will have prizes and swag for the best projects, and he'll write about them on Twilio's blog.
