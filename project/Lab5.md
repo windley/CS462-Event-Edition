@@ -38,7 +38,9 @@ You will present your project to class during the final 2-3 class periods. You p
 
 You will also submit your code and a writeup describing the foregoing points. That is due on the last day of class and will be graded separately from your presentation.
 
-Your group will have seven minutes to make your presentation including set-up. 
+Your group will have seven minutes to make your presentation including set-up.  
+
+Ideally, you should use the class computer to access an online presentation of your project to cut down on setup time. 
 
 ## Twilio
 
