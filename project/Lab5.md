@@ -64,4 +64,8 @@ Grading for this lab in in three portions:
   - 12% &mdash; Description of events, event generators, and event consumers
   - 10% &mdash; Architectural diagram and explanation
   - 8% &mdash; Analysis of why events were or were not a good solution
-  - 6% &mdash; Completeness of your solution to problem
+  - 6% &mdash; Completeness of your solution to problem 
+
+## Submission
+
+Please zip up your code and writeup together and submit that through Gradebook.
