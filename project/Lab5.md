@@ -49,7 +49,8 @@ Ideally, you should use the class computer to access an online presentation of y
 Grading for this lab in in three portions:
 
 - **Proposal** (10%)
-  - Pass or fail: Submit the written proposal by the deadline and have it approved 
+  - Pass or fail: Submit the written proposal by the deadline and have it approved
+  - Architectural diagram and explanation 
 - **Presentation** (35%)
   - Score will be determined by Dr. Windley and the TAs based on the quality of your presentation and demonstration
 - **Final submission** (55%)
