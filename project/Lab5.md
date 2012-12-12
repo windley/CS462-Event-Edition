@@ -42,12 +42,6 @@ Your group will have seven minutes to make your presentation including set-up.
 
 Ideally, you should use the class computer to access an online presentation of your project to cut down on setup time. Google presentation, Presi, Slideshare, or even just plain old Web pages will work. 
 
-## Twilio
-
-You're not required to use any particular technology for this project. However, a developer evangelist from Twilio will be visiting during one of the presentation days. If you use Twilio, we'll have you present your project on that day. The guy from Twilio will have prizes and swag for the best projects, and he'll write about them on Twilio's blog.
-
-We encourage as many of you as are interested to build Twilio into your project and join the competition.
-
 ----
 
 ## Grading
