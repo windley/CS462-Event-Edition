@@ -13,6 +13,10 @@ The purpose of this lab is to create a base server confirmation that will be use
 - Serve a static web page that displays your name
 - Create a custom AMI with your basic server configuration
 
+# Log-in info.
+Website: https://289357741533.signin.aws.amazon.com/console
+User Name: cs462Students
+
 # Passoff Procedure 
 
 - Email the TA (cs462ta@gmail.com) with this information, provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your full name. Please place in the email subject line "Lab 0 passoff".
