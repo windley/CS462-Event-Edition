@@ -14,8 +14,8 @@ The purpose of this lab is to create a base server confirmation that will be use
 - Create a custom AMI with your basic server configuration
 
 # Log-in info.
-Website: https://289357741533.signin.aws.amazon.com/console
-User Name: cs462Students
+- Website: https://289357741533.signin.aws.amazon.com/console
+- User Name: cs462Students
 
 # Passoff Procedure 
 
