@@ -53,3 +53,4 @@ The following sites will be a great help in testing your site and learning how t
 - 20% &mdash; Delivery request form
 - 40% &mdash; Proper event signaling
 
+To pass off you will need to demonstrate to the TA by showing in person or email the Ip and aim # (if it's running on the Amazon cloud). 
