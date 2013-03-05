@@ -12,6 +12,7 @@ The form-submit example ([a16x69.krl](/lecture_notes/krl/form_submit/a16x69.krl)
 * entity storage
 * explicit events
 
-![Event loop with explicit events](/lecture_notes/images/eventloop.jpg)
+<a href="./images/eventloop.jpg"><img src="../../../raw/master/lecture_notes/images/eventloop.jpg" alt="" style="width: 90%" /></a>
+
 
 
