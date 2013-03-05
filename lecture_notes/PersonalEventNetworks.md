@@ -27,5 +27,7 @@ The following rulesets all listen for the <tt>thermostat:temperature</tt> event:
 
 What's important:
 
-* Common event semantics create opportunities for interaction (analogous to URLs)
+* Common event semantics create opportunities for interaction 
+   - analogous to URLs
+   - [Example Event Documentation](http://developer.kynetx.com/display/docs/CloudOS+Event+Protocol)
 * Different rulesets see and react to common events, but are independent and loosely coupled 
