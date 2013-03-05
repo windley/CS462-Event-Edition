@@ -25,4 +25,7 @@ The following rulesets all listen for the <tt>thermostat:temperature</tt> event:
 * [Temperature app](/lecture_notes/krl/Temperature_app/a16x164.krl)
 * [Light Controller](/lecture_notes/krl/Hue_app/a16x166.krl)
 
+What's important:
 
+* Common event semantics create opportunities for interaction (analogous to URLs)
+* Different rulesets see and react to common events, but are independent and loosely coupled 
