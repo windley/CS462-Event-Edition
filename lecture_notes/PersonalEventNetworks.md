@@ -12,7 +12,11 @@ The form-submit example ([a16x69.krl](/lecture_notes/krl/form_submit/a16x69.krl)
 * entity storage
 * explicit events
 
-<a href="./images/eventloop.jpg"><img src="../../../raw/master/lecture_notes/images/eventloop.jpg" alt="" style="width: 90%" /></a>
+<a href="./images/eventloop.jpg"><img src="../../../raw/master/lecture_notes/images/eventloop.jpg" alt="" style="width: 70%" /></a>
 
+
+## Event Busses, Networks, and Clouds
+
+<a href="./images/eventcloud.jpg"><img src="../../../raw/master/lecture_notes/images/eventcloud.jpg" alt="" style="width: 70%" /></a>
 
 
