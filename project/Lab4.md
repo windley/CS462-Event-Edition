@@ -53,6 +53,7 @@ The driver needs some way to notify his system when he has completed the actual 
 
 # Implementation Notes
 
+- Be careful not to use the guild as an excuse to over centralize logic. Flowershops and drivers still need to be independent. They are just intermediated by the guild. 
 - You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."  Another way to think of this is you have to create the ranking API, but you don't have to put a real ranking algorithm behind it. 
 - You may have the Guild intermediate **rfq:bid_available** events if you like. However, that is not required, and you'll need to justify your decision.
 - In Lab 3, you had direct subscriptions from the flower shops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the Guild. 
@@ -60,6 +61,7 @@ The driver needs some way to notify his system when he has completed the actual 
 - You may need transaction IDs or some other identifier to link events about a particular delivery. 
 - The diagram shows the driver sending **delivery:complete** events directly to the flowershop as well as the guild. You may choose to have the guild intermediate this event if it's easier. 
 - The guild passes the **rfq:delivery_ready** to drivers. You're free to decide how the guild determines which drivers to send it to. In a real system, there could be many different choices about how events are distributed. 
+- When we say "the guild subscribes to the flowershops" don't assume that means the guild has to seek out flowershops and register with them. The word "subscribe" is meant to describe the direction that events flow, not how the registration process works. "The guild subscribes to the flowershops" means simply that the guild must provide the flowershop with an ESL. You could have flowershops come to the guild, register and get an ESL from the guild. 
 
 ---
 #Exercises
