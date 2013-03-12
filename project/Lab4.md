@@ -30,11 +30,22 @@ The Guild will maintain a ranking of delivery drivers based on performance.
 
 When the Guild receives a **rfq:delivery_ready** event from a flower shop, it raises that event to the top three drivers based on performance (you can dummy up the data for testing purposes).  
 
+The Guild is functioning as an event router, routing **rfq:delivery_ready** events to some or all drivers (your choice) and **rfq:bid_awarded** events to the selected driver. 
+
 ---
 
 # Drivers
 
-Your drivers will still maintain a database of flower shops and ESLs. When a driver sees a **rfq:deliver_ready** event from the Guild, it will respond to the flower shop directly as it has in the past. The Guild need not intermediate the bid process.
+In the diagram, we've shown the drivers sending **rfq:bid_available** events directly to the flower shops for two reasons:
+
+0 The guild probably doesn't need to be involved in the bid process to do its job. 
+0 You built this functionality in Lab 3 and there's no need to redo it here. 
+
+That said, you might decide that the driver site will be simpler if drivers don't have to maintain a database of flower shops and ESLs.  There are two alternatives:
+
+0 Have the guild intermediate the bid process as well. You'll need processes in the guild to handle and pass on **rfq:bid_available** events. 
+0 Have the flowershop send a callback ESL as one of the attributes of the **rfq::delivery_ready**. The Driver doesn't know about flowershops, it simply uses the "return address" that the flowershop provides. 
+
 
 The driver needs some way to notify his system when he has completed the actual delivery. You may use Twilio (as in Lab 3) or some other method.
 
@@ -42,11 +53,13 @@ The driver needs some way to notify his system when he has completed the actual 
 
 # Implementation Notes
 
-- You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."
-- You may have the Guild intermediate **rfq:bid_available** events if you find it necessary to maintain your driver rankings. However, that is not required, and you'll need to justify your decision.
+- You're free to determine how this ranking works. One possible solution is to base it on on-time performance for deliveries against a hypothetical best time. A production system would probably use a sophisticated service for this, but for our purposes, you can dummy up the ranking system and just update it with random performance rankings for each delivery. _Note:_ you **must** have a ranking system and update it, but it doesn't have to be "real."  Another way to think of this is you have to create the ranking API, but you don't have to put a real ranking algorithm behind it. 
+- You may have the Guild intermediate **rfq:bid_available** events if you like. However, that is not required, and you'll need to justify your decision.
 - In Lab 3, you had direct subscriptions from the flower shops to the drivers. You will need to undo those subscriptions. Drivers should now *only* see **rfq:delivery_ready** events from the Guild. 
 - The universal driver identifier maintained by the Guild will need to be an attribute on any event referencing a driver. 
 - You may need transaction IDs or some other identifier to link events about a particular delivery. 
+- The diagram shows the driver sending **delivery:complete** events directly to the flowershop as well as the guild. You may choose to have the guild intermediate this event if it's easier. 
+- The guild passes the **rfq:delivery_ready** to drivers. You're free to decide how the guild determines which drivers to send it to. In a real system, there could be many different choices about how events are distributed. 
 
 ---
 #Exercises
