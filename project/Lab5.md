@@ -23,6 +23,8 @@ You are required to submit a written proposal (around half a page) to the TAs th
 - A list of the APIs you will use
 - Who is in your group
 
+A picture at this stage is very helpful. 
+
 ## Deliverables
 
 You will present your project to class during the final 2-3 class periods. You presentation should include at least:
