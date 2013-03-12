@@ -38,13 +38,13 @@ The Guild is functioning as an event router, routing **rfq:delivery_ready** even
 
 In the diagram, we've shown the drivers sending **rfq:bid_available** events directly to the flower shops for two reasons:
 
-0 The guild probably doesn't need to be involved in the bid process to do its job. 
-0 You built this functionality in Lab 3 and there's no need to redo it here. 
+1. The guild probably doesn't need to be involved in the bid process to do its job. 
+2. You built this functionality in Lab 3 and there's no need to redo it here. 
 
 That said, you might decide that the driver site will be simpler if drivers don't have to maintain a database of flower shops and ESLs.  There are two alternatives:
 
-0 Have the guild intermediate the bid process as well. You'll need processes in the guild to handle and pass on **rfq:bid_available** events. 
-0 Have the flowershop send a callback ESL as one of the attributes of the **rfq::delivery_ready**. The Driver doesn't know about flowershops, it simply uses the "return address" that the flowershop provides. 
+1. Have the guild intermediate the bid process as well. You'll need processes in the guild to handle and pass on **rfq:bid_available** events. 
+2. Have the flowershop send a callback ESL as one of the attributes of the **rfq::delivery_ready**. The Driver doesn't know about flowershops, it simply uses the "return address" that the flowershop provides. 
 
 
 The driver needs some way to notify his system when he has completed the actual delivery. You may use Twilio (as in Lab 3) or some other method.
