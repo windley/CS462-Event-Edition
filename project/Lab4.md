@@ -60,7 +60,7 @@ The driver needs some way to notify his system when he has completed the actual 
 - The universal driver identifier maintained by the Guild will need to be an attribute on any event referencing a driver. 
 - You may need transaction IDs or some other identifier to link events about a particular delivery. 
 - The diagram shows the driver sending **delivery:complete** events directly to the flowershop as well as the guild. You may choose to have the guild intermediate this event if it's easier. 
-- The guild passes the **rfq:delivery_ready** to drivers. You're free to decide how the guild determines which drivers to send it to. In a real system, there could be many different choices about how events are distributed. 
+- The guild passes the **rfq:delivery_ready** to drivers. Use the ranking system to distribute the RFQ to the top three drivers. You may also need to take into account other information (like which driver's are available based on proximity to the shop, etc.). 
 - When we say "the guild subscribes to the flowershops" don't assume that means the guild has to seek out flowershops and register with them. The word "subscribe" is meant to describe the direction that events flow, not how the registration process works. "The guild subscribes to the flowershops" means simply that the guild must provide the flowershop with an ESL. You could have flowershops come to the guild, register and get an ESL from the guild. 
 
 ---
