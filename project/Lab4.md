@@ -30,7 +30,7 @@ The Guild will maintain a ranking of delivery drivers based on performance.
 
 When the Guild receives a **rfq:delivery_ready** event from a flower shop, it raises that event to the top three drivers based on performance (you can dummy up the data for testing purposes).  
 
-The Guild is functioning as an event router, routing **rfq:delivery_ready** events to some or all drivers (your choice) and **rfq:bid_awarded** events to the selected driver. 
+The Guild is functioning as an event router, routing **rfq:delivery_ready** events to drivers as described above and **rfq:bid_awarded** events to the selected driver. 
 
 ---
 
