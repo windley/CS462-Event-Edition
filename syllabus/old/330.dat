@@ -1,0 +1,87 @@
+# CS330
+
+$wiki_url = "http://classes.eclab.byu.edu/330/wiki/index.cgi?";
+
+
+my $year = 2008;
+
+# starting date
+@start=($year,1,7);
+
+# ending date
+@end=($year,4,21);
+
+
+# when are classes
+$normal_classes[1]=1; # monday
+$normal_classes[2]=0; 
+$normal_classes[3]=1; 
+$normal_classes[4]=0; 
+$normal_classes[5]=1; 
+$normal_classes[6]=0; 
+$normal_classes[7]=0; 
+
+# last class day
+@last_class = ($year,4,14);
+
+# holidays
+$holiday{"$year,1,21"} = 1;
+$holiday{"$year,2,18"} = 1;
+
+# no class
+$noclass{"$year,3,28"} = 1;
+
+
+# virtual days
+$virtday{"$year,2,19"} = 1;
+
+# midterms
+$midterm{"$year,2,11"} = 1;
+$midterm{"$year,3,14"} = 1;
+
+# no assignments
+$noassign{1} = 1;
+$noassign{2} = 1;
+
+# special events
+$special{"$year,2,20"} = "Midterm Project Part I due";
+$special{"$year,2,27"} = "Midterm Project Part II due";
+$special{"$year,4,14"} = "Final Project due";
+$special{"$year,4,18"} = "Final Exam - Testing Center";
+$special{"$year,4,19"} = "Final Exam - Testing Center";
+$special{"$year,4,21"} = "Final Exam - Testing Center";
+
+# screencasts.  Would be more convenient to do this by lecture number
+$special{"$year,1,7"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=Intro%201\">Installing Scheme</a>";
+$special{"$year,1,11"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=basic1\">Data</a>";
+$special{"$year,1,14"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=varairity\">Variable Arity</a>";
+$special{"$year,1,18"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=lists\">Lists</a>";
+$special{"$year,1,25"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=tail\">Tail Recursion</a>";
+$special{"$year,2,13"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=fileio\">Scheme File I/O</a>";
+$special{"$year,3,19"} = "SC: <a href=\"http://classes.eclab.byu.edu/330/scasts/?body=strtype\">Type Checking &amp; Strings</a>";
+
+
+
+$page_start =  <<EOF;
+<h2>CS330 Class Schedule</h2>
+
+<p> The following table gives the overall schedule for CS330 ($year).
+This page may be subject to infrequent updates as the semester moves
+along and things change.  Homework assignments are listed on the date
+that they are due.  </p>
+
+
+<table style="font-size:small"  width="100%" cellpadding="5">
+<tr style="background-color: AAA0A0">
+<td>Date</td>
+<td>Lecture</td>
+<td>Due</td>
+<td>Other</td>
+</tr>
+EOF
+
+$page_end = <<EOF;
+</table>
+
+
+EOF

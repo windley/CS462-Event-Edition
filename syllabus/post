@@ -1,0 +1,6 @@
+
+rm  -f schedule.body
+./syllabus.pl 462 >schedule.body
+scp schedule.body web@cheetah.windley.net:/web/virt/classes/462/docs
+
+

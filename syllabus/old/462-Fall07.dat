@@ -1,0 +1,145 @@
+# CS462
+
+# Define to add URLs to lecture names
+$wiki_url = "http://classes.eclab.byu.edu/462/lectures/index.cgi?";
+
+my $year = 2007;
+
+# starting date
+@start=($year,9,5);
+
+# ending date (including final)
+@end=($year,12,19);
+
+
+# last class day
+@last_class = ($year,12,12);
+
+# when are classes
+$normal_classes[1]=1; # monday
+$normal_classes[2]=0; 
+$normal_classes[3]=1; 
+$normal_classes[4]=0; 
+$normal_classes[5]=0; 
+$normal_classes[6]=0; 
+$normal_classes[7]=0; 
+
+
+# holidays
+$holiday{"$year,11,21"} = 1;
+$holiday{"$year,11,22"} = 1;
+$holiday{"$year,11,23"} = 1;
+
+# no class
+#$noclass{"$year,9,13"} = 1;
+#$noclass{"$year,11,8"} = 1;
+$noclass{"$year,12,5"} = 1;
+
+# midterms
+#$midterm{"$year,10,16"} = 1;
+
+# no assignments
+#$noassign{1} = 1;
+#$noassign{2} = 1;
+$noassignever = 1; 
+
+# special events
+$special{"$year,9,19"} = "<a href=\"$wiki_url" . 
+		        "Lab1\">Lab 1: Webserver on AWS</a>";
+$special{"$year,10,8"} = "<a href=\"$wiki_url" . 
+		        "Lab2\">Lab 2: Listing App Server</a>";
+$special{"$year,10,31"} = "<a href=\"$wiki_url" . 
+		        "Lab3\">Lab 3: Integrating Web and Listing servers</a>";
+$special{"$year,11,14"} = "<a href=\"$wiki_url" . 
+		        "Lab4\">Lab 4: Submit App Server</a>";
+$special{"$year,12,3"} = "<a href=\"$wiki_url" . 
+		        "Lab5\">Lab 5: The Approval Client</a>";
+$special{"$year,12,5"} = "<a href=\"$wiki_url" . 
+		        "DataCenterTour\">Data Center Tour</a>";
+$special{"$year,12,18"} = "Final Exam; 7pm";
+
+# lecture names
+my $i = 1;
+$lect_name[$i++] = "Course Introduction & Distributed Architectures";
+$lect_name[$i++] = "Virtualization and EC2";
+$lect_name[$i++] = "Building Clients & Transport";
+$lect_name[$i++] = "CGI & DNS";
+$lect_name[$i++] = "Load Balancing";
+$lect_name[$i++] = "Practicum: Detailed Lab Introduction";
+$lect_name[$i++] = "Sam";
+$lect_name[$i++] = "Application Design & Presentation Layer  & Page Flow";
+$lect_name[$i++] = "Cookies and Sessions";
+$lect_name[$i++] = "Design Exercise I";
+$lect_name[$i++] = "Design Exercise I";
+$lect_name[$i++] = "Service Oriented Architectures";
+$lect_name[$i++] = "XML And Schemas & JSON";
+$lect_name[$i++] = "Web Services";
+$lect_name[$i++] = "WS-Splat!";
+$lect_name[$i++] = "Design Exercise: Queue Message Syntax";
+$lect_name[$i++] = "Restful Web Services";
+$lect_name[$i++] = "Case Study: ActiveTrails.com (Sam)";
+$lect_name[$i++] = "Intro To J2EE & Component Transaction Monitors";
+$lect_name[$i++] = "Transactions";
+$lect_name[$i++] = "Internet Application Performance";
+$lect_name[$i++] = "Identity";
+$lect_name[$i++] = "Architectural Choices";
+$lect_name[$i++] = "Design exercise: Architectural Choices";
+$lect_name[$i++] = "Lab review, prepare for Jeff's Visit (Sam)";
+$lect_name[$i++] = "Power Laws and Software";
+$lect_name[$i++] = "Jeff Barr Visit";
+
+
+# $lect_name[$i++] = "Practicum: Servers";
+# $lect_name[$i++] = "Building Clients";  # plus communication patterns
+# $lect_name[$i++] = "Component Transaction Monitors";
+# $lect_name[$i++] = "Intro To J2EE";
+# $lect_name[$i++] = "Intro To J2EE";
+# $lect_name[$i++] = "Entity Beans";
+# $lect_name[$i++] = "Entity Relationships";
+# $lect_name[$i++] = "Entity Queries";
+# $lect_name[$i++] = "Design Exercise I";
+# $lect_name[$i++] = "Design Exercise I";
+# $lect_name[$i++] = "Presentation Layer";
+# $lect_name[$i++] = "Java Server Pages";
+# $lect_name[$i++] = "Cookies and Sessions & Page Flow";
+# $lect_name[$i++] = "Design Exercise II";
+# $lect_name[$i++] = "Session Beans";
+# $lect_name[$i++] = "Session Beans";
+# $lect_name[$i++] = "Transactions";
+# $lect_name[$i++] = "EJB Security";
+# $lect_name[$i++] = "Design Exercise III";
+# $lect_name[$i++] = "Design Exercise III";
+# $lect_name[$i++] = "Building AnimalControl With Rails";
+# $lect_name[$i++] = "Service Oriented Architectures";
+# $lect_name[$i++] = "XML And Schemas";
+# $lect_name[$i++] = "Web Services";
+# $lect_name[$i++] = "Using SOAP";
+# $lect_name[$i++] = "WS Standards";
+# $lect_name[$i++] = "Restful Services";
+# $lect_name[$i++] = "SOA Governance";
+# $lect_name[$i++] = "Digital Identity";
+# $lect_name[$i++] = "Design Exercise IV";
+# $lect_name[$i++] = "Design Exercise IV";
+# $lect_name[$i++] = "Making Architectural Decisions";
+
+
+$page_start =  <<EOF;
+<h2>CS462 Class Schedule</h2>
+
+<p>
+The following table gives the overall schedule for CS462 ($year).  This page will be subject to updates as the semester moves along and things change.
+<em>Note that some of the links go to pages that have not yet been
+completed.</em> 
+</p>
+
+
+<table style="font-size:small"  width="100%" cellpadding="5">
+EOF
+
+$page_end = <<EOF;
+</table>
+
+
+EOF
+
+

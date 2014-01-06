@@ -36,7 +36,7 @@ You will present your project to class during the final 2-3 class periods. You p
 - Architectural diagram and explanation
 - A demonstration of your system 
 - Methods used in constructing your solution (language, libraries, servers, etc., and their configuration). 
-- Analysis of why events were or were not a good solution to the problem you chose
+- Analysis of why events were or were not a good solution to the problem you chose. Give pros and cons. 
 
 You will also submit your code and a writeup describing the foregoing points. That is due on the last day of class and will be graded separately from your presentation.
 

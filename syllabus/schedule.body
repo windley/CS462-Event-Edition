@@ -1,0 +1,180 @@
+<h2>CS462 Class Schedule</h2>
+
+<p>
+The following table gives the overall schedule for CS462 (2013).  This page will be subject to updates as the semester moves along and things change.
+<em>Note that some of the links go to pages that have not yet been
+completed.</em> 
+</p>
+
+
+<table style="font-size:small"  width="100%" cellpadding="5">
+<tr><td align="right">Jan 8</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CourseIntroduction">Course Introduction</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 10</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?HTTPReview">HTTP Review</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 15</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?LabReview">Lab Review</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 17</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?RestfulWebServices">Restful Web Services</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 18</td>
+    <td></td>
+    <td></td>
+    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
+</tr>
+<tr><td align="right">Jan 22</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?XMLAndSchemas">XML And Schemas</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?JSON">JSON</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 24</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?IdentityOAuthOpenID">Identity, OAuth, OpenID</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 29</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?SomeUsefulAPISTwilioandFoursquare">Some Useful APIS: Twilio and Foursquare</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Jan 31</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DigitalTransformationForum">Digital Transformation Forum</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 1</td>
+    <td></td>
+    <td></td>
+    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md">Lab 1: APIs and OAuth</a></td>
+</tr>
+<tr><td align="right">Feb 5</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 7</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 12</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Event-DrivenArchitectures">Event-Driven Architectures</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?Lab2">Lab 2</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 14</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventProcessing">Event Processing</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 19</td>
+    <td>University Holiday</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 20</td>
+    <td></td>
+    <td></td>
+    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab2.md">Lab 2: Events, Event Generation, and Multi-Tenancy</a></td>
+</tr>
+<tr><td align="right">Feb 21</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventExpressions">Event Expressions</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 26</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?WritingKRLRules">Writing KRL Rules</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 28</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PersonalEventNetworks">Personal Event Networks</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 5</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PatternsinEventProcessing">Patterns in Event Processing</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 7</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventHierarchies">Event Hierarchies</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 12</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventIntermediaries">Event Intermediaries</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?Lab4Introduction">Lab 4 Introduction</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?EventHierarchyExercise">Event Hierarchy Exercise</a></td>
+    <td></td>
+    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab3.md">Lab 3: Consuming and Processing Events</a></td>
+</tr>
+<tr><td align="right">Mar 14</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CloudOSandServices">CloudOS and Services</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 19</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseII">Design Exercise II</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 21</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseII">Design Exercise II</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 26</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLectureLynnMonson">Guest Lecture: Lynn Monson</a></td>
+    <td></td>
+    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab4.md">Lab 4: Event Intermediaries</a></td>
+</tr>
+<tr><td align="right">Mar 28</td>
+    <td>No class</td>
+    <td></td>
+    <td><a 
+href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md">Lab 5: Project Proposals</a></td>
+</tr>
+<tr><td align="right">Apr 2</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?InfrastructureAutomation">Infrastructure Automation</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Apr 4</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Transactions">Transactions</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Apr 9</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MakingArchitecturalDecisions">Making Architectural Decisions</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Apr 11</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ProjectPresentations">Project Presentations</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Apr 16</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PowerLawsandSoftware">Power Laws and Software</a></td>
+    <td></td>
+    <td><a 
+href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md">Lab 5: Final Project</a></td>
+</tr>
+<tr><td align="right">Apr 19</td>
+    <td></td>
+    <td></td>
+    <td>Final Exam; 7:00am</td>
+</tr>
+</table>
+
+

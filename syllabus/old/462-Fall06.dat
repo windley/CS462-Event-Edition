@@ -1,0 +1,96 @@
+# CS462
+
+# Define to add URLs to lecture names
+$wiki_url = "http://classes.eclab.byu.edu/462/lectures/index.cgi?";
+
+# starting date
+@start=(2006,9,6);
+
+# ending date (including final)
+@end=(2006,12,19);
+
+# when are classes
+$normal_classes[1]=1; # monday
+$normal_classes[2]=0; 
+$normal_classes[3]=1; 
+$normal_classes[4]=0; 
+$normal_classes[5]=1; 
+$normal_classes[6]=0; 
+$normal_classes[7]=0; 
+
+# last class day
+@last_class = (2006,12,13);
+
+# holidays
+$holiday{"2006,11,22"} = 1;
+$holiday{"2006,11,23"} = 1;
+$holiday{"2006,11,24"} = 1;
+
+# no class
+$noclass{"2006,9,13"} = 1;
+$noclass{"2006,11,8"} = 1;
+$noclass{"2006,12,4"} = 1;
+
+# midterms
+# $midterm{"2006,10,16"} = 1;
+
+# no assignments
+#$noassign{1} = 1;
+#$noassign{2} = 1;
+$noassignever = 1; 
+
+# special events
+$special{"2006,9,14"} = "Server setup due";
+$special{"2006,9,25"} = "Client assignment due";
+$special{"2006,10,5"} = "Data model assignment (individual) due";
+$special{"2006,10,13"} = "Data model assignment (group) due";
+$special{"2006,10,30"} = "EJB assignment (individual) due";
+$special{"2006,11,10"} = "EJB assignment (group) due";
+$special{"2006,11,27"} = "Web services assignment due";
+$special{"2006,12,4"} = "<a href=\"$wiki_url" . 
+		        "DataCenterTour\">Data Center Tour</a>";
+$special{"2006,12,13"} = "System integration project due";
+$special{"2006,12,19"} = "Final Exam; 11am";
+
+# lecture names
+$lect_name[1] = "Course Introduction";
+$lect_name[2] = "Distributed Architectures";
+$lect_name[3] = "Practicum: Servers";
+$lect_name[4] = "Building Clients";
+$lect_name[5] = "Building Clients";  # plus communication patterns
+$lect_name[6] = "Transport";
+$lect_name[7] = "CGI";
+$lect_name[8] = "Component Transaction Monitors";
+$lect_name[9] = "Intro To J2EE";
+$lect_name[10] = "Intro To J2EE";
+my $i = 11;
+$lect_name[$i++] = "Entity Beans";
+$lect_name[$i++] = "Entity Relationships";
+$lect_name[$i++] = "Entity Queries";
+$lect_name[$i++] = "Design Exercise I";
+$lect_name[$i++] = "Design Exercise I";
+$lect_name[$i++] = "Presentation Layer";
+$lect_name[$i++] = "Java Server Pages";
+$lect_name[$i++] = "Cookies and Sessions & Page Flow";
+$lect_name[$i++] = "Design Exercise II";
+$lect_name[$i++] = "Session Beans";
+$lect_name[$i++] = "Session Beans";
+$lect_name[$i++] = "Transactions";
+$lect_name[$i++] = "EJB Security";
+$lect_name[$i++] = "Design Exercise III";
+$lect_name[$i++] = "Design Exercise III";
+$lect_name[$i++] = "Building AnimalControl With Rails";
+$lect_name[$i++] = "Service Oriented Architectures";
+$lect_name[$i++] = "XML And Schemas";
+$lect_name[$i++] = "Web Services";
+$lect_name[$i++] = "Using SOAP";
+$lect_name[$i++] = "WS Standards";
+$lect_name[$i++] = "Restful Services";
+$lect_name[$i++] = "SOA Governance";
+$lect_name[$i++] = "Digital Identity";
+$lect_name[$i++] = "Design Exercise IV";
+$lect_name[$i++] = "Design Exercise IV";
+$lect_name[$i++] = "Making Architectural Decisions";
+
+
+
