@@ -45,9 +45,12 @@ The purpose of this page is simply to demonstrate that your web server is config
 
 The bootstrapping process allows you to start from a vanilla AMI or from your own custom AMI and automatically configure the server to install packages, run desired services, and download appropriate code.
 
-The main piece of the process is the User Data script. This script is copied into the User Data field (or passed as a command line argument) when launching an instance. It might install necessary packages, download your web app code from S3 or a Git repository.
+The main piece of the process is the User Data script. This script is copied into the User Data field (or passed as a command line argument) when launching an instance. Launching an instance and starting an instance are not the same thing. It might install necessary packages, download your web app code from S3 or a Git repository.
 
 One good solution is to have the script be very simple, downloading the full code for the server and then executing a more in-depth (and more easily updated) script that actually installs packages and copies the code to the proper locations.
+
+Examples and explanations on User-scripts can be found on Amazon's website:
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
 
 # Creating and registering an AMI
 
