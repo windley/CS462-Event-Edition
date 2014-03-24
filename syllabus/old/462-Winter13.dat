@@ -3,17 +3,17 @@
 # Define to add URLs to lecture names
 $wiki_url = "http://classes.windley.com/462/lectures/index.cgi?";
 
-my $year = 2014;
+my $year = 2013;
 
 # starting date
-@start=($year,1,6);
+@start=($year,1,8);
 
 # ending date (including final)
-@end=($year,4,23);
+@end=($year,4,19);
 
 
 # last class day
-@last_class = ($year,4,15);
+@last_class = ($year,4,16);
 
 # when are classes
 $normal_classes[1]=0; # monday
@@ -27,10 +27,10 @@ $normal_classes[7]=0;
 
 # holidays
 #$holiday{"$year,1,18"} = 1;
-$holiday{"$year,2,18"} = 1;
+$holiday{"$year,2,19"} = 1;
 
 # no class
-#$noclass{"$year,3,28"} = 1;
+$noclass{"$year,3,28"} = 1;
 
 # midterms
 #$midterm{"$year,10,16"} = 1;
@@ -43,63 +43,66 @@ $noassignever = 1;
 # special events
 
 $special{"$year,1,18"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md\">Lab 0: Webserver on AWS: AMI</a>";
-$special{"$year,2,6"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md\">Lab 1: APIs and OAuth</a>";
-$special{"$year,2,13"} = "<a href=\"http://developer.kynetx.com/display/docs/Rule+Exercises\">Lab 2: Rule Exercise</a>";
-$special{"$year,2,20"} = "<a href=\"http://developer.kynetx.com/display/docs/Web+Rule+Exercises\">Lab 3: Web Rule Exercises</a>";
-$special{"$year,2,27"} = "<a href=\"http://developer.kynetx.com/display/docs/Rotten+Tomatoes+API+Exercise\">Lab 4: Rotten Tomatoes API Exercise</a>";
-$special{"$year,3,6"} = "<a href=\"http://developer.kynetx.com/display/docs/Foursquare+Checkin+Exercise\">Lab 5: Foursquare Checkin Exercise</a>";
-$special{"$year,3,13"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercises%3A+Data+Storage+Module\">Lab 6: Event Network Exercises: Data Storage Module</a>";
-$special{"$year,3,20"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercise%3A+Semantic+Translation\">Lab 7: Event Network Exercise: Semantic Translation</a>";
-$special{"$year,3,27"} = "<a href=\"http://developer.kynetx.com/display/docs/Dispatching+Events+Exercise\">Lab 8: Dispatching Events Exercise</a>";
-$special{"$year,4,16"} = "Final Project Due";
-
+$special{"$year,2,1"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md\">Lab 1: APIs and OAuth</a>";
 # lab 2 intro should happen after Design Exercise I
-# $special{"$year,2,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab2.md\">Lab 2: Events, Event Generation, and Multi-Tenancy</a>";
-# $special{"$year,3,12"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab3.md\">Lab 3: Consuming and Processing Events</a>";
-# $special{"$year,3,26"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab4.md\">Lab 4: Event Intermediaries</a>";
-# $special{"$year,3,28"} = "<a 
-# href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Project Proposals</a>";
-# $special{"$year,4,16"} = "<a 
-# href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Final Project</a>";
+$special{"$year,2,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab2.md\">Lab 2: Events, Event Generation, and Multi-Tenancy</a>";
+$special{"$year,3,12"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab3.md\">Lab 3: Consuming and Processing Events</a>";
+$special{"$year,3,26"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab4.md\">Lab 4: Event Intermediaries</a>";
+$special{"$year,3,28"} = "<a 
+href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Project Proposals</a>";
+$special{"$year,4,16"} = "<a 
+href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Final Project</a>";
 # $special{"$year,4,5"} = "<a href=\"$wiki_url" . 
 # 		        "DataCenterTour\">Data Center Tour</a> (TBS)";
 $special{"$year,4,19"} = "Final Exam; 7:00am";
+
+# put transactions right after EJB for next time.
 
 # lecture names
 my $i = 1;
 $lect_name[$i++] = "Course Introduction";
 
 # APIs
-$lect_name[$i++] = "HTTP Review & Restful Web Services";
-# $lect_name[$i++] = "Lab Review";
+$lect_name[$i++] = "HTTP Review";
+$lect_name[$i++] = "Lab Review";
+$lect_name[$i++] = "Restful Web Services";
 $lect_name[$i++] = "XML And Schemas & JSON";
 $lect_name[$i++] = "Identity, OAuth, OpenID";
 $lect_name[$i++] = "Some Useful APIS: Twilio and Foursquare";
+$lect_name[$i++] = "Digital Transformation Forum";
 $lect_name[$i++] = "Design Exercise I";
 $lect_name[$i++] = "Design Exercise I";
 
 # Events
-$lect_name[$i++] = "Centralized, Decentralized, and Distributed & Event-Driven Architectures";
-$lect_name[$i++] = "KRE Architecture";
-$lect_name[$i++] = "Writing KRL Rules";
-$lect_name[$i++] = "Persistent Compute Objects";
+$lect_name[$i++] = "Event-Driven Architectures & Lab 2";
+$lect_name[$i++] = "Event Processing";
 $lect_name[$i++] = "Event Expressions";
+#$lect_name[$i++] = "Guest Lecture: Drummond Reed";
+$lect_name[$i++] = "Writing KRL Rules";
+$lect_name[$i++] = "Personal Event Networks";
 $lect_name[$i++] = "Patterns in Event Processing";
-$lect_name[$i++] = "Event Hierarchies & Event Hierarchy Exercise";
+$lect_name[$i++] = "Event Hierarchies";
+$lect_name[$i++] = "Event Intermediaries & Lab 4 Introduction & Event Hierarchy Exercise";
 $lect_name[$i++] = "CloudOS and Services";
-$lect_name[$i++] = "Event System Example: Thermostat";
 $lect_name[$i++] = "Design Exercise II";
 $lect_name[$i++] = "Design Exercise II";
+$lect_name[$i++] = "Guest Lecture: Lynn Monson";
+#$lect_name[$i++] = "Commerce in Personal Event Networks";
+#$lect_name[$i++] = "A Large Event-Driven Application";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
+# $lect_name[$i++] = "";
 
+
+#$lect_name[$i++] = "Presentation Preparation and Practice";
+$lect_name[$i++] = "Infrastructure Automation";
 $lect_name[$i++] = "Transactions";
-$lect_name[$i++] = "Guest Lecture: Alen Peacock";
 $lect_name[$i++] = "Making Architectural Decisions";
-$lect_name[$i++] = "Project Introduction && Design Exercise III";
-$lect_name[$i++] = "TBD";
-$lect_name[$i++] = "Guest Lecture: Tom Creighton, Family Search";
-$lect_name[$i++] = "Guest Lecture: Samuel Smith, Salt Stack";
-
-$lect_name[$i++] = "Project Presentations";
 $lect_name[$i++] = "Project Presentations";
 $lect_name[$i++] = "Power Laws and Software";
 
@@ -118,8 +121,10 @@ $lect_name[$i++] = "Power Laws and Software";
 # $lect_name[$i++] = "Lab Review";
 # $lect_name[$i++] = "Service Oriented Architectures & Web Services";
 # $lect_name[$i++] = "WS-Splat!";
+# $lect_name[$i++] = "Guest Speaker: Doc Searls";
 # $lect_name[$i++] = "Events and Event Expressions";
 # $lect_name[$i++] = "Kynetx Rule Language Basics";
+# $lect_name[$i++] = "Guest Speaker: Ryan Sarver";
 # $lect_name[$i++] = "Advanced KRL";
 # #$lect_name[$i++] =  "Using Apache as an Application Server";
 # $lect_name[$i++] = "Kynetx Architecture: Evaluating Millions of Rules per Day & Using Apache as an Application Server";
