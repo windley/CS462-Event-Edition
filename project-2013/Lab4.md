@@ -8,7 +8,8 @@ Event intermediaries simplify some interactions in event networks and cut down o
 
 The following diagram shows how this will work:
 
-<a href="./Lab4-architecture.png"><img src="../../../raw/master/project/Lab4-architecture.png" alt="Lab 4 architecture" style="width: 90%" /></a>
+![Lab 4 architecture](https://raw.githubusercontent.com/windley/CS462-Event-Edition/master/project-2013/Lab4-architecture.png)
+
 
 ---
 

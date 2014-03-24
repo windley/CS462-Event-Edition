@@ -9,7 +9,7 @@ The flower shop and delivery driver will play both consumer and generator roles 
 
 This is a diagram of the entities and events in this system:
 
-<a href="./Lab3-architecture.png"><img src="../../../raw/master/project/Lab3-architecture.png" alt="Lab 3 architecture" style="width: 90%" /></a>
+![Lab 3 architecture](https://raw.githubusercontent.com/windley/CS462-Event-Edition/master/project-2013/Lab3-architecture.png)
 
 ---
 

@@ -23,7 +23,9 @@ You are required to submit a written proposal (less than 300 words plus a diagra
 - A list of the APIs you will use
 - Who is in your group
 
-A picture at this stage is very helpful. 
+A picture at this stage is very helpful.
+
+__Option:__ If you can't think of something to do, you may build the flower delivery system described in [Lab 3](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab3.md) and [Lab 4](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab4.md) of last year's project. 
 
 ## Deliverables
 
