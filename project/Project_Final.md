@@ -1,12 +1,12 @@
 # Final Project
 
-**Objective**: Work with a small group to build an event-driven solution to a problem of your choice according to the parameters described below.
+**Objective**: Work with a small group to build a non-hierarchical, distributed solution to a problem of your choice according to the parameters described below.
 
 ## Constraints
 
 - Your group must have at least two and not more than three people
 - You must use at least two APIs listed at [ProgrammableWeb](http://programmableweb.com)
-- Your architecture must be primarily event-driven
+- Your architecture must be primarily event-driven (push not pull)
 - You must get your project idea approved by the TA and Dr. Windley before you begin
 
 ## Accommodations
@@ -30,7 +30,7 @@ We will judge your proposal for
 - Clarity of what is to be built
 - Scale and scope (e.g. too big or too small)
 - Completeness
-- Potential for use of event-based design
+- Appropriate use of events to create a non-hierarchical, distributed solution
 
 __Option:__ If you can't think of something to do, you may build the flower delivery system described in [Lab 3](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab3.md) and [Lab 4](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab4.md) of last year's project. 
 
