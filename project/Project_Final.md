@@ -12,18 +12,25 @@
 ## Accommodations
 
 - You may use any programming language(s), frameworks, or libraries that you choose
-- You may build and host the system anywhere you like
+- You may build and host the system anywhere you like. Remember you have access to Amazon. 
 
 ## Proposal
 
 You are required to submit a written proposal (less than 300 words plus a diagram) to the TA that includes the following information:
 
-- What the system will do
+- What the system will do, what problem it will solve. 
 - A high-level description of your event architecture
 - A list of the APIs you will use
 - Who is in your group
 
 A picture at this stage is very helpful.
+
+We will judge your proposal for
+
+- Clarity of what is to be built
+- Scale and scope (e.g. too big or too small)
+- Completeness
+- Potential for use of event-based design
 
 __Option:__ If you can't think of something to do, you may build the flower delivery system described in [Lab 3](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab3.md) and [Lab 4](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab4.md) of last year's project. 
 
