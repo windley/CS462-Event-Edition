@@ -51,7 +51,8 @@ $special{"$year,3,6"} = "<a href=\"http://developer.kynetx.com/display/docs/Four
 $special{"$year,3,13"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercises%3A+Data+Storage+Module\">Lab 6: Event Network Exercises: Data Storage Module</a>";
 $special{"$year,3,20"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercise%3A+Semantic+Translation\">Lab 7: Event Network Exercise: Semantic Translation</a>";
 $special{"$year,3,27"} = "<a href=\"http://developer.kynetx.com/display/docs/Dispatching+Events+Exercise\">Lab 8: Dispatching Events Exercise</a>";
-$special{"$year,4,16"} = "Final Project Due";
+$special{"$year,4,1"} = "<a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Proposals Due";
+$special{"$year,4,16"} = "<a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Due";
 
 # lab 2 intro should happen after Design Exercise I
 # $special{"$year,2,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab2.md\">Lab 2: Events, Event Generation, and Multi-Tenancy</a>";
@@ -95,7 +96,7 @@ $lect_name[$i++] = "Transactions";
 $lect_name[$i++] = "Guest Lecture: Alen Peacock";
 $lect_name[$i++] = "Making Architectural Decisions";
 $lect_name[$i++] = "Project Introduction && Design Exercise III";
-$lect_name[$i++] = "TBD";
+$lect_name[$i++] = "Bitcoin and Distributed Consensus";
 $lect_name[$i++] = "Guest Lecture: Tom Creighton, Family Search";
 $lect_name[$i++] = "Guest Lecture: Samuel Smith, Salt Stack";
 
