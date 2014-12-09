@@ -7,6 +7,14 @@
   * Coupling
   * Event-based systems
 
+> Distributed computing architectures: P2P, client server
+> Inter-process communication
+> Distributed objects and remote invocation
+> Naming and Name services
+> Time and Global State Management
+> Transactions and Concurrency control
+> Distributed Transactions 
+
 * Introduction to Events
   * what is an event
   * event detection

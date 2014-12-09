@@ -3,17 +3,17 @@
 # Define to add URLs to lecture names
 $wiki_url = "http://classes.windley.com/462/lectures/index.cgi?";
 
-my $year = 2014;
+my $year = 2015;
 
 # starting date
-@start=($year,1,6);
+@start=($year,1,5);
 
 # ending date (including final)
-@end=($year,4,23);
+@end=($year,4,22);
 
 
 # last class day
-@last_class = ($year,4,15);
+@last_class = ($year,4,14);
 
 # when are classes
 $normal_classes[1]=0; # monday
@@ -27,7 +27,7 @@ $normal_classes[7]=0;
 
 # holidays
 #$holiday{"$year,1,18"} = 1;
-$holiday{"$year,2,18"} = 1;
+$holiday{"$year,2,17"} = 1;
 
 # no class
 #$noclass{"$year,3,28"} = 1;
@@ -67,42 +67,75 @@ $special{"$year,4,16"} = "<a href='https://github.com/windley/CS462-Event-Editio
 $special{"$year,4,19"} = "Final Exam; 7:00am";
 
 # lecture names
-my $i = 1;
-$lect_name[$i++] = "Course Introduction";
 
-# APIs
-$lect_name[$i++] = "HTTP Review & Restful Web Services";
-# $lect_name[$i++] = "Lab Review";
-$lect_name[$i++] = "XML And Schemas & JSON";
-$lect_name[$i++] = "Identity, OAuth, OpenID";
-$lect_name[$i++] = "Some Useful APIS: Twilio and Foursquare";
-$lect_name[$i++] = "Design Exercise I";
-$lect_name[$i++] = "Design Exercise I";
+# One lecture per line. & separates different lecture topics (i.e. different wiki entries)
+$lect_name = <<_EOF_;
+Course Introduction
+Interprocess Communication
+Distributed Architectures
+XML And Schemas & JSON
+Identity, OAuth, OpenID & DNS
+RESTful APIs
+Design Exercise I
+Design Exercise I
+MapReduce
+Peer to Peer
+Distributed Hash Tables
+Kademila
+CAP Theorem
+Event Driven Systems: Event Expressions 
+Event Driven Systems: Persistent Compute Objects (picos)
+Event Driven Systems: Event Processing Patterns
+Distributed Transactions: Transactions in MVC
+Distributed Transactions: Transactions in RESTful systems
+Memory Coherence
+Consensus: Byzantine 
+Consensus: Paxis
+Consensus: Blockchain
+Partitioning 
+Telehash
+Guest Lecture
+Power Laws and Software
+_EOF_
 
-# Events
-$lect_name[$i++] = "Centralized, Decentralized, and Distributed & Event-Driven Architectures";
-$lect_name[$i++] = "KRE Architecture";
-$lect_name[$i++] = "Writing KRL Rules";
-$lect_name[$i++] = "Persistent Compute Objects";
-$lect_name[$i++] = "Event Expressions";
-$lect_name[$i++] = "Patterns in Event Processing";
-$lect_name[$i++] = "Event Hierarchies & Event Hierarchy Exercise";
-$lect_name[$i++] = "CloudOS and Services";
-$lect_name[$i++] = "Event System Example: Thermostat";
-$lect_name[$i++] = "Design Exercise II";
-$lect_name[$i++] = "Design Exercise II";
+@lect_name = split(/\n/, $lect_name);
 
-$lect_name[$i++] = "Transactions";
-$lect_name[$i++] = "Guest Lecture: Alen Peacock";
-$lect_name[$i++] = "Making Architectural Decisions";
-$lect_name[$i++] = "Project Introduction && Design Exercise III";
-$lect_name[$i++] = "Bitcoin and Distributed Consensus";
-$lect_name[$i++] = "Guest Lecture: Tom Creighton, Family Search";
-$lect_name[$i++] = "Guest Lecture: Samuel Smith, Salt Stack";
+# my $i = 1;
+# $lect_name[$i++] = "Course Introduction";
 
-$lect_name[$i++] = "Project Presentations";
-$lect_name[$i++] = "Project Presentations";
-$lect_name[$i++] = "Power Laws and Software";
+# # APIs
+# $lect_name[$i++] = "HTTP Review & Restful Web Services";
+# # $lect_name[$i++] = "Lab Review";
+# $lect_name[$i++] = "XML And Schemas & JSON";
+# $lect_name[$i++] = "Identity, OAuth, OpenID";
+# $lect_name[$i++] = "Some Useful APIS: Twilio and Foursquare";
+# $lect_name[$i++] = "Design Exercise I";
+# $lect_name[$i++] = "Design Exercise I";
+
+# # Events
+# $lect_name[$i++] = "Centralized, Decentralized, and Distributed & Event-Driven Architectures";
+# $lect_name[$i++] = "KRE Architecture";
+# $lect_name[$i++] = "Writing KRL Rules";
+# $lect_name[$i++] = "Persistent Compute Objects";
+# $lect_name[$i++] = "Event Expressions";
+# $lect_name[$i++] = "Patterns in Event Processing";
+# $lect_name[$i++] = "Event Hierarchies & Event Hierarchy Exercise";
+# $lect_name[$i++] = "CloudOS and Services";
+# $lect_name[$i++] = "Event System Example: Thermostat";
+# $lect_name[$i++] = "Design Exercise II";
+# $lect_name[$i++] = "Design Exercise II";
+
+# $lect_name[$i++] = "Transactions";
+# $lect_name[$i++] = "Guest Lecture: Alen Peacock";
+# $lect_name[$i++] = "Making Architectural Decisions";
+# $lect_name[$i++] = "Project Introduction && Design Exercise III";
+# $lect_name[$i++] = "Bitcoin and Distributed Consensus";
+# $lect_name[$i++] = "Guest Lecture: Tom Creighton, Family Search";
+# $lect_name[$i++] = "Guest Lecture: Samuel Smith, Salt Stack";
+
+# $lect_name[$i++] = "Project Presentations";
+# $lect_name[$i++] = "Project Presentations";
+# $lect_name[$i++] = "Power Laws and Software";
 
 
 # $lect_name[$i++] = "Building Clients & Transport";
@@ -177,7 +210,7 @@ $page_start =  <<EOF;
 <p>
 The following table gives the overall schedule for CS462 ($year).  This page will be subject to updates as the semester moves along and things change.
 <em>Note that some of the links go to pages that have not yet been
-completed.</em> 
+completed. </em> 
 </p>
 
 

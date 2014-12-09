@@ -1,30 +1,30 @@
 <h2>CS462 Class Schedule</h2>
 
 <p>
-The following table gives the overall schedule for CS462 (2014).  This page will be subject to updates as the semester moves along and things change.
+The following table gives the overall schedule for CS462 (2015).  This page will be subject to updates as the semester moves along and things change.
 <em>Note that some of the links go to pages that have not yet been
-completed.</em> 
+completed. </em> 
 </p>
 
 
 <table style="font-size:small"  width="100%" cellpadding="5">
-<tr><td align="right">Jan 7</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CourseIntroduction">Course Introduction</a></td>
+<tr><td align="right">Jan 6</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?InterprocessCommunication">Interprocess Communication</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 9</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?HTTPReview">HTTP Review</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?RestfulWebServices">Restful Web Services</a></td>
+<tr><td align="right">Jan 8</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedArchitectures">Distributed Architectures</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 14</td>
+<tr><td align="right">Jan 13</td>
     <td><a href="http://classes.windley.com/462/lectures/index.cgi?XMLAndSchemas">XML And Schemas</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?JSON">JSON</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 16</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?IdentityOAuthOpenID">Identity, OAuth, OpenID</a></td>
+<tr><td align="right">Jan 15</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?IdentityOAuthOpenID">Identity, OAuth, OpenID</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?DNS">DNS</a></td>
     <td></td>
     <td></td>
 </tr>
@@ -33,128 +33,173 @@ completed.</em>
     <td></td>
     <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
 </tr>
-<tr><td align="right">Jan 21</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?SomeUsefulAPISTwilioandFoursquare">Some Useful APIS: Twilio and Foursquare</a></td>
+<tr><td align="right">Jan 20</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?RESTfulAPIs">RESTful APIs</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 23</td>
+<tr><td align="right">Jan 22</td>
     <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 28</td>
+<tr><td align="right">Jan 27</td>
     <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Jan 30</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CentralizedDecentralizedandDistributed">Centralized, Decentralized, and Distributed</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?Event-DrivenArchitectures">Event-Driven Architectures</a></td>
+<tr><td align="right">Jan 29</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MapReduce">MapReduce</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Feb 4</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?KREArchitecture">KRE Architecture</a></td>
+<tr><td align="right">Feb 3</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PeertoPeer">Peer to Peer</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 5</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedHashTables">Distributed Hash Tables</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Feb 6</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?WritingKRLRules">Writing KRL Rules</a></td>
+    <td></td>
     <td></td>
     <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md">Lab 1: APIs and OAuth</a></td>
 </tr>
-<tr><td align="right">Feb 11</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PersistentComputeObjects">Persistent Compute Objects</a></td>
+<tr><td align="right">Feb 10</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Kademila">Kademila</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 12</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CAPTheorem">CAP Theorem</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Feb 13</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventExpressions">Event Expressions</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Rule+Exercises">Lab 2: Rule Exercise</a></td>
 </tr>
-<tr><td align="right">Feb 18</td>
+<tr><td align="right">Feb 17</td>
     <td>University Holiday</td>
     <td></td>
     <td></td>
 </tr>
+<tr><td align="right">Feb 19</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsEventExpressions">Event Driven Systems: Event Expressions</a></td>
+    <td></td>
+    <td></td>
+</tr>
 <tr><td align="right">Feb 20</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PatternsinEventProcessing">Patterns in Event Processing</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Web+Rule+Exercises">Lab 3: Web Rule Exercises</a></td>
 </tr>
-<tr><td align="right">Feb 25</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventHierarchies">Event Hierarchies</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?EventHierarchyExercise">Event Hierarchy Exercise</a></td>
+<tr><td align="right">Feb 24</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsPersistentComputeObjects(picos)">Event Driven Systems: Persistent Compute Objects (picos)</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Feb 26</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsEventProcessingPatterns">Event Driven Systems: Event Processing Patterns</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Feb 27</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CloudOSandServices">CloudOS and Services</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Rotten+Tomatoes+API+Exercise">Lab 4: Rotten Tomatoes API Exercise</a></td>
 </tr>
-<tr><td align="right">Mar 4</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventSystemExampleThermostat">Event System Example: Thermostat</a></td>
+<tr><td align="right">Mar 3</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedTransactionsTransactionsinMVC">Distributed Transactions: Transactions in MVC</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 5</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedTransactionsTransactionsinRESTfulsystems">Distributed Transactions: Transactions in RESTful systems</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Mar 6</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseII">Design Exercise II</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Foursquare+Checkin+Exercise">Lab 5: Foursquare Checkin Exercise</a></td>
 </tr>
-<tr><td align="right">Mar 11</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseII">Design Exercise II</a></td>
+<tr><td align="right">Mar 10</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MemoryCoherence">Memory Coherence</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 12</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusByzantine">Consensus: Byzantine</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Mar 13</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Transactions">Transactions</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Event+Network+Exercises%3A+Data+Storage+Module">Lab 6: Event Network Exercises: Data Storage Module</a></td>
 </tr>
-<tr><td align="right">Mar 18</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLectureAlenPeacock">Guest Lecture: Alen Peacock</a></td>
+<tr><td align="right">Mar 17</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusPaxis">Consensus: Paxis</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 19</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusBlockchain">Consensus: Blockchain</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Mar 20</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MakingArchitecturalDecisions">Making Architectural Decisions</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Event+Network+Exercise%3A+Semantic+Translation">Lab 7: Event Network Exercise: Semantic Translation</a></td>
 </tr>
-<tr><td align="right">Mar 25</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ProjectIntroduction">Project Introduction</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?"></a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseIII">Design Exercise III</a></td>
+<tr><td align="right">Mar 24</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Partitioning">Partitioning</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><td align="right">Mar 26</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLecture">Guest Lecture</a></td>
     <td></td>
     <td></td>
 </tr>
 <tr><td align="right">Mar 27</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?BitcoinandDistributedConsensus">Bitcoin and Distributed Consensus</a></td>
+    <td></td>
     <td></td>
     <td><a href="http://developer.kynetx.com/display/docs/Dispatching+Events+Exercise">Lab 8: Dispatching Events Exercise</a></td>
 </tr>
+<tr><td align="right">Mar 31</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PowerLawsandSoftware">Power Laws and Software</a></td>
+    <td></td>
+    <td></td>
+</tr>
 <tr><td align="right">Apr 1</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLectureTomCreightonFamilySearch">Guest Lecture: Tom Creighton, Family Search</a></td>
+    <td></td>
     <td></td>
     <td><a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Proposals Due</td>
 </tr>
-<tr><td align="right">Apr 3</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLectureSamuelSmithSaltStack">Guest Lecture: Samuel Smith, Salt Stack</a></td>
+<tr><td align="right">Apr 2</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture25">Lecture 25</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Apr 8</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ProjectPresentations">Project Presentations</a></td>
+<tr><td align="right">Apr 7</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture26">Lecture 26</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Apr 10</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ProjectPresentations">Project Presentations</a></td>
+<tr><td align="right">Apr 9</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture27">Lecture 27</a></td>
     <td></td>
     <td></td>
 </tr>
-<tr><td align="right">Apr 15</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PowerLawsandSoftware">Power Laws and Software</a></td>
+<tr><td align="right">Apr 14</td>
+    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture28">Lecture 28</a></td>
     <td></td>
     <td></td>
 </tr>
