@@ -1,3 +1,5 @@
+>Note that this has not been updated yet for 2015. Don't start early without talking to Prof. Windley. 
+
 # CS462 Project for Evented Systems
 
 This repository includes project notes and code for the CS 462 a class at Brigham Young University on large scale distributed systems. This edition of the class is taught by Phil Windley (<http://www.windley.com>) and focuses on using event-based architectures. 
