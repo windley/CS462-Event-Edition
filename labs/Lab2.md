@@ -12,7 +12,9 @@ The purpose of this lab is to gain experience using public-key (asymmetric) cryp
 - Install GPG
 - Create a public/private key pair.
 - Publish your public key on ```hkp://pgp.mit.edu```
-- Use the key server to find the public key of one or more class members. Validate the keyID. 
+- Use the key server to find the public key of one or more class members.
+	- Validate the keyID.
+	- What is their key's fingerprint
 - Exchange and validate signed messages with another class member. 
 - Exchange a secret message with another class member
 
