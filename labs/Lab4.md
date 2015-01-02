@@ -22,5 +22,12 @@ The purpose of this lab is to make you familiar with MapReduce as an example of 
 
 # Run Your Own Mapper and Reducer Scripts
 
-0. Repeat the example above, but use the mapper.py and reducer.py scripts available on Github. You're also free to rewrote these in some other EMR-supported language if you wish. Regardless, you should understand what each does.
-0. Modify the scripts to sort the results. [This HowTo](https://wiki.python.org/moin/HowTo/Sorting) might come in handy if you're unfamiliar with Python. 
+0. Repeat the example above, but use the [mapper.py](https://github.com/windley/CS462-Event-Edition/blob/master/code/mapreduce/mapper.py) and [reducer.py](https://github.com/windley/CS462-Event-Edition/blob/master/code/mapreduce/reducer.py) scripts available on Github. You're also free to rewrote these in some other EMR-supported language if you wish. Regardless, you should understand what each does.
+0. Modify the scripts to sort the results. [This HowTo](https://wiki.python.org/moin/HowTo/Sorting) might come in handy if you're unfamiliar with Python. You can test your scripts by doing the following:
+
+		cat file.txt | python mapper.py | python reducer.py
+
+	The contents of file.txt shouldn't be long. Just long enough to know your scripts work. 
+
+0. Note that the most frequent words are mostly uninteresting. These are called [stop words](https://en.wikipedia.org/wiki/Stop_words). Use this [list of English stop words](https://github.com/windley/CS462-Event-Edition/blob/master/code/mapreduce/stop-words) to modify the scripts once more so that they don't count stop words.
+0. Now that your script sorts and removes stop words, run it on the text of a largish document such as one of the [books at Project Gutenberg](https://www.gutenberg.org/)
