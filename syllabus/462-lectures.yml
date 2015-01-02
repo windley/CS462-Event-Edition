@@ -1,0 +1,182 @@
+
+Lectures: 
+  - 
+    title: Course Introduction
+  - 
+    title: Distributed System Tolopogies and Issues
+    url: wiki
+  - 
+    title: Coupling
+    reading:
+      - title: "Event-Based Programming: Taking Events to the Limit, Chapter 1"
+        author: Ted Faison
+        url: "http://books.google.com/books?id=9CL446IzhuAC&pg=PA311&lpg=PA311&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false"
+  - 
+    title: Distributed Architectures
+    reading:
+      - title: 
+        author: 
+        url: 
+  -
+    title: Integrity, Non-Repudiation, and Confidentiality
+    reading:
+      - title: 
+        author: 
+        url: 
+  -
+    title: Identity and Naming
+    topics: Identity, OAuth, OpenID, URIs, DNS
+    reading:
+      - title: 
+        author: 
+        url: 
+  -
+    title: Serialization
+    topics: XML And Schemas & JSON
+    reading:
+      - title: 
+        author: 
+        url: 
+  -
+    title: RESTful APIs
+    reading:
+      - title: Thoughts on RESTful API Design
+        author: Geert Jansen
+        url: http://restful-api-design.readthedocs.org/en/latest/
+      - title: Teach a Dog to REST
+        author: Brian Mulloy
+        url: https://www.youtube.com/watch?v=o-4mibDn_aU#t=23
+  -
+    title: Design Exercise I
+  -
+    title: MapReduce
+    reading:
+      - title: "MapReduce: simplified data processing on large clusters"
+        author: Jeffrey Dean, Sanjay Ghemawat
+        url: http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE
+      - title: "Amazon Elastic MapReduce"
+        author: "Amazon Web Services, Inc."
+        url: http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html
+  -
+    title: Peer to Peer Systems
+    reading:
+      - title: Fallacies of Distributed Computing Explained
+        author: Arnon Rotem-Gal-Oz
+        url: "http://www.rgoarchitects.com/Files/fallacies.pdf"
+  -
+    title: Distributed Hash Tables
+    reading:
+      - title: "Intro to Distributed Hash Tables (DHTs)"
+        author: real 
+        url: "http://www.freedomlayer.org/articles/dht_intro.html"
+      - title: "Chord: a scalable peer-to-peer lookup protocol for internet applications"
+        author: Ion Stoica, et. al.
+        url: "http://dl.acm.org/citation.cfm?id=638336"
+  -
+    title: Kademila and Telehash
+    reading:
+      - title: "Kademlia: A Peer-to-Peer Information System Based on the XOR Metric"
+        author: Petar Maymounkov, David Mazières
+        url: "http://dl.acm.org/citation.cfm?id=646334.687801"
+  -
+    title: CAP Theorem
+    reading:
+      - title: "A plain English introduction to CAP theorem"
+        author: Kaushik Sathupadi
+        url: "http://ksat.me/a-plain-english-introduction-to-cap-theorem/"
+      - title: "Perspectives on the CAP Theorem"
+        author: Seth Gilbert, Nancy A. Lynch
+        url: "http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html"
+  -
+    title: "Event Driven Systems: Event Expressions"
+    reading:
+      - title: The Live Web, Chapters 1-4
+        author: Phillip J. Windley
+  -
+    title: "Event Driven Systems: Event Processing Patterns"
+    reading:
+      - title: The Live Web, Chapters 11-14
+        author: Phillip J. Windley
+  -
+    title: "Event Driven Systems: Persistent Compute Objects (picos)"
+    reading:
+      - title: 
+        author: 
+  -
+    title: "Distributed Transactions: Transactions in MVC"
+    topics: transactions, two-phase commit, transaction monitors
+  -
+    title: "Distributed Transactions: Transactions in RESTful systems"
+    reading:
+    - title: "Starbucks Does Not Use Two-Phase Commit"
+      author: Gregor Hohpe
+      url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+    - title: "How to GET a Cup of Coffee"
+      author: Jim Webber
+      url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+  -
+    title: Memory Coherence
+    reading:
+      - title: "Memory Coherence in Shared Virtual Memory Systems "
+        author:
+        url: "http://dl.acm.org/citation.cfm?doid=75104.75105"
+  -
+    title: "Consensus: Byzantine Generals Problem"
+    reading:
+      - title: "Practical Byzantine Fault Tolerance"
+        author:
+        url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf"
+  -
+    title: "Consensus: Paxos"
+    reading:
+      - title: "Paxos Made Simple"
+        author: Leslie Lamport
+        url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf"
+      - title: The Part-Time Parliament
+        author: Leslie Lamport 
+        url: "http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf"
+  -
+    title: "Consensus: Blockchain"
+    reading:
+      - title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+        author: Satoshi Nakamoto
+        url: "https://bitcoin.org/bitcoin.pdf"
+      - title: "How the Bitcoin protocol actually works"
+        author: Michael Nielsen
+        url: "http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/"
+  -
+    title: Partitioning 
+    reading:
+      - title: "Disconnected operation in the Coda File System"
+        author: James J. Kistler, M. Satyanarayanan
+        url: "http://dl.acm.org/citation.cfm?doid=146941.146942"
+      - title: "Managing update conflicts in Bayou, a weakly connected replicated storage system"
+        author: D. B. Terry, M. M. Theimer, Karin Petersen, A. J. Demers, M. J. Spreitzer, C. H. Hauser
+        url: "http://dl.acm.org/citation.cfm?doid=224056.224070"
+      - title: "Spanner: Google's globally-distributed database"
+        author: James C. Corbett, et. al.
+        url: "https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf"
+  -
+    title: Micoservices
+    reading:
+      - title: Microservices and PaaS - Part I
+        author: John Wetherill
+        url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+      - title: "Microservices and PaaS - Part II"
+        author: John Wetherill
+        url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii"
+      - title: "Microservices and PaaS - Part III"
+        author: John Wetherill
+        url: "http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii"
+      - title: "Microservices and PaaS - Part IV"
+        author: John Wetherill
+        url: "http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv"
+  -
+    title: Design Exercise II
+  -
+    title: Guest Lecture
+  -
+    title: Power Laws and Software
+
+
+

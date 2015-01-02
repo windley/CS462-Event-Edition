@@ -1,6 +1,6 @@
 
 rm  -f schedule.body
-./syllabus.pl 462 >schedule.body
+./syllabus.pl -c 462-config.dat -f 462-lectures.yml >schedule.body
 scp schedule.body web@cheetah.windley.net:/web/virt/classes/462/docs
 
 

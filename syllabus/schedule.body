@@ -8,210 +8,160 @@ completed. </em>
 
 
 <table style="font-size:small"  width="100%" cellpadding="5">
-<tr><td align="right">Jan 6</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?InterprocessCommunication">Interprocess Communication</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 6</td>
+    <td valign="top">Course Introduction</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 8</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedArchitectures">Distributed Architectures</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 8</td>
+    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/DistributedSystemTolopogiesandIssues.md'>Distributed System Tolopogies and Issues</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 13</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?XMLAndSchemas">XML And Schemas</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?JSON">JSON</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 13</td>
+    <td valign="top">Coupling<br/><a href='http://books.google.com/books?id=9CL446IzhuAC&pg=PA311&lpg=PA311&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false'>Event-Based Programming: Taking Events to the Limit, Chapter 1</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 15</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?IdentityOAuthOpenID">Identity, OAuth, OpenID</a> &amp; <a href="http://classes.windley.com/462/lectures/index.cgi?DNS">DNS</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 15</td>
+    <td valign="top">Distributed Architectures</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 18</td>
-    <td></td>
-    <td></td>
-    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
+<tr><td valign="top" align="right">Jan 18</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
 </tr>
-<tr><td align="right">Jan 20</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?RESTfulAPIs">RESTful APIs</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 20</td>
+    <td valign="top">Integrity, Non-Repudiation, and Confidentiality</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 22</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 22</td>
+    <td valign="top">Identity and Naming</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 27</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DesignExerciseI">Design Exercise I</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 27</td>
+    <td valign="top">Serialization</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Jan 29</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MapReduce">MapReduce</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Jan 29</td>
+    <td valign="top">RESTful APIs<br/><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 3</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PeertoPeer">Peer to Peer</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 3</td>
+    <td valign="top">Design Exercise I</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 5</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedHashTables">Distributed Hash Tables</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 5</td>
+    <td valign="top">MapReduce<br/><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 6</td>
-    <td></td>
-    <td></td>
-    <td><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md">Lab 1: APIs and OAuth</a></td>
+<tr><td valign="top" align="right">Feb 6</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md">Lab 1: APIs and OAuth</a></td>
 </tr>
-<tr><td align="right">Feb 10</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Kademila">Kademila</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 10</td>
+    <td valign="top">Peer to Peer Systems<br/><a href='http://www.rgoarchitects.com/Files/fallacies.pdf'>Fallacies of Distributed Computing Explained</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 12</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?CAPTheorem">CAP Theorem</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 12</td>
+    <td valign="top">Distributed Hash Tables<br/><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 13</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Rule+Exercises">Lab 2: Rule Exercise</a></td>
+<tr><td valign="top" align="right">Feb 19</td>
+    <td valign="top">Kademila and Telehash<br/><a href='http://dl.acm.org/citation.cfm?id=646334.687801'>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 17</td>
-    <td>University Holiday</td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 24</td>
+    <td valign="top">CAP Theorem<br/><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html'>Perspectives on the CAP Theorem</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 19</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsEventExpressions">Event Driven Systems: Event Expressions</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Feb 26</td>
+    <td valign="top">Event Driven Systems: Event Expressions<br/>The Live Web, Chapters 1-4</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 20</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Web+Rule+Exercises">Lab 3: Web Rule Exercises</a></td>
+<tr><td valign="top" align="right">Mar 3</td>
+    <td valign="top">Event Driven Systems: Event Processing Patterns<br/>The Live Web, Chapters 11-14</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 24</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsPersistentComputeObjects(picos)">Event Driven Systems: Persistent Compute Objects (picos)</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 5</td>
+    <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 26</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?EventDrivenSystemsEventProcessingPatterns">Event Driven Systems: Event Processing Patterns</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 10</td>
+    <td valign="top">Distributed Transactions: Transactions in MVC</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Feb 27</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Rotten+Tomatoes+API+Exercise">Lab 4: Rotten Tomatoes API Exercise</a></td>
+<tr><td valign="top" align="right">Mar 12</td>
+    <td valign="top">Distributed Transactions: Transactions in RESTful systems<br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 3</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedTransactionsTransactionsinMVC">Distributed Transactions: Transactions in MVC</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 17</td>
+    <td valign="top">Memory Coherence<br/><a href='http://dl.acm.org/citation.cfm?doid=75104.75105'>Memory Coherence in Shared Virtual Memory Systems </a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 5</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?DistributedTransactionsTransactionsinRESTfulsystems">Distributed Transactions: Transactions in RESTful systems</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 19</td>
+    <td valign="top">Consensus: Byzantine Generals Problem<br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf'>Practical Byzantine Fault Tolerance</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 6</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Foursquare+Checkin+Exercise">Lab 5: Foursquare Checkin Exercise</a></td>
+<tr><td valign="top" align="right">Mar 24</td>
+    <td valign="top">Consensus: Paxos<br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf'>Paxos Made Simple</a><br/><a href='http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf'>The Part-Time Parliament</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 10</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?MemoryCoherence">Memory Coherence</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 26</td>
+    <td valign="top">Consensus: Blockchain<br/><a href='https://bitcoin.org/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a><br/><a href='http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/'>How the Bitcoin protocol actually works</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 12</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusByzantine">Consensus: Byzantine</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Mar 31</td>
+    <td valign="top">Partitioning<br/><a href='http://dl.acm.org/citation.cfm?doid=146941.146942'>Disconnected operation in the Coda File System</a><br/><a href='http://dl.acm.org/citation.cfm?doid=224056.224070'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a><br/><a href='https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf'>Spanner: Google's globally-distributed database</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 13</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Event+Network+Exercises%3A+Data+Storage+Module">Lab 6: Event Network Exercises: Data Storage Module</a></td>
+<tr><td valign="top" align="right">Apr 2</td>
+    <td valign="top">Micoservices<br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Microservices and PaaS - Part I</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii'>Microservices and PaaS - Part II</a><br/><a href='http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii'>Microservices and PaaS - Part III</a><br/><a href='http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv'>Microservices and PaaS - Part IV</a></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 17</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusPaxis">Consensus: Paxis</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Apr 7</td>
+    <td valign="top">Design Exercise II</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 19</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?ConsensusBlockchain">Consensus: Blockchain</a></td>
-    <td></td>
-    <td></td>
+<tr><td valign="top" align="right">Apr 9</td>
+    <td valign="top">Guest Lecture</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 20</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Event+Network+Exercise%3A+Semantic+Translation">Lab 7: Event Network Exercise: Semantic Translation</a></td>
+<tr><td valign="top" align="right">Apr 14</td>
+    <td valign="top">Power Laws and Software</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
 </tr>
-<tr><td align="right">Mar 24</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Partitioning">Partitioning</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Mar 26</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?GuestLecture">Guest Lecture</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Mar 27</td>
-    <td></td>
-    <td></td>
-    <td><a href="http://developer.kynetx.com/display/docs/Dispatching+Events+Exercise">Lab 8: Dispatching Events Exercise</a></td>
-</tr>
-<tr><td align="right">Mar 31</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?PowerLawsandSoftware">Power Laws and Software</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Apr 1</td>
-    <td></td>
-    <td></td>
-    <td><a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Proposals Due</td>
-</tr>
-<tr><td align="right">Apr 2</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture25">Lecture 25</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Apr 7</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture26">Lecture 26</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Apr 9</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture27">Lecture 27</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Apr 14</td>
-    <td><a href="http://classes.windley.com/462/lectures/index.cgi?Lecture28">Lecture 28</a></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr><td align="right">Apr 16</td>
-    <td></td>
-    <td></td>
-    <td><a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Due</td>
-</tr>
-<tr><td align="right">Apr 19</td>
-    <td></td>
-    <td></td>
-    <td>Final Exam; 7:00am</td>
+<tr><td valign="top" align="right">Apr 19</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+    <td valign="top">Final Exam; 7:00am</td>
 </tr>
 </table>
 

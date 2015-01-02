@@ -1,7 +1,9 @@
 # CS462
 
 # Define to add URLs to lecture names
-$wiki_url = "http://classes.windley.com/462/lectures/index.cgi?";
+#$wiki_url = "http://classes.windley.com/462/lectures/index.cgi?";
+our $wiki_url = "https://github.com/windley/CS462-Event-Edition/blob/master/lectures/";
+our $wiki_ext = ".md";
 
 my $year = 2015;
 

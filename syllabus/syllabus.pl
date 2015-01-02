@@ -1,23 +1,48 @@
 #!/usr/bin/perl
 
+use Getopt::Std;
 use Date::Calc qw(:all);
+use YAML::XS;
+use Data::Dumper;
+
+use constant DEFAULT_CONFIG_FILE => 'class.dat';
+use constant DEFAULT_LECTURES_FILE => 'lectures.yml';
+
+# global options
+use vars qw/ %clopt /;
+my $opt_string = 'c:f:?h';
+getopts( "$opt_string", \%clopt ) or usage();
+
+usage() if $clopt{'h'} || $clopt{'?'};
+
+warn "No config file specified. Using " . DEFAULT_CONFIG_FILE . "\n" unless $clopt{'c'};
+my $config = ($clopt{'c'} || DEFAULT_CONFIG_FILE) ;
+
+print "No lecture file specified. Using " . DEFAULT_LECTURE_FILE . "\n" unless $clopt{'f'};
+my $lectures_top = read_config($clopt{'f'});
+my $lectures = $lectures_top->{"Lectures"};
+
+#print Dumper $lectures;
 
 our(@start,@end,@date,@normal_classes,@last_class);
 
-require "$ARGV[0].dat";
+require $config;
 
 @date=@start;
 
 my($i, $j, $month_text, $lectno);
 
 $j = Delta_Days(@start,@end);
-$lectno = 1;
+$lectno = 0;
 
 print $page_start if (defined $page_start);
 
 # print "$j\n";
 for($i = 0; $i <= $j; $i++) {
 
+    my $lecture_html = "";
+    my $lecture_title = "";
+    my $reading_html = "";
     $dd = join(",",@date);
     # print a class date if this is a day the class meets or there's 
     # a special note on this day
@@ -39,26 +64,47 @@ for($i = 0; $i <= $j; $i++) {
 	    $comments = "Testing Center";
 	} elsif ($normal_classes[Day_of_Week(@date)] ||
 	         $virtday{$dd}) {
-
-	    if(defined($lect_name[$lectno])) {
-		$lecture = $lect_name[$lectno];
+	    
+	    if(defined($lectures->[$lectno]->{"title"})) {
+		$lecture_title = $lectures->[$lectno]->{"title"};
 	    } else {
-		$lecture = "Lecture $lectno";
+		$lecture_title = "Lecture $lectno";
 	    }
 
-	    my @l;
+	    my $lecture_url = $lectures->[$lectno]->{"url"};
 
-	    if (defined($wiki_url)) {
-		@lectures = split("&", $lecture);
-		foreach $lect (@lectures) {
-		    $lect =~ s/^\s*($1)/$1/;
-		    $lect =~ s/($1)\s*$/$1/;
-		    $lecture_wiki = $lect;
-		    $lecture_wiki =~ s/[\s:;,'"]//g;
-		    push(@l, "<a href=\"$wiki_url$lecture_wiki\">$lect</a>");
-                }
+	    if ($lecture_url eq "wiki") {
+		$lecture_wiki = $lecture_title;
+		$lecture_wiki =~ s/[\s:;,'"]//g;
+		$lecture_wiki .= $wiki_ext if defined $wiki_ext;
+		$lecture_url = $wiki_url . $lecture_wiki;
 	    }
-            $lecture = join(" &amp; ", @l);
+
+	    if (defined $lecture_url) {
+		$lecture_html .= "<a href='$lecture_url'>$lecture_title</a>";
+	    } else {
+		$lecture_html .= $lecture_title;
+	    }
+	    
+	    my $lecture_reading = $lectures->[$lectno]->{"reading"};
+	    
+	    if (defined $lecture_reading) {
+		foreach my $ri (@{ $lecture_reading }) {
+		      my $this_html = "";
+		      if (defined $ri->{"title"}) {
+			  $this_html .= $ri->{"title"};
+			  if (defined $ri->{"url"}) {
+			      $this_html = "<a href='" . $ri->{"url"} . "'>$this_html</a>";
+			  }
+			  # if (defined $ri->{"author"}) {
+			  #     $this_html .= " by " . $ri->{"author"};
+			  # }
+			  $this_html = "<br/>" . $this_html;
+		      }
+		      $reading_html .= $this_html;
+		}
+	    }
+	    
 	    $assn = "<a href=\"".$wiki_url."Homework$lectno\">HW$lectno" unless defined($noassign{$lectno}) || defined($noassignever);
 	    $lectno++;
 	} else {
@@ -69,11 +115,11 @@ for($i = 0; $i <= $j; $i++) {
 	}
 
 	# print out the date if there's something there
-	print <<EOF if (length($lecture . $assn . $comments) > 0);
-<tr><td align="right">$month_text $date[2]</td>
-    <td>$lecture</td>
-    <td>$assn</td>
-    <td>$comments</td>
+	print <<EOF if (length($lecture_title . $assn . $comments) > 0);
+<tr><td valign="top" align="right">$month_text $date[2]</td>
+    <td valign="top">$lecture_html$reading_html</td>
+    <td valign="top">$assn</td>
+    <td valign="top">$comments</td>
 </tr>
 EOF
     }
@@ -83,3 +129,48 @@ EOF
 
 print $page_end if (defined $page_end);
 
+1;
+
+#
+# Message about this program and how to use it
+#
+sub usage {
+    print STDERR << "EOF";
+
+prepares a set of rulesets for deployment
+
+usage: $0 [-h?] -v version
+
+ -h|?       : this (help) message
+ -c         : configuration file with (default: DEFAULT_CONFIG_FILE)
+ -f         : lecture file (default: DEFAULT_LECTURE_FILE)
+
+example: $0 -v v1 -c 462-config.dat -f 462-lectures.yml
+
+EOF
+    exit;
+}
+
+sub read_config {
+    my ($filename) = @_;
+
+    $filename ||= DEFAULT_LECTURE_FILE;
+
+#    print "File ", $filename;
+    my $config;
+    if ( -e $filename ) {
+      $config = YAML::XS::LoadFile($filename) ||
+	warn "Can't open configuration file $filename: $!";
+    }
+
+    return $config;
+}
+
+sub read_file {
+    my ($filename) = @_;
+    local $/ = undef;
+    open FILE, $filename or die "Couldn't open file: $!";
+    $string = <FILE>;
+    close FILE;
+    return $string
+}

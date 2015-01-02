@@ -13,13 +13,17 @@ The purpose of this lab is to create a base server confirmation that will be use
 - Serve a static web page that displays your name
 - Create a custom AMI with your basic server configuration
 
-# Log-in info.
+# Log-in info 
 - Website: https://289357741533.signin.aws.amazon.com/console
-- User Name: cs462Students
+- Credentials will be supplied to you by the TA
+
+*Note: you are responsible for protecting your credentials. Their loss could result in substantial charges at Amazon which BYU would be responsible for covering. If your credentials are responsible for a breach, you will lose your Amazon privileges and have to find some other way to complete class requirements.*
+
+*In particular, be sure that your AWS secret and password are __never__ hard coded into a file that will be stored in any public server. This is especially true of code you upload to Github.*
 
 # Passoff Procedure 
 
-- Email the TA (cs462ta@gmail.com) with this information, provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your full name. Please place in the email subject line "Lab 0 passoff".
+- Email the TA with this information, provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your full name. Please place in the email subject line "Lab 0 passoff".
 
 # Booting an AMI 
 
@@ -31,7 +35,7 @@ Find your AMI in the provided list and launch it. If you are using the standard 
 
 # Basic Web Server 
 
-Use Apache to create a basic webserver.
+Use Apache to create a basic webserver. 
 
 Install the necessary packages for Apache (or your server of choice). You can also install packages for the programming language you want to use in later labs if you wish.
 
@@ -64,7 +68,7 @@ Make note of your AMI ID, since you will need it for the passoff procedure.
 You may find it useful to put your code in a Subversion or Git repository and have your bootstrap script copy the code from there to your server. This makes it very easy to update your server.
 
 ## Security Credentials
-Everything in this lab can be done through the AWS Console online. The only key you will need to download to your computer is the keypair for logging into an EC2 instance.
+Everything in this lab can be done through the AWS Console online. In addition to the credentials supplied by the TA you will need to download to your computer is the keypair for logging into an EC2 instance.
 
 This information will be useful if you choose to use AWS for the other labs in this class. Read through this information to become familiar with it, even though you may not need it.
 

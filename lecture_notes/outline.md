@@ -71,7 +71,6 @@
 
 - [Memory Coherence in Shared Virtual Memory Systems ](http://dl.acm.org/citation.cfm?doid=75104.75105)
 - [Bitcoin: A Peer-to-Peer Electronic Cash System2](http://bitcoin.org/bitcoin.pdf)
-- [Paxos Made Simple](http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf)
 - [Practical Byzantine Fault Tolerance](http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf)
 
 ## Disconnected Operation (Partitioning)
