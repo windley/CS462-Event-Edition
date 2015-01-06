@@ -19,4 +19,6 @@
 - What are we going to talk about in this class?
 - What will students be responsible for?
 
+[Slides for this lecture](https://github.com/windley/CS462-Event-Edition/blob/master/lectures/distributed_architecures.pdf?raw=true)
+
 
