@@ -56,11 +56,11 @@ for($i = 0; $i <= $j; $i++) {
 	if(Delta_Days(@date,@last_class) < 0) {
 	    $lecture= "";
 	} elsif(defined($holiday{$dd})) {
-	    $lecture = "University Holiday";
+	    $lecture_title = "University Holiday";
 	} elsif (defined($noclass{$dd})) {
-	    $lecture = "No class";
+	    $lecture_title = "No class";
 	} elsif (defined($midterm{$dd})) {
-	    $lecture = "Midterm, no class";
+	    $lecture_title = "Midterm, no class";
 	    $comments = "Testing Center";
 	} elsif ($normal_classes[Day_of_Week(@date)] ||
 	         $virtday{$dd}) {
@@ -109,6 +109,9 @@ for($i = 0; $i <= $j; $i++) {
 	    $lectno++;
 	} else {
 	}
+
+	$lecture_html = $lecture_title unless ($lecture_html);
+
 
 	if (defined($special{$dd})) {
 	    $comments .= $special{$dd};

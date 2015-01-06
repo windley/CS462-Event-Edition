@@ -2,9 +2,12 @@
 Lectures: 
   - 
     title: Course Introduction
-  - 
-    title: Distributed System Tolopogies and Issues
+    topics: Distributed System Tolopogies and Issues
     url: wiki
+  - title: AWS Lab Introduction (guest lecture)
+    reading:
+      - title: Getting Started with AWS
+        url: http://aws.amazon.com/documentation/gettingstarted/
   - 
     title: Coupling
     reading:

@@ -44,29 +44,14 @@ $noassignever = 1;
 
 # special events
 
-$special{"$year,1,18"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md\">Lab 0: Webserver on AWS: AMI</a>";
-$special{"$year,2,6"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md\">Lab 1: APIs and OAuth</a>";
-# $special{"$year,2,13"} = "<a href=\"http://developer.kynetx.com/display/docs/Rule+Exercises\">Lab 2: Rule Exercise</a>";
-# $special{"$year,2,20"} = "<a href=\"http://developer.kynetx.com/display/docs/Web+Rule+Exercises\">Lab 3: Web Rule Exercises</a>";
-# $special{"$year,2,27"} = "<a href=\"http://developer.kynetx.com/display/docs/Rotten+Tomatoes+API+Exercise\">Lab 4: Rotten Tomatoes API Exercise</a>";
-# $special{"$year,3,6"} = "<a href=\"http://developer.kynetx.com/display/docs/Foursquare+Checkin+Exercise\">Lab 5: Foursquare Checkin Exercise</a>";
-# $special{"$year,3,13"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercises%3A+Data+Storage+Module\">Lab 6: Event Network Exercises: Data Storage Module</a>";
-# $special{"$year,3,20"} = "<a href=\"http://developer.kynetx.com/display/docs/Event+Network+Exercise%3A+Semantic+Translation\">Lab 7: Event Network Exercise: Semantic Translation</a>";
-# $special{"$year,3,27"} = "<a href=\"http://developer.kynetx.com/display/docs/Dispatching+Events+Exercise\">Lab 8: Dispatching Events Exercise</a>";
-# $special{"$year,4,1"} = "<a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Proposals Due";
-# $special{"$year,4,16"} = "<a href='https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md'>Final Project</a> Due";
+$special{"$year,1,13"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab0.md\">Lab 0: Webserver on AWS: AMI</a>";
+$special{"$year,1,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md\">Lab 1: APIs and OAuth</a>";
+$special{"$year,1,27"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md\">Lab 2: Hashing, Signing, and Encrypting</a>";
+# should happen before design exercise I
+$special{"$year,2,3"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md\">Lab 3: APIs and OAuth</a>";
+$special{"$year,2,17"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md\">Lab 4: MapReduce</a>";
 
-# lab 2 intro should happen after Design Exercise I
-# $special{"$year,2,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab2.md\">Lab 2: Events, Event Generation, and Multi-Tenancy</a>";
-# $special{"$year,3,12"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab3.md\">Lab 3: Consuming and Processing Events</a>";
-# $special{"$year,3,26"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab4.md\">Lab 4: Event Intermediaries</a>";
-# $special{"$year,3,28"} = "<a 
-# href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Project Proposals</a>";
-# $special{"$year,4,16"} = "<a 
-# href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab5.md\">Lab 5: Final Project</a>";
-# $special{"$year,4,5"} = "<a href=\"$wiki_url" . 
-# 		        "DataCenterTour\">Data Center Tour</a> (TBS)";
-$special{"$year,4,19"} = "Final Exam; 7:00am";
+$special{"$year,4,18"} = "Final Exam; 7:00am";
 
 # lecture names
 

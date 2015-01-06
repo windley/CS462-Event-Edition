@@ -5,6 +5,7 @@ The purpose of this lab is to make you familiar with MapReduce as an example of 
 # Reading
 
 - [Get Started: Count Words with Amazon EMR](http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html)
+- [Amazon EMR FAQs](http://aws.amazon.com/elasticmapreduce/faqs/)
 
 # Requirements
 

@@ -9,34 +9,29 @@ completed. </em>
 
 <table style="font-size:small"  width="100%" cellpadding="5">
 <tr><td valign="top" align="right">Jan 6</td>
-    <td valign="top">Course Introduction</td>
+    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/CourseIntroduction.md'>Course Introduction</a></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 8</td>
-    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/DistributedSystemTolopogiesandIssues.md'>Distributed System Tolopogies and Issues</a></td>
+    <td valign="top">AWS Lab Introduction (guest lecture)<br/><a href='http://aws.amazon.com/documentation/gettingstarted/'>Getting Started with AWS</a></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 13</td>
     <td valign="top">Coupling<br/><a href='http://books.google.com/books?id=9CL446IzhuAC&pg=PA311&lpg=PA311&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false'>Event-Based Programming: Taking Events to the Limit, Chapter 1</a></td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 15</td>
     <td valign="top">Distributed Architectures</td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
-<tr><td valign="top" align="right">Jan 18</td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
-</tr>
 <tr><td valign="top" align="right">Jan 20</td>
     <td valign="top">Integrity, Non-Repudiation, and Confidentiality</td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md">Lab 1: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 22</td>
     <td valign="top">Identity and Naming</td>
@@ -46,7 +41,7 @@ completed. </em>
 <tr><td valign="top" align="right">Jan 27</td>
     <td valign="top">Serialization</td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md">Lab 2: Hashing, Signing, and Encrypting</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 29</td>
     <td valign="top">RESTful APIs<br/><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></td>
@@ -56,17 +51,12 @@ completed. </em>
 <tr><td valign="top" align="right">Feb 3</td>
     <td valign="top">Design Exercise I</td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 5</td>
-    <td valign="top">MapReduce<br/><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a></td>
+    <td valign="top">MapReduce<br/><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></td>
     <td valign="top"></td>
     <td valign="top"></td>
-</tr>
-<tr><td valign="top" align="right">Feb 6</td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab1.md">Lab 1: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 10</td>
     <td valign="top">Peer to Peer Systems<br/><a href='http://www.rgoarchitects.com/Files/fallacies.pdf'>Fallacies of Distributed Computing Explained</a></td>
@@ -77,6 +67,11 @@ completed. </em>
     <td valign="top">Distributed Hash Tables<br/><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></td>
     <td valign="top"></td>
     <td valign="top"></td>
+</tr>
+<tr><td valign="top" align="right">Feb 17</td>
+    <td valign="top">University Holiday</td>
+    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md">Lab 4: MapReduce</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 19</td>
     <td valign="top">Kademila and Telehash<br/><a href='http://dl.acm.org/citation.cfm?id=646334.687801'>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric</a></td>
@@ -158,7 +153,7 @@ completed. </em>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
-<tr><td valign="top" align="right">Apr 19</td>
+<tr><td valign="top" align="right">Apr 18</td>
     <td valign="top"></td>
     <td valign="top"></td>
     <td valign="top">Final Exam; 7:00am</td>
