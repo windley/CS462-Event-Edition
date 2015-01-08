@@ -3,15 +3,15 @@
 The purpose of this lab is to create a base server confirmation that will be used in future labs. You will modify an existing AMI (Amazon Machine Image) and configure it with a web server and a bootstrapping mechanism.
 
 - Get an AWS instance running
-- Set up a simple static Web page that displays your name
+- Set up a simple static Web page that displays your name, your custom AMI ID and User Data script.
 
 # Lab Requirements 
 
-- Boot an EC2 instance based on an Ubuntu 11.10 AMI (ami-bf62a9d6)
-- Add a bootstrapping procedure based on the User Data script supplied at launch
+- Boot an EC2 instance with an AMI that is "Free tier eligible"
 - Install a web server with a basic configuration
 - Serve a static web page that displays your name
 - Create a custom AMI with your basic server configuration
+- Add a bootstrapping procedure based on the User Data script supplied at launch
 
 # Log-in info 
 - Website: https://289357741533.signin.aws.amazon.com/console
@@ -21,23 +21,35 @@ The purpose of this lab is to create a base server confirmation that will be use
 
 *In particular, be sure that your AWS secret and password are __never__ hard coded into a file that will be stored in any public server. This is especially true of code you upload to Github.*
 
-# Passoff Procedure 
+*Please remember to stop your instances when you are not using them. When the TA passes you off he will start your instance and stop it so you won't need to worry about leaving it running. *
 
-- Email the TA with this information, provide the AMI ID of your custom AMI, the User Data (bootstrapping) script you wish to use, and your full name. Please place in the email subject line "Lab 0 passoff".
+# Passoff Procedure 
+- your instance should have a basic web server running, serving a web page with your name, AMI ID and a copy of your User Data script. 
+- Email the TA with your instance ID and any URL exstenstion needed to veiw your webpage, please include any notes needed to view your page. Please place in the email subject line "Lab 0 passoff".
+-The TA will start your instance and verify your work by visiting your webpage and reviewing your custom AMI.  
 
 # Booting an AMI 
 
 The AWS Management Console is the easiest way to control EC2 Instances. Amazon also provides command line tools, or you can use ElasticFox (a Firefox plugin).
+- navigate to EC2 Dashboard, continue to Instances menu option.
+- click Launch Instance.
+- select Amazon Linux AMI.
+- instance type "t2.micro"
+- in configure make sure to change auto-assign Public IP to ENABLE, if you fail to do this, your instance will not have an ip address.
+- you can create your own security group if you like or choose one that has already been made. if you create a new security group you will need to provide rules to allow traffic through for SSH and webpage viewing.
 
 You will need to create a key pair that will allow you to login to the server after it has launched. If you use the AWS Management Console, this is part of the process to launch a new instance and is very simple to do.
 
-Find your AMI in the provided list and launch it. If you are using the standard Ubuntu Server 11.10 AMI, you can follow this link: <https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-bf62a9d6>.
+for a more indepth guide go to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance_linux.html
+
 
 # Basic Web Server 
 
 Use Apache to create a basic webserver. 
 
 Install the necessary packages for Apache (or your server of choice). You can also install packages for the programming language you want to use in later labs if you wish.
+
+Amazon guide for installing a LAMP web server has Apache install instruction if you need further help. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
 
 # Simple index page
 
