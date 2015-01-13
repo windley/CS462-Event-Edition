@@ -22,7 +22,7 @@ $normal_classes[1]=0; # monday
 $normal_classes[2]=1; 
 $normal_classes[3]=0; 
 $normal_classes[4]=1; 
-$normal_classes[5]=0; 
+$normal_classes[5]=0;  
 $normal_classes[6]=0; 
 $normal_classes[7]=0; 
 
@@ -49,7 +49,7 @@ $special{"$year,1,20"} = "<a href=\"https://github.com/windley/CS462-Event-Editi
 $special{"$year,1,27"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md\">Lab 2: Hashing, Signing, and Encrypting</a>";
 # should happen before design exercise I
 $special{"$year,2,3"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md\">Lab 3: APIs and OAuth</a>";
-$special{"$year,2,17"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md\">Lab 4: MapReduce</a>";
+$special{"$year,2,10"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md\">Lab 4: MapReduce</a>";
 
 $special{"$year,4,18"} = "Final Exam; 7:00am";
 

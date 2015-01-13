@@ -13,31 +13,23 @@ Lectures:
     reading:
       - title: "Event-Based Programming: Taking Events to the Limit, Chapter 1"
         author: Ted Faison
-        url: "http://books.google.com/books?id=9CL446IzhuAC&pg=PA311&lpg=PA311&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false"
+        url: "http://books.google.com/books?id=9CL446IzhuAC&pg=PA1&lpg=PA1&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false"
   - 
     title: Distributed Architectures
-    reading:
-      - title: 
-        author: 
-        url: 
-  -
-    title: Integrity, Non-Repudiation, and Confidentiality
-    reading:
-      - title: 
-        author: 
-        url: 
   -
     title: Identity and Naming
     topics: Identity, OAuth, OpenID, URIs, DNS
     reading:
-      - title: 
+      - title: Draft chapter on Learning Suite
         author: 
         url: 
   -
     title: Serialization
     topics: XML And Schemas & JSON
+  -
+    title: Integrity, Non-Repudiation, and Confidentiality
     reading:
-      - title: 
+      - title: Draft chapter on Learning Suite
         author: 
         url: 
   -

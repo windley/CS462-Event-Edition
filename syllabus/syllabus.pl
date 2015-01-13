@@ -100,9 +100,11 @@ for($i = 0; $i <= $j; $i++) {
 			  #     $this_html .= " by " . $ri->{"author"};
 			  # }
 			  $this_html = "<br/>" . $this_html;
-		      }
+		      } 
 		      $reading_html .= $this_html;
 		}
+	    } else {
+		$reading_html = "<br/>No assigned reading";
 	    }
 	    
 	    $assn = "<a href=\"".$wiki_url."Homework$lectno\">HW$lectno" unless defined($noassign{$lectno}) || defined($noassignever);
