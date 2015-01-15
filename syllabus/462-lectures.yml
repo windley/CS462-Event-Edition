@@ -15,7 +15,8 @@ Lectures:
         author: Ted Faison
         url: "http://books.google.com/books?id=9CL446IzhuAC&pg=PA1&lpg=PA1&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false"
   - 
-    title: Distributed Architectures
+    title: Distributed Architecture Types
+    url: wiki
     reading:
       - title: Balanced Asymmetry of Networks or How to avoid Hierarchies
         author: Adriana Lukas
