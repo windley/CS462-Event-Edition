@@ -1,4 +1,4 @@
-# Lab 1: APIs and OAuth
+# APIs and OAuth
 
 # Objective
 

@@ -45,7 +45,7 @@ $noassignever = 1;
 # special events
 
 $special{"$year,1,13"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab0.md\">Lab 0: Webserver on AWS: AMI</a>";
-$special{"$year,1,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md\">Lab 1: APIs and OAuth</a>";
+$special{"$year,1,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md\">Lab 1: HTTP CGI, Headers, and Return Codes</a>";
 $special{"$year,1,27"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md\">Lab 2: Hashing, Signing, and Encrypting</a>";
 # should happen before design exercise I
 $special{"$year,2,3"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md\">Lab 3: APIs and OAuth</a>";

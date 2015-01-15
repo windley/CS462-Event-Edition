@@ -63,4 +63,4 @@ Horizontally distributed
 
 ## Network Principles are Universal
 
-[The surprising math of cities and corporations](http://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations) by [Geoffrey West](http://www.santafe.edu/about/people/profile/Geoffrey%20West)
+Video: [The surprising math of cities and corporations](http://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations) by [Geoffrey West](http://www.santafe.edu/about/people/profile/Geoffrey%20West)
