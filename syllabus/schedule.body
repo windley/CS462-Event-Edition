@@ -24,7 +24,7 @@ completed. </em>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 15</td>
-    <td valign="top">Distributed Architectures<br/><a href='https://www.youtube.com/watch?v=mNwn49YuFa0'>Balanced Asymmetry of Networks or How to avoid Hierarchies</a></td>
+    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/DistributedArchitectureTypes.md'>Distributed Architecture Types</a><br/><a href='https://www.youtube.com/watch?v=mNwn49YuFa0'>Balanced Asymmetry of Networks or How to avoid Hierarchies</a></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

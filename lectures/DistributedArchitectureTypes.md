@@ -11,7 +11,7 @@ Distributed architectures comprise a system of processors of some sort that are 
 
 Rather than thinking of the terms "distributed," "decentralized," and "distributed" as a linear arrangement, I like to picture them like so:
 
-![System Type 2x2](https://raw.githubusercontent.com/windley/CS462-Event-Edition/master/lectures/system%20type%202x2.png)
+![System Type 2x2](https://raw.githubusercontent.com/windley/CS462-Event-Edition/master/lectures/system_type_2x2.png)
 
 In this diagram, I use the terms "centralized" and "decentralized" to distinguish between systems that are made up of pieces that are all under the control of a single entity or not. I use the term "co-located" and "distributed" to indicate whether the functionality that is necessary to implement a system is co-located in a single process (at whatever level of abstraction is appropriate) or distributed among multiple processors. 
 
