@@ -19,4 +19,4 @@ Answer the following questions in a small group (2 people per group preferred) a
 6.  According to the SOA record, when was the last time ```windley.com``` was updated?
 
 
-*Note: You may use the Internet to determine how to answer the questions, but not to find the answer*
+*Note: You may use the Web to determine how to answer the questions, but not to find the answer*
