@@ -31,6 +31,14 @@ Lectures:
   -
     title: Serialization
     topics: XML And Schemas & JSON
+    reading:
+      - title: Serialization (Wikipedia)
+        url: https://en.wikipedia.org/wiki/Serialization
+      - title: Comparison of data serialization formats
+        url: https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
+      - title: Discovering JavaScript Object Notation
+        author: Douglas Crockford
+        url: https://www.youtube.com/watch?v=kc8BAR7SHJI
   -
     title: Integrity, Non-Repudiation, and Confidentiality
     reading:

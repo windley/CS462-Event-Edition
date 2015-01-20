@@ -9,62 +9,62 @@ completed. </em>
 
 <table style="font-size:small"  width="100%" cellpadding="5">
 <tr><td valign="top" align="right">Jan 6</td>
-    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/CourseIntroduction.md'>Course Introduction</a><br/>No assigned reading</td>
+    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/CourseIntroduction.md'>Course Introduction</a><div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 8</td>
-    <td valign="top">AWS Lab Introduction (guest lecture)<br/><a href='http://aws.amazon.com/documentation/gettingstarted/'>Getting Started with AWS</a></td>
+    <td valign="top">AWS Lab Introduction (guest lecture)<div style='margin-top: 5px'><a href='http://aws.amazon.com/documentation/gettingstarted/'>Getting Started with AWS</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 13</td>
-    <td valign="top">Coupling<br/><a href='http://books.google.com/books?id=9CL446IzhuAC&pg=PA1&lpg=PA1&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false'>Event-Based Programming: Taking Events to the Limit, Chapter 1</a></td>
+    <td valign="top">Coupling<div style='margin-top: 5px'><a href='http://books.google.com/books?id=9CL446IzhuAC&pg=PA1&lpg=PA1&dq=Interaction+Patterns+for+Communicating+Processes+Ted+Faison+plop&source=bl&ots=qnJSGrCub2&sig=eJQTqc2fLPOkoDuvSz3pwFIan94&hl=en&sa=X&ei=czGHVNrHIZDmoASV8ILoBA&ved=0CCwQ6AEwAg#v=onepage&q&f=false'>Event-Based Programming: Taking Events to the Limit, Chapter 1</a></div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab0.md">Lab 0: Webserver on AWS: AMI</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 15</td>
-    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/DistributedArchitectureTypes.md'>Distributed Architecture Types</a><br/><a href='https://www.youtube.com/watch?v=mNwn49YuFa0'>Balanced Asymmetry of Networks or How to avoid Hierarchies</a></td>
+    <td valign="top"><a href='https://github.com/windley/CS462-Event-Edition/blob/master/lectures/DistributedArchitectureTypes.md'>Distributed Architecture Types</a><div style='margin-top: 5px'><a href='https://www.youtube.com/watch?v=mNwn49YuFa0'>Balanced Asymmetry of Networks or How to avoid Hierarchies</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 20</td>
-    <td valign="top">Identity and Naming<br/>Draft chapter on Learning Suite</td>
+    <td valign="top">Identity and Naming<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
     <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md">Lab 1: APIs and OAuth</a></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md">Lab 1: HTTP CGI, Headers, and Return Codes</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 22</td>
-    <td valign="top">Serialization<br/>No assigned reading</td>
+    <td valign="top">Serialization<div style='margin-top: 5px'><a href='https://en.wikipedia.org/wiki/Serialization'>Serialization (Wikipedia)</a><br/><a href='https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats'>Comparison of data serialization formats</a><br/><a href='https://www.youtube.com/watch?v=kc8BAR7SHJI'>Discovering JavaScript Object Notation</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 27</td>
-    <td valign="top">Integrity, Non-Repudiation, and Confidentiality<br/>Draft chapter on Learning Suite</td>
+    <td valign="top">Integrity, Non-Repudiation, and Confidentiality<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md">Lab 2: Hashing, Signing, and Encrypting</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 29</td>
-    <td valign="top">RESTful APIs<br/><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></td>
+    <td valign="top">RESTful APIs<div style='margin-top: 5px'><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 3</td>
-    <td valign="top">Design Exercise I<br/>No assigned reading</td>
+    <td valign="top">Design Exercise I<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 5</td>
-    <td valign="top">MapReduce<br/><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></td>
+    <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 10</td>
-    <td valign="top">Peer to Peer Systems<br/><a href='http://www.rgoarchitects.com/Files/fallacies.pdf'>Fallacies of Distributed Computing Explained</a></td>
+    <td valign="top">Peer to Peer Systems<div style='margin-top: 5px'><a href='http://www.rgoarchitects.com/Files/fallacies.pdf'>Fallacies of Distributed Computing Explained</a></div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md">Lab 4: MapReduce</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 12</td>
-    <td valign="top">Distributed Hash Tables<br/><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></td>
+    <td valign="top">Distributed Hash Tables<div style='margin-top: 5px'><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -74,82 +74,82 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 19</td>
-    <td valign="top">Kademila and Telehash<br/><a href='http://dl.acm.org/citation.cfm?id=646334.687801'>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric</a></td>
+    <td valign="top">Kademila and Telehash<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?id=646334.687801'>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 24</td>
-    <td valign="top">CAP Theorem<br/><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html'>Perspectives on the CAP Theorem</a></td>
+    <td valign="top">CAP Theorem<div style='margin-top: 5px'><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html'>Perspectives on the CAP Theorem</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 26</td>
-    <td valign="top">Event Driven Systems: Event Expressions<br/>The Live Web, Chapters 1-4</td>
+    <td valign="top">Event Driven Systems: Event Expressions<div style='margin-top: 5px'>The Live Web, Chapters 1-4</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 3</td>
-    <td valign="top">Event Driven Systems: Event Processing Patterns<br/>The Live Web, Chapters 11-14</td>
+    <td valign="top">Event Driven Systems: Event Processing Patterns<div style='margin-top: 5px'>The Live Web, Chapters 11-14</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 5</td>
-    <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)</td>
+    <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)<div style='margin-top: 5px'></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 10</td>
-    <td valign="top">Distributed Transactions: Transactions in MVC<br/>No assigned reading</td>
+    <td valign="top">Distributed Transactions: Transactions in MVC<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 12</td>
-    <td valign="top">Distributed Transactions: Transactions in RESTful systems<br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></td>
+    <td valign="top">Distributed Transactions: Transactions in RESTful systems<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 17</td>
-    <td valign="top">Memory Coherence<br/><a href='http://dl.acm.org/citation.cfm?doid=75104.75105'>Memory Coherence in Shared Virtual Memory Systems </a></td>
+    <td valign="top">Memory Coherence<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?doid=75104.75105'>Memory Coherence in Shared Virtual Memory Systems </a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 19</td>
-    <td valign="top">Consensus: Byzantine Generals Problem<br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf'>Practical Byzantine Fault Tolerance</a></td>
+    <td valign="top">Consensus: Byzantine Generals Problem<div style='margin-top: 5px'><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf'>Practical Byzantine Fault Tolerance</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 24</td>
-    <td valign="top">Consensus: Paxos<br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf'>Paxos Made Simple</a><br/><a href='http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf'>The Part-Time Parliament</a></td>
+    <td valign="top">Consensus: Paxos<div style='margin-top: 5px'><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf'>Paxos Made Simple</a><br/><a href='http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf'>The Part-Time Parliament</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 26</td>
-    <td valign="top">Consensus: Blockchain<br/><a href='https://bitcoin.org/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a><br/><a href='http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/'>How the Bitcoin protocol actually works</a></td>
+    <td valign="top">Consensus: Blockchain<div style='margin-top: 5px'><a href='https://bitcoin.org/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a><br/><a href='http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/'>How the Bitcoin protocol actually works</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 31</td>
-    <td valign="top">Partitioning<br/><a href='http://dl.acm.org/citation.cfm?doid=146941.146942'>Disconnected operation in the Coda File System</a><br/><a href='http://dl.acm.org/citation.cfm?doid=224056.224070'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a><br/><a href='https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf'>Spanner: Google's globally-distributed database</a></td>
+    <td valign="top">Partitioning<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?doid=146941.146942'>Disconnected operation in the Coda File System</a><br/><a href='http://dl.acm.org/citation.cfm?doid=224056.224070'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a><br/><a href='https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf'>Spanner: Google's globally-distributed database</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Apr 2</td>
-    <td valign="top">Micoservices<br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Microservices and PaaS - Part I</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii'>Microservices and PaaS - Part II</a><br/><a href='http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii'>Microservices and PaaS - Part III</a><br/><a href='http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv'>Microservices and PaaS - Part IV</a></td>
+    <td valign="top">Micoservices<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Microservices and PaaS - Part I</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii'>Microservices and PaaS - Part II</a><br/><a href='http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii'>Microservices and PaaS - Part III</a><br/><a href='http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv'>Microservices and PaaS - Part IV</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Apr 7</td>
-    <td valign="top">Design Exercise II<br/>No assigned reading</td>
+    <td valign="top">Design Exercise II<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Apr 9</td>
-    <td valign="top">Guest Lecture<br/>No assigned reading</td>
+    <td valign="top">Guest Lecture<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Apr 14</td>
-    <td valign="top">Power Laws and Software<br/>No assigned reading</td>
+    <td valign="top">Power Laws and Software<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

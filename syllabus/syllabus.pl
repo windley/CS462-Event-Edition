@@ -87,8 +87,9 @@ for($i = 0; $i <= $j; $i++) {
 	    }
 	    
 	    my $lecture_reading = $lectures->[$lectno]->{"reading"};
-	    
+
 	    if (defined $lecture_reading) {
+		my @reading = ();
 		foreach my $ri (@{ $lecture_reading }) {
 		      my $this_html = "";
 		      if (defined $ri->{"title"}) {
@@ -99,14 +100,17 @@ for($i = 0; $i <= $j; $i++) {
 			  # if (defined $ri->{"author"}) {
 			  #     $this_html .= " by " . $ri->{"author"};
 			  # }
-			  $this_html = "<br/>" . $this_html;
+			  push @reading, $this_html
 		      } 
-		      $reading_html .= $this_html;
 		}
+		$reading_html = join("<br/>", @reading);
+
 	    } else {
-		$reading_html = "<br/>No assigned reading";
+		$reading_html = "No assigned reading";
 	    }
 	    
+	    $reading_html = "<div style='margin-top: 5px'>$reading_html</div>";
+
 	    $assn = "<a href=\"".$wiki_url."Homework$lectno\">HW$lectno" unless defined($noassign{$lectno}) || defined($noassignever);
 	    $lectno++;
 	} else {
