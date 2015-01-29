@@ -41,5 +41,5 @@ You will probably want to have your server persist accounts so that you can star
 - 33% &mdash; Foursquare OAuth properly executed
 - 34% &mdash; Foursquare checkins properly retrieved and displayed
 
-You will need to demonstrate (By showing in person or email the Ip and aim # (if it's running on the Amazon cloud).) that multiple Foursquare accounts can use OAuth to authorize your Web application and that your application can correctly associate Foursquare checkin data from a particular user with that user's account on your Web application. Feel free to have other class members link their Foursquare accounts to your Web application to test this. 
+You will need to demonstrate (By showing in person or submitting to learningsuite a text file with the Ip and aim # (if it's running on the Amazon cloud).) that multiple Foursquare accounts can use OAuth to authorize your Web application and that your application can correctly associate Foursquare checkin data from a particular user with that user's account on your Web application. Feel free to have other class members link their Foursquare accounts to your Web application to test this. 
 

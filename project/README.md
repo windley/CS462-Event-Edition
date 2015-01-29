@@ -18,4 +18,4 @@ If you learn nothing else in this class, you might at least learn to use Git. :)
 
 # Late assignments and projects
 
-Students are encouraged to meet project deadlines. I want to see all students complete every lab by the end of the semester. You are expected to compete each project or assignment by the time it is due. If you havemust turn an assignment in late, please get permission from Prof. Windley.  
+Students are encouraged to meet project deadlines. I want to see all students complete every lab by the end of the semester. You are expected to compete each project or assignment by the time it is due. If you must turn an assignment in late, please get permission from Prof. Windley.  
