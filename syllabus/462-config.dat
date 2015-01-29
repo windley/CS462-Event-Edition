@@ -48,8 +48,9 @@ $special{"$year,1,13"} = "<a href=\"https://github.com/windley/CS462-Event-Editi
 $special{"$year,1,20"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md\">Lab 1: HTTP CGI, Headers, and Return Codes</a>";
 $special{"$year,1,27"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md\">Lab 2: Hashing, Signing, and Encrypting</a>";
 # should happen before design exercise I
-$special{"$year,2,3"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md\">Lab 3: APIs and OAuth</a>";
-$special{"$year,2,10"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md\">Lab 4: MapReduce</a>";
+$special{"$year,2,5"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md\">Lab 3: APIs and OAuth</a>";
+$special{"$year,2,17"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md\">Lab 4: MapReduce</a>";
+$special{"$year,2,26"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md\">Lab 5: Gossip-Protocol Chat System</a>";
 
 $special{"$year,4,18"} = "Final Exam; 7:00am";
 

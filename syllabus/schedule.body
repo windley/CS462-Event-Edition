@@ -51,17 +51,17 @@ completed. </em>
 <tr><td valign="top" align="right">Feb 3</td>
     <td valign="top">Design Exercise I<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
+    <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 5</td>
     <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 10</td>
     <td valign="top">Peer to Peer Systems<div style='margin-top: 5px'><a href='http://www.rgoarchitects.com/Files/fallacies.pdf'>Fallacies of Distributed Computing Explained</a></div></td>
     <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md">Lab 4: MapReduce</a></td>
+    <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 12</td>
     <td valign="top">Distributed Hash Tables<div style='margin-top: 5px'><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></div></td>
@@ -71,25 +71,25 @@ completed. </em>
 <tr><td valign="top" align="right">Feb 17</td>
     <td valign="top">University Holiday</td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md">Lab 4: MapReduce</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 19</td>
-    <td valign="top">Kademila and Telehash<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?id=646334.687801'>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric</a></div></td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-</tr>
-<tr><td valign="top" align="right">Feb 24</td>
     <td valign="top">CAP Theorem<div style='margin-top: 5px'><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html'>Perspectives on the CAP Theorem</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
-<tr><td valign="top" align="right">Feb 26</td>
+<tr><td valign="top" align="right">Feb 24</td>
     <td valign="top">Event Driven Systems: Event Expressions<div style='margin-top: 5px'>The Live Web, Chapters 1-4</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
-<tr><td valign="top" align="right">Mar 3</td>
+<tr><td valign="top" align="right">Feb 26</td>
     <td valign="top">Event Driven Systems: Event Processing Patterns<div style='margin-top: 5px'>The Live Web, Chapters 11-14</div></td>
+    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md">Lab 5: Gossip-Protocol Chat System</a></td>
+</tr>
+<tr><td valign="top" align="right">Mar 3</td>
+    <td valign="top">Introduction to KRL<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

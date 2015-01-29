@@ -18,7 +18,8 @@ The purpose of this lab is to gain experience using public-key (asymmetric) cryp
 	- Validate the keyID.
 	- What is their key's fingerprint
 - Exchange and validate signed messages with another class member. 
-- Send a secret message to another class member. Don't tell them what it says in plaintext. 
+- Send a secret message to another class member. Don't tell them what it says in plaintext.
+- Sign someone's public key (i.e. participate in a keysigning)
 
 ## Keybase.io
 
@@ -36,6 +37,7 @@ You should have received an invitation from Dr. Windley to sign up for Keybase.i
 
 Send the following to the TA:
 
+0. Statement that you've completed all the preceding steps.
 1. Your public key, key ID, and key fingerprint. *Do NOT send your private key!*
 2. The name of the class member you sent a secret message with and the content of the message.
 3. The name of the class member you got a secret message from and the content of their message.
