@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="http://schema.omg.org/spec/UML/1.3" verified="false" timestamp="2007-09-20T12:21:42" xmi.version="1.2" >
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
+   <XMI.exporterVersion>1.5.6</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name="UML" href="UML.xml" xmi.version="1.3" />
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isSpecification="false" isLeaf="false" isRoot="false" xmi.id="m1" isAbstract="false" name="UML Model" >
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="folder" isRoot="false" isAbstract="false" name="folder" />
+    <UML:Stereotype isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="constructor" isRoot="false" isAbstract="false" name="constructor" />
+    <UML:Model stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="Logical View" isRoot="false" isAbstract="false" name="Logical View" >
+     <UML:Namespace.ownedElement>
+      <UML:Package stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="Datatypes" isRoot="false" isAbstract="false" name="Datatypes" >
+       <UML:Namespace.ownedElement/>
+      </UML:Package>
+      <UML:Package isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="DpDSnWEAIkYk" isRoot="false" isAbstract="false" name="kademlia" >
+       <UML:Namespace.ownedElement>
+        <UML:Class comment="Represents a single node (participant) in a Kademlia network" isSpecification="false" isLeaf="false" visibility="public" namespace="DpDSnWEAIkYk" xmi.id="2LUfambgQJs8" isRoot="false" isAbstract="false" name="Node" >
+         <UML:Classifier.feature>
+          <UML:Attribute comment="Quasi-unique binary number that identifies this node in the network" isSpecification="false" visibility="public" xmi.id="HTCDRUJRpl4N" name="id" />
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="4k6SOUCwWuJ3" type="7QT8DoQCXWXv" name="_buckets" />
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="GYWo3nRWdttU" type="7GHDWr88ADzp" name="_connection" />
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="3VNMHtAySJOJ" type="NbT6Jwpyf3r2" name="_dataStore" />
+          <UML:Operation stereotype="constructor" isSpecification="false" isLeaf="false" visibility="public" xmi.id="mMhORi6Lkhr2" isRoot="false" isAbstract="false" isQuery="false" name="__init__" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="J1RNpdHd2vQ2" value="None" type="7QT8DoQCXWXv" name="knownNodes" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation comment="Generates a 160-bit, pseudo-random, globally unique ID string" isSpecification="false" isLeaf="false" visibility="private" xmi.id="knf0YBkncu03" isRoot="false" isAbstract="false" isQuery="false" name="_generateID" />
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="private" xmi.id="C6JfG9zXykip" isRoot="false" isAbstract="false" isQuery="false" name="_lookupNode" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="zgTcUeBXivxk" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="90UbpbfYQgg6" isRoot="false" isAbstract="false" isQuery="false" name="findNode" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="uz9MawxESMs6" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="gECq6SAhgAnc" isRoot="false" isAbstract="false" isQuery="false" name="updateContacts" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="FxE3UAfGSVSB" value="" type="7QT8DoQCXWXv" name="contacts" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="ef3Oan6hCijh" isRoot="false" isAbstract="false" isQuery="false" name="store" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="9nXCBB4zfJx8" value="" type="F0BvEIsmGaS6" name="key" />
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="7CYhwF7asAwS" value="" type="F0BvEIsmGaS6" name="value" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="g2b2RDuZuyMa" isRoot="false" isAbstract="false" isQuery="false" name="findValue" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="lwaWBsxvPGXM" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="0n9lCsI1Knxq" isRoot="false" isAbstract="false" isQuery="false" name="receiveData" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="Rarr2VqoAWSx" value="" type="F0BvEIsmGaS6" name="data" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+         </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class comment="Container for Contacts
+A Kademlia node organizes other nodes known to it (its contacts) in buckets (called k-buckets) which hold a maximum of k contacts each." isSpecification="false" isLeaf="false" visibility="public" namespace="DpDSnWEAIkYk" xmi.id="jdBZBejROQK7" isRoot="false" isAbstract="false" name="KBucket" >
+         <UML:Classifier.feature>
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="yFzSkx7TJKZd" type="7QT8DoQCXWXv" name="_contacts" />
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="QZdpxdk3UEUL" isRoot="false" isAbstract="false" isQuery="false" name="addContact" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="lbpBPpP0076m" value="" type="GEZ8qdeWfnMw" name="contact" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="fSrsnocF3ZE9" isRoot="false" isAbstract="false" isQuery="false" name="getContacts" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="lwLuezP6cZd0" value="" type="Xf4wyu4BjGbV" name="count" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="VnwqMZjDkrXk" isRoot="false" isAbstract="false" isQuery="false" name="removeContact" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="OCHBAQkoosE2" value="" type="F0BvEIsmGaS6" name="nodeID" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+         </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class comment="A known remote Node in the Kademlia network" isSpecification="false" isLeaf="false" visibility="public" namespace="DpDSnWEAIkYk" xmi.id="GEZ8qdeWfnMw" isRoot="false" isAbstract="false" name="Contact" >
+         <UML:Classifier.feature>
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="QuK9lDznoAno" type="F0BvEIsmGaS6" name="id" />
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="8zpbiI0ac9Lq" type="F0BvEIsmGaS6" name="address" />
+          <UML:Attribute isSpecification="false" visibility="private" xmi.id="GdH9PrvVpi5V" type="Xf4wyu4BjGbV" name="port" />
+          <UML:Operation stereotype="constructor" isSpecification="false" isLeaf="false" visibility="public" xmi.id="9zGxX6umLqWB" isRoot="false" isAbstract="false" isQuery="false" name="__init__" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter comment="The contact's NodeID" isSpecification="false" visibility="private" xmi.id="EcVIgN8ErGfR" value="" type="F0BvEIsmGaS6" name="id" />
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="FVtE5Pv3Iz1D" value="" type="Xf4wyu4BjGbV" name="ipAddress" />
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="LXfY2Yn5yi9G" value="" type="Xf4wyu4BjGbV" name="udpPort" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+         </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="DpDSnWEAIkYk" xmi.id="7GHDWr88ADzp" isRoot="false" isAbstract="false" name="Protocol" >
+         <UML:Classifier.feature>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="in3mPH4C1RF2" isRoot="false" isAbstract="false" isQuery="false" name="ping" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="CkXV1srlNLe9" value="" type="GEZ8qdeWfnMw" name="contact" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="7yTzhrIMy1us" isRoot="false" isAbstract="false" isQuery="false" name="store" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="nlhsNeTUbxRI" value="" type="F0BvEIsmGaS6" name="key" />
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="cYwkAmYgEayf" value="" type="F0BvEIsmGaS6" name="value" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="Bv7A4ERLQxAW" isRoot="false" isAbstract="false" isQuery="false" name="findNode" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="YNhiRu7nI4xo" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="E5HkGCTccCRU" isRoot="false" isAbstract="false" isQuery="false" name="findValue" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="6aQxuETUeOBX" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="private" xmi.id="QjAXZnVh4d4i" isRoot="false" isAbstract="false" isQuery="false" name="_sendRPC" />
+         </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="DpDSnWEAIkYk" xmi.id="NbT6Jwpyf3r2" isRoot="false" isAbstract="false" name="DataStore" >
+         <UML:Classifier.feature>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="G4NSul3NpKHd" isRoot="false" isAbstract="false" isQuery="false" name="__setitem__" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="MGc0g11vkHlp" value="" type="F0BvEIsmGaS6" name="key" />
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="qRh2nycocdnV" value="" type="F0BvEIsmGaS6" name="data" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+          <UML:Operation isSpecification="false" isLeaf="false" visibility="public" xmi.id="FBMe15MRUZ88" isRoot="false" isAbstract="false" isQuery="false" name="__getitem__" >
+           <UML:BehavioralFeature.parameter>
+            <UML:Parameter isSpecification="false" visibility="private" xmi.id="qVAZtUrpTWdy" value="" type="F0BvEIsmGaS6" name="key" />
+           </UML:BehavioralFeature.parameter>
+          </UML:Operation>
+         </UML:Classifier.feature>
+        </UML:Class>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="Xf4wyu4BjGbV" isRoot="false" isAbstract="false" name="int" />
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="7QT8DoQCXWXv" isRoot="false" isAbstract="false" name="list" />
+      <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="F0BvEIsmGaS6" isRoot="false" isAbstract="false" name="str" />
+      <UML:Association isSpecification="false" visibility="public" namespace="Logical View" xmi.id="yUJ3aHr9Y0ja" name="" >
+       <UML:Association.connection>
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="false" xmi.id="zYlqcQie728U" aggregation="none" type="2LUfambgQJs8" name="" />
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="true" xmi.id="jtWDoECmhVnH" aggregation="none" type="jdBZBejROQK7" name="" />
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association isSpecification="false" visibility="public" namespace="Logical View" xmi.id="mdQId7radcRG" name="" >
+       <UML:Association.connection>
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="false" xmi.id="07u870aqr42f" aggregation="none" type="jdBZBejROQK7" name="" />
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="true" xmi.id="GEPxhDDTqbkR" aggregation="none" type="GEZ8qdeWfnMw" name="" />
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association isSpecification="false" visibility="public" namespace="Logical View" xmi.id="jb1MBQcBYVHf" name="" >
+       <UML:Association.connection>
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="false" xmi.id="VrUNtW28iS5P" aggregation="none" type="2LUfambgQJs8" name="" />
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="true" xmi.id="dGqRsasb9rxK" aggregation="none" type="7GHDWr88ADzp" name="" />
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association isSpecification="false" visibility="public" namespace="Logical View" xmi.id="givfE99ALTxB" name="" >
+       <UML:Association.connection>
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="false" xmi.id="rkttq2aB2262" aggregation="none" type="2LUfambgQJs8" name="" />
+        <UML:AssociationEnd isSpecification="false" visibility="public" changeability="changeable" isNavigable="true" xmi.id="spUJZPOF7IuL" aggregation="none" type="GEZ8qdeWfnMw" name="" />
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Package isSpecification="false" isLeaf="false" visibility="public" namespace="Logical View" xmi.id="7meKJjex8e6q" isRoot="false" isAbstract="false" name="twisted" >
+       <UML:Namespace.ownedElement>
+        <UML:Package isSpecification="false" isLeaf="false" visibility="public" namespace="7meKJjex8e6q" xmi.id="n0aQFZaDttWL" isRoot="false" isAbstract="false" name="internet" >
+         <UML:Namespace.ownedElement>
+          <UML:Package isSpecification="false" isLeaf="false" visibility="public" namespace="n0aQFZaDttWL" xmi.id="9amvxNu37WNQ" isRoot="false" isAbstract="false" name="protocol" >
+           <UML:Namespace.ownedElement>
+            <UML:Class isSpecification="false" isLeaf="false" visibility="public" namespace="9amvxNu37WNQ" xmi.id="E1MMdSDOTnog" isRoot="false" isAbstract="false" name="DatagramProtocol" />
+           </UML:Namespace.ownedElement>
+          </UML:Package>
+         </UML:Namespace.ownedElement>
+        </UML:Package>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Dependency isSpecification="false" visibility="public" namespace="Logical View" xmi.id="tDGQXNyJIueC" client="7GHDWr88ADzp" name="" supplier="E1MMdSDOTnog" />
+     </UML:Namespace.ownedElement>
+     <XMI.extension xmi.extender="umbrello" >
+      <diagrams>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1272" snapy="10" showatts="1" xmi.id="mOoYOUXuSxyI" documentation="" type="1" showops="1" showpackage="0" name="Class diagram" localid="" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1063" >
+        <widgets>
+         <classwidget usesdiagramfillcolor="0" width="249" showattsigs="601" x="153" fillcolor="#ffffc0" y="626" showopsigs="601" linewidth="none" height="234" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="2LUfambgQJs8" showoperations="1" showpackage="0" showscope="1" usesdiagramusefillcolor="0" font="Sans,10,-1,5,75,0,0,0,0,0" linecolor="#ff0000" />
+         <classwidget usesdiagramfillcolor="0" width="227" showattsigs="601" x="451" fillcolor="#ffffc0" y="671" showopsigs="601" linewidth="none" height="90" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="jdBZBejROQK7" showoperations="1" showpackage="0" showscope="1" usesdiagramusefillcolor="0" font="Sans,10,-1,5,75,0,0,0,0,0" linecolor="#ff0000" />
+         <classwidget usesdiagramfillcolor="1" width="195" showattsigs="601" x="182" fillcolor="none" y="371" showopsigs="601" linewidth="none" height="117" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="7GHDWr88ADzp" showoperations="1" showpackage="0" showscope="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,0,0,0,0,0" linecolor="none" />
+         <classwidget usesdiagramfillcolor="1" width="311" showattsigs="601" x="736" fillcolor="none" y="662" showopsigs="601" linewidth="none" height="90" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="GEZ8qdeWfnMw" showoperations="1" showpackage="0" showscope="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,0,0,0,0,0" linecolor="none" />
+         <packagewidget usesdiagramfillcolor="1" width="70" x="241" fillcolor="none" y="14" linewidth="none" height="46" usefillcolor="1" isinstance="0" xmi.id="7meKJjex8e6q" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,1,0,0,0,0" linecolor="none" />
+         <packagewidget usesdiagramfillcolor="1" width="70" x="241" fillcolor="none" y="89" linewidth="none" height="46" usefillcolor="1" isinstance="0" xmi.id="n0aQFZaDttWL" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,1,0,0,0,0" linecolor="none" />
+         <packagewidget usesdiagramfillcolor="1" width="70" x="241" fillcolor="none" y="166" linewidth="none" height="46" usefillcolor="1" isinstance="0" xmi.id="9amvxNu37WNQ" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,1,0,0,0,0" linecolor="none" />
+         <classwidget usesdiagramfillcolor="1" width="144" showattsigs="601" x="204" fillcolor="none" y="250" showopsigs="601" linewidth="none" height="36" usefillcolor="1" showpubliconly="0" showattributes="1" isinstance="0" xmi.id="E1MMdSDOTnog" showoperations="1" showpackage="0" showscope="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,75,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages/>
+        <associations>
+         <assocwidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" linewidth="none" widgetbid="jdBZBejROQK7" widgetaid="2LUfambgQJs8" xmi.id="yUJ3aHr9Y0ja" linecolor="none" >
+          <linepath>
+           <startpoint startx="402" starty="743" />
+           <endpoint endx="451" endy="716" />
+          </linepath>
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="2" indexb="1" linewidth="none" widgetbid="7GHDWr88ADzp" widgetaid="2LUfambgQJs8" xmi.id="GYWo3nRWdttU" type="510" changeabilityA="900" changeabilityB="900" linecolor="none" visibilityA="200" >
+          <linepath>
+           <startpoint startx="277" starty="626" />
+           <endpoint endx="279" endy="488" />
+          </linepath>
+          <floatingtext usesdiagramfillcolor="1" width="123" x="167" fillcolor="none" y="497" linewidth="none" posttext="" role="710" height="22" usefillcolor="1" pretext="+" isinstance="0" xmi.id="wvLp83fbvH4q" showstereotype="1" text="self._connection" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" linewidth="none" widgetbid="GEZ8qdeWfnMw" widgetaid="jdBZBejROQK7" xmi.id="mdQId7radcRG" linecolor="none" >
+          <linepath>
+           <startpoint startx="678" starty="716" />
+           <endpoint endx="736" endy="707" />
+          </linepath>
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="2" indexb="1" linewidth="none" widgetbid="n0aQFZaDttWL" widgetaid="7meKJjex8e6q" roleBdoc="" documentation="" roleAdoc="" type="509" changeabilityA="900" changeabilityB="900" linecolor="none" visibilityA="200" >
+          <linepath>
+           <startpoint startx="276" starty="60" />
+           <endpoint endx="276" endy="89" />
+          </linepath>
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="2" indexb="1" linewidth="none" widgetbid="9amvxNu37WNQ" widgetaid="n0aQFZaDttWL" roleBdoc="" documentation="" roleAdoc="" type="509" changeabilityA="900" changeabilityB="900" linecolor="none" visibilityA="200" >
+          <linepath>
+           <startpoint startx="276" starty="135" />
+           <endpoint endx="276" endy="166" />
+          </linepath>
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="2" indexb="1" linewidth="none" widgetbid="E1MMdSDOTnog" widgetaid="9amvxNu37WNQ" roleBdoc="" documentation="" roleAdoc="" type="509" changeabilityA="900" changeabilityB="900" linecolor="none" visibilityA="200" >
+          <linepath>
+           <startpoint startx="276" starty="212" />
+           <endpoint endx="276" endy="250" />
+          </linepath>
+         </assocwidget>
+         <assocwidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" linewidth="none" widgetbid="E1MMdSDOTnog" widgetaid="7GHDWr88ADzp" xmi.id="tDGQXNyJIueC" linecolor="none" >
+          <linepath>
+           <startpoint startx="279" starty="371" />
+           <endpoint endx="276" endy="286" />
+          </linepath>
+         </assocwidget>
+        </associations>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1740" snapy="10" showatts="1" xmi.id="0WQB0Fjwzows" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: Node joins network" localid="Zm7YR0rd047m" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1104" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="121" x="12" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="JxRcfwUL90G2" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="308" x="478" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="g3qU7X4IUN3E" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="189" x="301" fillcolor="#ffffc0" y="48" instancename="knownContact" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="GEZ8qdeWfnMw" decon="0" localid="aUHqjH1AbdRO" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="132" x="714" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="5PSau9CBPReA" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="951" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="4lp28fNL7jFL" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="144" x="1121" fillcolor="#ffffc0" y="48" instancename="remoteNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="7ewbq3lbXf8i" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="323" x="1276" fillcolor="#ffffc0" y="48" instancename="remoteNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="Zm7YR0rd047m" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="387" x="86" fillcolor="none" y="974" linewidth="none" height="126" usefillcolor="1" isinstance="0" xmi.id="YYV3e6fI7Mde" text="Sequence numbers 5 - 12 is iterative, and form the main loop of the Kademlia Node Lookup algorithm.
+
+This is repeated until no node in the returned sets is closer than the closest node already seen, or localNode has accumulated k active contacts." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <boxwidget usesdiagramfillcolor="1" width="1409" x="29" fillcolor="none" y="401" linewidth="none" height="538" usefillcolor="1" isinstance="0" xmi.id="f37UHckfbDzc" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#000000" />
+         <floatingtext usesdiagramfillcolor="1" width="134" x="1277" fillcolor="none" y="894" linewidth="none" posttext="" role="700" height="28" usefillcolor="1" pretext="" isinstance="0" xmi.id="dI4ekgQsqiMw" showstereotype="1" text="Node Lookup" usesdiagramusefillcolor="1" font="Sans,14,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="166" x="1502" fillcolor="none" y="226" linewidth="none" height="92" usefillcolor="1" isinstance="0" xmi.id="aD8sHmbxATmq" showstereotype="1" text="Sequences 2 &amp; 3 use user-specified data for a known node in the network" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="269" x="1467" fillcolor="none" y="453" linewidth="none" height="50" usefillcolor="1" isinstance="0" xmi.id="8hBnQK7dCcB4" showstereotype="1" text="4's getContacts() use the ALPHA constant for &lt;count> (default is 3)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="50" x="70" fillcolor="none" y="135" operation="knf0YBkncu03" linewidth="none" widgetbid="JxRcfwUL90G2" height="32" usefillcolor="1" seqnum="1" textid="oL3n7zdRu23a" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="knf0YBkncu03" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="112" x="75" fillcolor="none" y="113" linewidth="none" posttext="" role="705" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="oL3n7zdRu23a" text="1: _generateID()" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="568" x="72" fillcolor="none" y="286" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="g3qU7X4IUN3E" height="32" usefillcolor="1" seqnum="3" textid="NRO800Nf2B99" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="DkZlAtzMHgGL" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="77" fillcolor="none" y="264" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="NRO800Nf2B99" showstereotype="1" text="3: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="331" x="72" fillcolor="none" y="203" operation="9zGxX6umLqWB" linewidth="none" widgetbid="aUHqjH1AbdRO" height="50" usefillcolor="1" seqnum="2" textid="RlBbKo2ii7Cc" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="2WNEYlFFMjWA" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="308" x="77" fillcolor="none" y="181" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="RlBbKo2ii7Cc" text="2: __init__(id : str, ipAddress : int, udpPort : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="716" x="72" fillcolor="none" y="563" operation="Bv7A4ERLQxAW" linewidth="none" widgetbid="5PSau9CBPReA" height="68" usefillcolor="1" seqnum="5" textid="lOY4kJYIqbMb" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="SWwk5YlY5hPS" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="144" x="77" fillcolor="none" y="541" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="lOY4kJYIqbMb" showstereotype="1" text="5: findNode(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="242" x="781" fillcolor="none" y="579" operation="udp transmit" linewidth="none" widgetbid="4lp28fNL7jFL" height="8" usefillcolor="1" seqnum="6" textid="j03XvsSKq6vI" widgetaid="5PSau9CBPReA" isinstance="0" xmi.id="u6jZPllhEruL" sequencemessagetype="1001" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="796" fillcolor="none" y="557" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="j03XvsSKq6vI" text="6: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="177" x="1024" fillcolor="none" y="596" operation="90UbpbfYQgg6" linewidth="none" widgetbid="7ewbq3lbXf8i" height="72" usefillcolor="1" seqnum="7" textid="Ri07qitLU7vK" widgetaid="4lp28fNL7jFL" isinstance="0" xmi.id="NKd1eX9GSi6T" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="144" x="1038" fillcolor="none" y="574" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="Ri07qitLU7vK" showstereotype="1" text="7: findNode(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="252" x="1193" fillcolor="none" y="606" operation="fSrsnocF3ZE9" linewidth="none" widgetbid="Zm7YR0rd047m" height="48" usefillcolor="1" seqnum="8" textid="LOF3vVXhh47T" widgetaid="7ewbq3lbXf8i" isinstance="0" xmi.id="99vfd24io2Ci" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="177" x="1208" fillcolor="none" y="584" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="LOF3vVXhh47T" showstereotype="1" text="8: getContacts(count : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="242" x="781" fillcolor="none" y="674" operation="udp transmit" linewidth="none" widgetbid="5PSau9CBPReA" height="8" usefillcolor="1" seqnum="9" textid="7b9b6qIAvjZF" widgetaid="4lp28fNL7jFL" isinstance="0" xmi.id="P82PCiDEsuXE" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="910" fillcolor="none" y="652" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="7b9b6qIAvjZF" showstereotype="1" text="9: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="716" x="64" fillcolor="none" y="689" operation="gECq6SAhgAnc" linewidth="none" widgetbid="JxRcfwUL90G2" height="191" usefillcolor="1" seqnum="10" textid="GZtdtvqHNDNR" widgetaid="5PSau9CBPReA" isinstance="0" xmi.id="DCPMn76CJVT3" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="231" x="76" fillcolor="none" y="667" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="GZtdtvqHNDNR" showstereotype="1" text="10: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="568" x="72" fillcolor="none" y="790" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="g3qU7X4IUN3E" height="61" usefillcolor="1" seqnum="12" textid="Zqk0RvYRExkO" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="DmiLchCunjmf" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="226" x="86" fillcolor="none" y="768" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="Zqk0RvYRExkO" text="12: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="331" x="72" fillcolor="none" y="724" operation="9zGxX6umLqWB" linewidth="none" widgetbid="aUHqjH1AbdRO" height="32" usefillcolor="1" seqnum="11" textid="8MeMKaYgmtDx" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="MRjbHdG23KzR" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="316" x="77" fillcolor="none" y="702" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="8MeMKaYgmtDx" text="11: __init__(id : str, ipAddress : int, udpPort : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="568" x="72" fillcolor="none" y="449" operation="fSrsnocF3ZE9" linewidth="none" widgetbid="g3qU7X4IUN3E" height="48" usefillcolor="1" seqnum="4" textid="6pnV1RVgSbAj" widgetaid="JxRcfwUL90G2" isinstance="0" xmi.id="XXSqrxKpqfOK" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="177" x="77" fillcolor="none" y="427" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="6pnV1RVgSbAj" showstereotype="1" text="4: getContacts(count : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="2260" snapy="10" showatts="1" xmi.id="B5JD3Bq06iQv" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: FIND_NODE" localid="ZKVfSYRDmhX0" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1047" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="121" x="576" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="Hj16xOcW8scX" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="132" x="805" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="s2nzPx2j85uw" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="1241" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="7VU6icF9vT52" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="136" x="1476" fillcolor="#ffffc0" y="48" instancename="remoteNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="zkmxPV1mrJJA" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="323" x="1933" fillcolor="#ffffc0" y="48" instancename="remoteNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="GJki4TS0F2J6" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="142" x="1786" fillcolor="#ffffc0" y="48" instancename="sender" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="GEZ8qdeWfnMw" decon="0" localid="wrVkdwNTBRaH" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="217" x="12" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="CPeW6FUTXpmq" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="148" x="237" fillcolor="#ffffc0" y="48" instancename="newContact" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="GEZ8qdeWfnMw" decon="0" localid="ZKVfSYRDmhX0" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="246" x="1007" fillcolor="none" y="601" linewidth="none" height="107" usefillcolor="1" isinstance="0" xmi.id="dQ4LqT8eNJnM" showstereotype="1" text="This sequence assumes that the remote node responds.
+Also, the 2 nodes did not know about each other before the RPC operation." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="429" x="532" fillcolor="none" y="601" linewidth="none" height="106" usefillcolor="1" isinstance="0" xmi.id="S23AF3TfAQDX" showstereotype="1" text="If the key to the findNode() Protocol call is the nodeID of an existing contact or if it is the node ID of the remote node itself, the remote node is still required to return &lt;k> Contact triples, unless it is returning all of the contacts it knows of. " usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="360" x="1294" fillcolor="none" y="601" linewidth="none" height="124" usefillcolor="1" isinstance="0" xmi.id="nwblaoflCQ9c" showstereotype="1" text="The recipient of a FIND_NODE (i.e. the remote node) should never return a triple containing the nodeID of the requestor (i.e. the local node). If the requestor does receive such a triple, it should discard it. A node must never put its own nodeID into a bucket as a contact. " usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="243" x="636" fillcolor="none" y="113" operation="Bv7A4ERLQxAW" linewidth="none" widgetbid="s2nzPx2j85uw" height="32" usefillcolor="1" seqnum="1" textid="ZnbgfDBWDwVd" widgetaid="Hj16xOcW8scX" isinstance="0" xmi.id="3yfUrSA89BC7" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="144" x="683" fillcolor="none" y="91" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="ZnbgfDBWDwVd" showstereotype="1" text="1: findNode(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="441" x="872" fillcolor="none" y="123" operation="upd transmit" linewidth="none" widgetbid="7VU6icF9vT52" height="8" usefillcolor="1" seqnum="2" textid="motDH0hl4POK" widgetaid="s2nzPx2j85uw" isinstance="0" xmi.id="lJU0XDkMm0VN" sequencemessagetype="1001" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="901" fillcolor="none" y="101" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="motDH0hl4POK" showstereotype="1" text="2: upd transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="238" x="1314" fillcolor="none" y="294" operation="90UbpbfYQgg6" linewidth="none" widgetbid="zkmxPV1mrJJA" height="111" usefillcolor="1" seqnum="5" textid="HfXduybU2hpp" widgetaid="7VU6icF9vT52" isinstance="0" xmi.id="nn3WU7xw5BwP" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="144" x="1319" fillcolor="none" y="272" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="HfXduybU2hpp" showstereotype="1" text="5: findNode(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="558" x="1544" fillcolor="none" y="308" operation="fSrsnocF3ZE9" linewidth="none" widgetbid="GJki4TS0F2J6" height="77" usefillcolor="1" seqnum="6" textid="3JtVMaI9flx5" widgetaid="zkmxPV1mrJJA" isinstance="0" xmi.id="fMEZRPVqf8LI" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="177" x="1552" fillcolor="none" y="286" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="3JtVMaI9flx5" showstereotype="1" text="6: getContacts(count : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="441" x="872" fillcolor="none" y="418" operation="udp transmit" linewidth="none" widgetbid="s2nzPx2j85uw" height="8" usefillcolor="1" seqnum="7" textid="C1gUKMg4OQ6V" widgetaid="7VU6icF9vT52" isinstance="0" xmi.id="1rBmx0lbF8lI" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="1203" fillcolor="none" y="396" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="C1gUKMg4OQ6V" showstereotype="1" text="7: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="238" x="1314" fillcolor="none" y="155" operation="gECq6SAhgAnc" linewidth="none" widgetbid="zkmxPV1mrJJA" height="105" usefillcolor="1" seqnum="3" textid="DwuIDuknqhlj" widgetaid="7VU6icF9vT52" isinstance="0" xmi.id="zha9kkqtW2q3" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="1319" fillcolor="none" y="133" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="DwuIDuknqhlj" showstereotype="1" text="3: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="558" x="1544" fillcolor="none" y="219" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="GJki4TS0F2J6" height="29" usefillcolor="1" seqnum="4" textid="9XJKgtBOflrD" widgetaid="zkmxPV1mrJJA" isinstance="0" xmi.id="v5OonCeSxO3e" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="1553" fillcolor="none" y="197" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="9XJKgtBOflrD" showstereotype="1" text="4: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="243" x="628" fillcolor="none" y="444" operation="gECq6SAhgAnc" linewidth="none" widgetbid="Hj16xOcW8scX" height="108" usefillcolor="1" seqnum="8" textid="p6rQGqBIFqKN" widgetaid="s2nzPx2j85uw" isinstance="0" xmi.id="RuvGcBRL8ugn" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="643" fillcolor="none" y="422" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="p6rQGqBIFqKN" text="8: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="321" x="1544" fillcolor="none" y="158" operation="9zGxX6umLqWB" linewidth="none" widgetbid="wrVkdwNTBRaH" height="32" usefillcolor="1" seqnum="4" textid="55gMjdzMILLJ" widgetaid="zkmxPV1mrJJA" isinstance="0" xmi.id="gfBWZ2zJftg6" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="308" x="1549" fillcolor="none" y="136" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="55gMjdzMILLJ" showstereotype="1" text="4: __init__(id : str, ipAddress : int, udpPort : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="333" x="303" fillcolor="none" y="452" operation="9zGxX6umLqWB" linewidth="none" widgetbid="ZKVfSYRDmhX0" height="32" usefillcolor="1" seqnum="9" textid="AQExC2rjKMMk" widgetaid="Hj16xOcW8scX" isinstance="0" xmi.id="uCr1VpBsTgzi" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="308" x="323" fillcolor="none" y="430" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="AQExC2rjKMMk" showstereotype="1" text="9: __init__(id : str, ipAddress : int, udpPort : int)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="524" x="112" fillcolor="none" y="512" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="CPeW6FUTXpmq" height="33" usefillcolor="1" seqnum="10" textid="sIcGnKqsEE1b" widgetaid="Hj16xOcW8scX" isinstance="0" xmi.id="D1QPk9IW8Clf" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="226" x="405" fillcolor="none" y="490" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="sIcGnKqsEE1b" showstereotype="1" text="10: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1716" snapy="10" showatts="1" xmi.id="sx1Bd4fsczoQ" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: PING" localid="K8yKdJgVMSGM" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1047" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="121" x="399" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="HhFkMlKI9V4y" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="132" x="635" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="QPIIMKSxM7px" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="1030" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="yUq8qQC0NVjw" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="136" x="1276" fillcolor="#ffffc0" y="48" instancename="remoteNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="8coA41EfGcip" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="232" x="1480" fillcolor="#ffffc0" y="48" instancename="remoteNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="VUohZcmm7YM3" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="217" x="122" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="K8yKdJgVMSGM" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="258" x="837" fillcolor="none" y="407" linewidth="none" height="91" usefillcolor="1" isinstance="0" xmi.id="lOIryYYTJkAn" showstereotype="1" text="This sequence assumes that the remote node responds, and that the 2 nodes knew each other before the RPC operation." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="317" x="138" fillcolor="none" y="407" linewidth="none" height="68" usefillcolor="1" isinstance="0" xmi.id="fw8XYhcmR04I" showstereotype="1" text="addContact() may have to be replaced by a more descriptive method name, such as updateContact() or refreshContact()." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="250" x="459" fillcolor="none" y="123" operation="in3mPH4C1RF2" linewidth="none" widgetbid="QPIIMKSxM7px" height="49" usefillcolor="1" seqnum="1" textid="Yh8adml494KT" widgetaid="HhFkMlKI9V4y" isinstance="0" xmi.id="4bNEbdvqLIZf" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="172" x="464" fillcolor="none" y="101" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="Yh8adml494KT" showstereotype="1" text="1: ping(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="400" x="702" fillcolor="none" y="136" operation="udp transmit" linewidth="none" widgetbid="yUq8qQC0NVjw" height="8" usefillcolor="1" seqnum="2" textid="59VaqQxw2m46" widgetaid="QPIIMKSxM7px" isinstance="0" xmi.id="nC5qrumJkv9A" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="716" fillcolor="none" y="114" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="59VaqQxw2m46" showstereotype="1" text="2: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="249" x="1103" fillcolor="none" y="154" operation="gECq6SAhgAnc" linewidth="none" widgetbid="8coA41EfGcip" height="71" usefillcolor="1" seqnum="3" textid="hPQBZFomDuX0" widgetaid="yUq8qQC0NVjw" isinstance="0" xmi.id="E4JExj2dJu8i" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="1116" fillcolor="none" y="132" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="hPQBZFomDuX0" text="3: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="260" x="1344" fillcolor="none" y="169" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="VUohZcmm7YM3" height="37" usefillcolor="1" seqnum="4" textid="NHDKFWoqd4XF" widgetaid="8coA41EfGcip" isinstance="0" xmi.id="YsBVXbT5Pu2X" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="1373" fillcolor="none" y="147" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="NHDKFWoqd4XF" showstereotype="1" text="4: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="400" x="702" fillcolor="none" y="233" operation="udp transmit" linewidth="none" widgetbid="QPIIMKSxM7px" height="8" usefillcolor="1" seqnum="5" textid="H75oNl2eUG9e" widgetaid="yUq8qQC0NVjw" isinstance="0" xmi.id="xHa0pxF0FSW1" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="984" fillcolor="none" y="211" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="H75oNl2eUG9e" showstereotype="1" text="5: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="250" x="451" fillcolor="none" y="250" operation="gECq6SAhgAnc" linewidth="none" widgetbid="HhFkMlKI9V4y" height="61" usefillcolor="1" seqnum="6" textid="DyMafY3QXsuX" widgetaid="QPIIMKSxM7px" isinstance="0" xmi.id="ZUQNOhRvyKLS" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="473" fillcolor="none" y="228" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="DyMafY3QXsuX" text="6: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="237" x="222" fillcolor="none" y="265" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="K8yKdJgVMSGM" height="32" usefillcolor="1" seqnum="7" textid="YF2g59gNHcis" widgetaid="HhFkMlKI9V4y" isinstance="0" xmi.id="aMltRXn9pkFf" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="235" fillcolor="none" y="243" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="YF2g59gNHcis" showstereotype="1" text="7: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1826" snapy="10" showatts="1" xmi.id="wqqWcEQ7o7RL" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: STORE" localid="IsLbrnsFZ4SC" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1063" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="121" x="283" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="l6M0qU7Vpr5I" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="217" x="8" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="CRz4yqyoeURs" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="132" x="508" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="sYfzxyk3Klro" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="820" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="qLehQunaJmcI" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="136" x="1025" fillcolor="#ffffc0" y="48" instancename="remoteNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="ca6H3V9v1mty" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="167" x="1448" fillcolor="#ffffc0" y="48" instancename="remoteStore" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="NbT6Jwpyf3r2" decon="0" localid="4JFW6sKTEU7X" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="336" x="104" fillcolor="none" y="513" linewidth="none" height="144" usefillcolor="1" isinstance="0" xmi.id="KRo4xWGoy9Kv" showstereotype="1" text="addContact() may have to be replaced by a more descriptive method name, such as updateContact() or refreshContact().
+
+Note that this sequence also assumes that these 2 nodes have known about each other beforehand." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="416" x="1127" fillcolor="none" y="513" linewidth="none" height="105" usefillcolor="1" isinstance="0" xmi.id="3HrU4vQa9EXI" showstereotype="1" text="The mechanism used by the DataStore to physically store the data is not specified (e.g. it could be file-based, db-base, etc) - this allows it to be customized for the application using the library.
+A reasonable default (maybe sqlite?) should be provided." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="220" x="1602" fillcolor="none" y="250" linewidth="none" height="111" usefillcolor="1" isinstance="0" xmi.id="9Yx3Sawu9OSv" showstereotype="1" text="The DataStore's API may be made more Pythonic, e.g. by implementing a dictionary-type interface instead of explicit function calls." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <objectwidget usesdiagramfillcolor="0" width="232" x="1207" fillcolor="#ffffc0" y="48" instancename="remoteNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="IsLbrnsFZ4SC" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="239" x="343" fillcolor="none" y="119" operation="7yTzhrIMy1us" linewidth="none" widgetbid="sYfzxyk3Klro" height="61" usefillcolor="1" seqnum="1" textid="PIWCBTunRx7I" widgetaid="l6M0qU7Vpr5I" isinstance="0" xmi.id="eBfQnx1M1IPX" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="192" x="367" fillcolor="none" y="97" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="PIWCBTunRx7I" text="1: store(key : str, value : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="317" x="575" fillcolor="none" y="143" operation="udp transmit" linewidth="none" widgetbid="qLehQunaJmcI" height="8" usefillcolor="1" seqnum="2" textid="McJppRqOB1bJ" widgetaid="sYfzxyk3Klro" isinstance="0" xmi.id="hrzD1Bety5q3" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="595" fillcolor="none" y="121" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="McJppRqOB1bJ" showstereotype="1" text="2: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="208" x="893" fillcolor="none" y="280" operation="ef3Oan6hCijh" linewidth="none" widgetbid="ca6H3V9v1mty" height="60" usefillcolor="1" seqnum="3" textid="kvjFNgYfUVHL" widgetaid="qLehQunaJmcI" isinstance="0" xmi.id="co3RwrSDCOcT" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="192" x="898" fillcolor="none" y="258" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="kvjFNgYfUVHL" text="3: store(key : str, value : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="446" x="1093" fillcolor="none" y="291" operation="G4NSul3NpKHd" linewidth="none" widgetbid="4JFW6sKTEU7X" height="32" usefillcolor="1" seqnum="4" textid="WVTsVXvkV2Ht" widgetaid="ca6H3V9v1mty" isinstance="0" xmi.id="274AW5Y4bWN1" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="225" x="1106" fillcolor="none" y="269" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="WVTsVXvkV2Ht" showstereotype="1" text="4: __setitem__(key : str, data : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="317" x="575" fillcolor="none" y="374" operation="udp transmit" linewidth="none" widgetbid="sYfzxyk3Klro" height="8" usefillcolor="1" seqnum="5" textid="gJHXLlVqUI0O" widgetaid="qLehQunaJmcI" isinstance="0" xmi.id="SfhS3vror5uE" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="775" fillcolor="none" y="352" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="gJHXLlVqUI0O" showstereotype="1" text="5: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="239" x="335" fillcolor="none" y="393" operation="gECq6SAhgAnc" linewidth="none" widgetbid="l6M0qU7Vpr5I" height="58" usefillcolor="1" seqnum="6" textid="RT8QBYkeUsah" widgetaid="sYfzxyk3Klro" isinstance="0" xmi.id="2qX0Lqyj0l0F" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="346" fillcolor="none" y="371" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="RT8QBYkeUsah" showstereotype="1" text="6: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="235" x="108" fillcolor="none" y="405" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="CRz4yqyoeURs" height="32" usefillcolor="1" seqnum="7" textid="r0uYpZ3DDuNo" widgetaid="l6M0qU7Vpr5I" isinstance="0" xmi.id="XDC5voanOFlG" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="119" fillcolor="none" y="383" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="r0uYpZ3DDuNo" showstereotype="1" text="7: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="208" x="893" fillcolor="none" y="167" operation="gECq6SAhgAnc" linewidth="none" widgetbid="ca6H3V9v1mty" height="71" usefillcolor="1" seqnum="3" textid="b9j86YNOa8as" widgetaid="qLehQunaJmcI" isinstance="0" xmi.id="omt7cEgU0ZjZ" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="898" fillcolor="none" y="145" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="b9j86YNOa8as" showstereotype="1" text="3: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="238" x="1093" fillcolor="none" y="189" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="IsLbrnsFZ4SC" height="32" usefillcolor="1" seqnum="4" textid="OiZ5PKngtAyD" widgetaid="ca6H3V9v1mty" isinstance="0" xmi.id="mEd4K2vJvbuN" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="1100" fillcolor="none" y="167" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="OiZ5PKngtAyD" showstereotype="1" text="4: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1753" snapy="10" showatts="1" xmi.id="wEPAa9wuw8md" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: FIND_VALUE" localid="V35eShA1Uqfr" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1063" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="217" x="0" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="jkRfSyRQbYav" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="121" x="271" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="E8OOjXIdROQ5" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="159" x="484" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="BmKtB0M9Pmjx" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="832" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="PNK2tWQt2QLu" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="136" x="1068" fillcolor="#ffffc0" y="48" instancename="remoteNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="M6ApXub53AK7" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="167" x="1575" fillcolor="#ffffc0" y="48" instancename="remoteStore" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="NbT6Jwpyf3r2" decon="0" localid="JPnBDdXXhfKC" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="232" x="1333" fillcolor="#ffffc0" y="48" instancename="remoteNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="V35eShA1Uqfr" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="332" x="807" fillcolor="none" y="634" linewidth="none" height="125" usefillcolor="1" isinstance="0" xmi.id="GNBMJPx1SgFx" showstereotype="1" text="This sequence assumes that remoteNode has the requested data, and that the 2 nodes knew each other before the RPC call.
+
+If remoteNode does not have the data, the sequence is the same as with FIND_NODE." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="381" x="263" fillcolor="none" y="634" linewidth="none" height="120" usefillcolor="1" isinstance="0" xmi.id="tga89eBHFwho" showstereotype="1" text="receiveData() is a callback function for reading the data provided by the Protocol and exposing it to the top-level application (the user). 
+
+This should be easy to use and flexible, and thus this mechanism may change drastically later on." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         <notewidget usesdiagramfillcolor="1" width="251" x="1498" fillcolor="none" y="634" linewidth="none" height="86" usefillcolor="1" isinstance="0" xmi.id="aCTpRNWGKbqh" showstereotype="1" text="As with STORE, the DataStore's API may be made more Pythonic by implementing a dictionary-type interface." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="240" x="331" fillcolor="none" y="113" operation="E5HkGCTccCRU" linewidth="none" widgetbid="BmKtB0M9Pmjx" height="65" usefillcolor="1" seqnum="1" textid="sWlMuUnlwzcq" widgetaid="E8OOjXIdROQ5" isinstance="0" xmi.id="5l6YYM99IgkJ" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="147" x="336" fillcolor="none" y="91" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="sWlMuUnlwzcq" text="1: findValue(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="340" x="564" fillcolor="none" y="133" operation="udp transmit" linewidth="none" widgetbid="PNK2tWQt2QLu" height="8" usefillcolor="1" seqnum="2" textid="h3nipa0lGKTk" widgetaid="BmKtB0M9Pmjx" isinstance="0" xmi.id="t5EzWEKMReu9" sequencemessagetype="1001" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="582" fillcolor="none" y="111" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="h3nipa0lGKTk" showstereotype="1" text="2: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="239" x="905" fillcolor="none" y="277" operation="g2b2RDuZuyMa" linewidth="none" widgetbid="M6ApXub53AK7" height="69" usefillcolor="1" seqnum="5" textid="PsliQREjfHN2" widgetaid="PNK2tWQt2QLu" isinstance="0" xmi.id="uWGBjsMDWtl4" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="147" x="923" fillcolor="none" y="255" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="PsliQREjfHN2" showstereotype="1" text="5: findValue(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="530" x="1136" fillcolor="none" y="294" operation="FBMe15MRUZ88" linewidth="none" widgetbid="JPnBDdXXhfKC" height="32" usefillcolor="1" seqnum="6" textid="r8DLhJTXpd5g" widgetaid="M6ApXub53AK7" isinstance="0" xmi.id="PdADzaTClnom" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="160" x="1154" fillcolor="none" y="272" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="r8DLhJTXpd5g" showstereotype="1" text="6: __getitem__(key : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="239" x="905" fillcolor="none" y="170" operation="gECq6SAhgAnc" linewidth="none" widgetbid="M6ApXub53AK7" height="69" usefillcolor="1" seqnum="3" textid="qxTXGv33W8kc" widgetaid="PNK2tWQt2QLu" isinstance="0" xmi.id="kf2jFTtzHhl8" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="910" fillcolor="none" y="148" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="qxTXGv33W8kc" text="3: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="321" x="1136" fillcolor="none" y="184" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="V35eShA1Uqfr" height="32" usefillcolor="1" seqnum="4" textid="2OveO05r3AWU" widgetaid="M6ApXub53AK7" isinstance="0" xmi.id="EdjJxdDN8y3N" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="1147" fillcolor="none" y="162" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="2OveO05r3AWU" showstereotype="1" text="4: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="340" x="564" fillcolor="none" y="370" operation="udp transmit" linewidth="none" widgetbid="BmKtB0M9Pmjx" height="8" usefillcolor="1" seqnum="7" textid="cLuO5fXHao5C" widgetaid="PNK2tWQt2QLu" isinstance="0" xmi.id="zM77nvpZkdDa" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="106" x="749" fillcolor="none" y="348" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="cLuO5fXHao5C" text="7: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="240" x="323" fillcolor="none" y="389" operation="gECq6SAhgAnc" linewidth="none" widgetbid="E8OOjXIdROQ5" height="77" usefillcolor="1" seqnum="8" textid="Hfc5cSIez1w5" widgetaid="BmKtB0M9Pmjx" isinstance="0" xmi.id="xZhehURZC21c" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="335" fillcolor="none" y="367" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="Hfc5cSIez1w5" text="8: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="231" x="100" fillcolor="none" y="412" operation="QZdpxdk3UEUL" linewidth="none" widgetbid="jkRfSyRQbYav" height="32" usefillcolor="1" seqnum="9" textid="6y3eIzjT3IPQ" widgetaid="E8OOjXIdROQ5" isinstance="0" xmi.id="wlpWOxvdwXKM" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="218" x="108" fillcolor="none" y="390" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="6y3eIzjT3IPQ" showstereotype="1" text="9: addContact(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="240" x="323" fillcolor="none" y="501" operation="0n9lCsI1Knxq" linewidth="none" widgetbid="E8OOjXIdROQ5" height="65" usefillcolor="1" seqnum="10" textid="8siSdfH4D8vG" widgetaid="BmKtB0M9Pmjx" isinstance="0" xmi.id="093qpj8qWFZi" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="179" x="377" fillcolor="none" y="479" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="8siSdfH4D8vG" showstereotype="1" text="10: receiveData(data : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" linewidth="0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1272" snapy="10" showatts="1" xmi.id="1RMnJboeiuI0" documentation="" type="3" showops="1" showpackage="0" name="Sequence diagram: PING (no response)" localid="8P95ygVVKsfW" showstereotype="0" showscope="1" snapcsgrid="0" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="#ff0000" canvasheight="1063" >
+        <widgets>
+         <objectwidget usesdiagramfillcolor="0" width="217" x="21" fillcolor="#ffffc0" y="48" instancename="localNode._buckets[n]" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="jdBZBejROQK7" decon="0" localid="glT0M0pfkOpz" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="121" x="289" fillcolor="#ffffc0" y="48" instancename="localNode" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="2LUfambgQJs8" decon="0" localid="MYJhY8MGUAGC" multipleinstance="0" drawasactor="0" showstereotype="1" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="132" x="533" fillcolor="#ffffc0" y="48" instancename="localRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="VdSWbixvlioc" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <objectwidget usesdiagramfillcolor="0" width="147" x="860" fillcolor="#ffffc0" y="48" instancename="remoteRPC" linewidth="none" height="28" usefillcolor="1" isinstance="0" xmi.id="7GHDWr88ADzp" decon="0" localid="8P95ygVVKsfW" multipleinstance="0" drawasactor="0" usesdiagramusefillcolor="0" font="Sans,10,-1,5,50,0,1,0,0,0" linecolor="#ff0000" />
+         <notewidget usesdiagramfillcolor="1" width="310" x="404" fillcolor="none" y="453" linewidth="none" height="88" usefillcolor="1" isinstance="0" xmi.id="XlnKDAyShMTY" showstereotype="1" text="This shows the sequence for a PING RPC with no response; however, it is the same for any other RPC call that does not receive a response." usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+        </widgets>
+        <messages>
+         <messagewidget usesdiagramfillcolor="1" width="258" x="349" fillcolor="none" y="117" operation="in3mPH4C1RF2" linewidth="none" widgetbid="VdSWbixvlioc" height="66" usefillcolor="1" seqnum="1" textid="QNmvV07ydXUE" widgetaid="MYJhY8MGUAGC" isinstance="0" xmi.id="5PNjzQ2LzK0V" sequencemessagetype="1000" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="172" x="354" fillcolor="none" y="95" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="QNmvV07ydXUE" showstereotype="1" text="1: ping(contact : Contact)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="332" x="600" fillcolor="none" y="145" operation="udp transmit" linewidth="none" widgetbid="8P95ygVVKsfW" height="8" usefillcolor="1" seqnum="2" textid="XbZ3D3CcAFYr" widgetaid="VdSWbixvlioc" isinstance="0" xmi.id="2v0XMLvMtaIH" sequencemessagetype="1001" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="172" x="605" fillcolor="none" y="123" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="XbZ3D3CcAFYr" showstereotype="1" text="2: udp transmit" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="258" x="341" fillcolor="none" y="285" operation="gECq6SAhgAnc" linewidth="none" widgetbid="MYJhY8MGUAGC" height="73" usefillcolor="1" seqnum="3" textid="obj7VCgvUwKt" widgetaid="VdSWbixvlioc" isinstance="0" xmi.id="sUytiRWE9eJQ" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="223" x="369" fillcolor="none" y="263" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="obj7VCgvUwKt" showstereotype="1" text="3: updateContacts(contacts : list)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="50" x="597" fillcolor="none" y="268" operation="response timeout" linewidth="none" widgetbid="VdSWbixvlioc" height="105" usefillcolor="1" seqnum="3" textid="8RPSLBoHzsnD" widgetaid="VdSWbixvlioc" isinstance="0" xmi.id="sixB6jmpqFzV" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="137" x="602" fillcolor="none" y="246" linewidth="none" posttext="" role="705" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="8RPSLBoHzsnD" showstereotype="1" text="3: response timeout" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+         <messagewidget usesdiagramfillcolor="1" width="228" x="121" fillcolor="none" y="304" operation="VnwqMZjDkrXk" linewidth="none" widgetbid="glT0M0pfkOpz" height="32" usefillcolor="1" seqnum="5" textid="E1CNpTMfFXQ1" widgetaid="MYJhY8MGUAGC" isinstance="0" xmi.id="oUeVFSLSPobr" sequencemessagetype="1000" showstereotype="1" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" >
+          <floatingtext usesdiagramfillcolor="1" width="208" x="133" fillcolor="none" y="282" linewidth="none" posttext="" role="704" height="22" usefillcolor="1" pretext="" isinstance="0" xmi.id="E1CNpTMfFXQ1" showstereotype="1" text="5: removeContact(nodeID : str)" usesdiagramusefillcolor="1" font="Sans,10,-1,5,50,0,0,0,0,0" linecolor="none" />
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+      </diagrams>
+     </XMI.extension>
+    </UML:Model>
+    <UML:Model stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="Use Case View" isRoot="false" isAbstract="false" name="Use Case View" >
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="Component View" isRoot="false" isAbstract="false" name="Component View" >
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="Deployment View" isRoot="false" isAbstract="false" name="Deployment View" >
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isSpecification="false" isLeaf="false" visibility="public" namespace="m1" xmi.id="Entity Relationship Model" isRoot="false" isAbstract="false" name="Entity Relationship Model" >
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello" >
+  <docsettings viewid="sx1Bd4fsczoQ" documentation="" uniqueid="J3MFs3ECNVTq" />
+  <listview>
+   <listitem open="1" type="800" label="Views" >
+    <listitem open="1" type="801" id="Logical View" >
+     <listitem open="0" type="807" id="mOoYOUXuSxyI" label="Class diagram" />
+     <listitem open="0" type="810" id="B5JD3Bq06iQv" label="Sequence diagram: FIND_NODE" />
+     <listitem open="0" type="810" id="wEPAa9wuw8md" label="Sequence diagram: FIND_VALUE" />
+     <listitem open="0" type="810" id="0WQB0Fjwzows" label="Sequence diagram: Node joins network" />
+     <listitem open="0" type="810" id="sx1Bd4fsczoQ" label="Sequence diagram: PING" />
+     <listitem open="0" type="810" id="1RMnJboeiuI0" label="Sequence diagram: PING (no response)" />
+     <listitem open="0" type="810" id="wqqWcEQ7o7RL" label="Sequence diagram: STORE" />
+     <listitem open="0" type="813" id="Xf4wyu4BjGbV" />
+     <listitem open="1" type="813" id="7QT8DoQCXWXv" />
+     <listitem open="1" type="813" id="F0BvEIsmGaS6" />
+     <listitem open="1" type="818" id="DpDSnWEAIkYk" >
+      <listitem open="0" type="813" id="GEZ8qdeWfnMw" >
+       <listitem open="0" type="814" id="QuK9lDznoAno" />
+       <listitem open="0" type="814" id="8zpbiI0ac9Lq" />
+       <listitem open="0" type="814" id="GdH9PrvVpi5V" />
+       <listitem open="0" type="815" id="9zGxX6umLqWB" />
+      </listitem>
+      <listitem open="1" type="813" id="NbT6Jwpyf3r2" >
+       <listitem open="0" type="815" id="G4NSul3NpKHd" />
+       <listitem open="1" type="815" id="FBMe15MRUZ88" />
+      </listitem>
+      <listitem open="1" type="813" id="jdBZBejROQK7" >
+       <listitem open="0" type="814" id="yFzSkx7TJKZd" />
+       <listitem open="1" type="815" id="QZdpxdk3UEUL" />
+       <listitem open="1" type="815" id="fSrsnocF3ZE9" />
+       <listitem open="1" type="815" id="VnwqMZjDkrXk" />
+      </listitem>
+      <listitem open="1" type="813" id="2LUfambgQJs8" >
+       <listitem open="1" type="814" id="HTCDRUJRpl4N" />
+       <listitem open="0" type="814" id="4k6SOUCwWuJ3" />
+       <listitem open="0" type="814" id="GYWo3nRWdttU" />
+       <listitem open="0" type="814" id="3VNMHtAySJOJ" />
+       <listitem open="0" type="815" id="mMhORi6Lkhr2" />
+       <listitem open="1" type="815" id="knf0YBkncu03" />
+       <listitem open="1" type="815" id="C6JfG9zXykip" />
+       <listitem open="0" type="815" id="90UbpbfYQgg6" />
+       <listitem open="0" type="815" id="gECq6SAhgAnc" />
+       <listitem open="1" type="815" id="ef3Oan6hCijh" />
+       <listitem open="1" type="815" id="g2b2RDuZuyMa" />
+       <listitem open="1" type="815" id="0n9lCsI1Knxq" />
+      </listitem>
+      <listitem open="1" type="813" id="7GHDWr88ADzp" >
+       <listitem open="0" type="815" id="in3mPH4C1RF2" />
+       <listitem open="0" type="815" id="7yTzhrIMy1us" />
+       <listitem open="1" type="815" id="Bv7A4ERLQxAW" />
+       <listitem open="0" type="815" id="E5HkGCTccCRU" />
+       <listitem open="0" type="815" id="QjAXZnVh4d4i" />
+      </listitem>
+     </listitem>
+     <listitem open="0" type="818" id="7meKJjex8e6q" >
+      <listitem open="0" type="818" id="n0aQFZaDttWL" >
+       <listitem open="0" type="818" id="9amvxNu37WNQ" >
+        <listitem open="1" type="813" id="E1MMdSDOTnog" />
+       </listitem>
+      </listitem>
+     </listitem>
+     <listitem open="0" type="830" id="Datatypes" />
+    </listitem>
+    <listitem open="1" type="802" id="Use Case View" />
+    <listitem open="1" type="821" id="Component View" />
+    <listitem open="1" type="827" id="Deployment View" />
+    <listitem open="1" type="836" id="Entity Relationship Model" />
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="Python" />
+  </codegeneration>
+ </XMI.extensions>
+</XMI>

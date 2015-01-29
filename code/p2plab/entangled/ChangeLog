@@ -1,0 +1,33 @@
+* Francois Aucamp <faucamp@csir.co.za> - 0.2
+- Added several robustness patches by Haiyang Ma
+- Several misc bugfixes
+
+* Mon Feb 04 2008 Francois Aucamp <faucamp@csir.co.za> - 0.1
+- New release: 0.1
+- Added "build_apidocs" command to setup.py to allow creation of API
+  documentation via the installer
+- Added README
+- Updated AUTHORS
+
+
+* Thu Jan 31 2008 Francois Aucamp <faucamp@csir.co.za> - 0.0.svn150
+- Preparing for initial 0.1 release
+- Thanks to Haiyang Ma for providing a patch for the KademliaProtocol class,
+  fixing an issue with UDP datagram transmission delays
+- This snapshot is functional, although some package restructuring and API
+  breakage might occur in the course of the 0.1 - 0.3 release timeframe
+- Implemented features:
+  - Kademlia DHT implementation, with 3 different routing table implementations
+  - 2 example data storage ("datastore") implementations
+  - basic UDP-based RPC protocol; used for network organisation, but may be
+    used for other things as well (e.g. file transfer). No NAT traversal yet.
+  - "DELETE" RPC allowing removal of key/value pairs from the DHT
+  - Keyword-based higher level search/store procedures using inverted indexes
+    (for keyword searching)
+  - De-centralized, distributed tuple space, supporting the following Linda
+    concepts:
+    - "in"  ("get" in Entangled)
+    - "rd"  ("read" in Entangled)
+    - "out" ("put" in Entangled)
+- Added example scripts: create_network.py, fileshare.py, gui.py
+- Added unittests
