@@ -95,7 +95,7 @@ Each node will also provide an HTTP endpoint that responds to POST of valid mess
 The functions can be described as follows:
 
 * ```getPeer()```&mdash;selects a neighbor from a list of peers. 
-* ```prepareMessage()```&mdash;return a message to propagate to a specific neighbor
+* ```prepareMessage()```&mdash;return a message to propagate to a specific neighbor; randomly choose message type
 * ```update()```&mdash; update state of who has been send what. 
 * ```send()```&mdash;make HTTP POST to send message
 
