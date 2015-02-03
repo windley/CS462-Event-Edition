@@ -95,19 +95,28 @@ Lectures:
       - title: The Live Web, Chapters 1-4
         author: Phillip J. Windley
   -
-    title: "Event Driven Systems: Event Processing Patterns"
-    reading:
-      - title: The Live Web, Chapters 11-14
-        author: Phillip J. Windley
-  -
     title: "Introduction to KRL"
+    reading:
+      - title: The Live Web, Chapter 5
+        author: Phillip J. Windley
+      - title: KRL Quickstart
+        url: http://developer.kynetx.com/display/docs/Quickstart
+      - title: Tips for KRL Developers
+        url: http://developer.kynetx.com/display/docs/Tips+for+Developers
+      - title: "Sorting It All Out: SquareTag, CloudOS, and KRL"
+        url: http://developer.kynetx.com/display/docs/Sorting+It+All+Out%3A+SquareTag%2C+CloudOS%2C+and+KRL
   -
     title: "Event Driven Systems: Persistent Compute Objects (picos)"
     reading:
       - title: 
         author: 
   -
-    title: "Distributed Transactions: Transactions in MVC"
+    title: "Event Driven Systems: Event Processing Patterns"
+    reading:
+      - title: The Live Web, Chapters 11-14
+        author: Phillip J. Windley
+  -
+    title: "Transactions in MVC"
     topics: transactions, two-phase commit, transaction monitors
   -
     title: "Distributed Transactions: Transactions in RESTful systems"
@@ -125,20 +134,14 @@ Lectures:
         author:
         url: "http://dl.acm.org/citation.cfm?doid=75104.75105"
   -
-    title: "Consensus: Byzantine Generals Problem"
-    reading:
-      - title: "Practical Byzantine Fault Tolerance"
-        author:
-        url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/bft.pdf"
-  -
     title: "Consensus: Paxos"
     reading:
-      - title: "Paxos Made Simple"
-        author: Leslie Lamport
-        url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf"
       - title: The Part-Time Parliament
         author: Leslie Lamport 
         url: "http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf"
+      - title: "Paxos Made Simple"
+        author: Leslie Lamport
+        url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf"
   -
     title: "Consensus: Blockchain"
     reading:
@@ -177,6 +180,8 @@ Lectures:
         url: "http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv"
   -
     title: Design Exercise II
+  -
+    title: Guest Lecture
   -
     title: Guest Lecture
   -

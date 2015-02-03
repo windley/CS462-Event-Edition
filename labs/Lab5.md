@@ -16,7 +16,7 @@ Protocol](http://www.cs.cornell.edu/~asdas/research/dsn02-SWIM.pdf)
 
 * This lab builds upon the work you did in Lab 3. 
 
-# Gossip Messages
+# Part 1: Gossip Messages
 
 The foundation of your gossip system will be messages that are exchanged between different instances of your software (or your friend's software if you implement it with interoperability in mind).
 
@@ -105,7 +105,7 @@ You will need a Web page for entering and displaying chat messages. A simple TEX
 
 When the user submits a new message, you will need to add it to list of messages for this node and increment the sequence number. Note that you *don't* need to actually propagate the rumor. That will be done by the first algorithm shown above. 
 
-# Deliverables 1
+# Deliverables for Part 1
 
 0. Implement the simple gossip scheme described above. Use the multi-tenancy you built in Lab 3 to allow it to work for multiple accounts from a single machine. Note that each account will need it's own URL for POSTing messages and the interaction between them should NOT assume they are on the same machine (even if they are). 
 1. Test it by running three or four nodes of your own. 
@@ -123,7 +123,7 @@ When the user submits a new message, you will need to add it to list of messages
 3. Why would a UUID be better than a long random number for creating the origin ID?
 4. The propagation algorithm sleeps for ```n``` seconds between each iteration. What are the trade-offs between a low and high value for ```n```. 
 
-# Adding Peers
+# Part 2: Adding Peers
 
 Add a mechanism to keep track of a dynamically modifiable list of peers, each of which can have its own URL for POSTing messages.  This list will be the set of neighbors you pick from to gossip with. 
 
@@ -134,7 +134,7 @@ Your peer list should by default (on startup) include your nodes.  You should ha
 
 The above functionality should give your application everything it needs, at least in theory, to operate “at large” over the Internet.
 
-# Deliverables 2
+# Deliverables for Part 2
 
 0. Add dynamic peers to your gossip application
 1. Test it by adding new nodes from both your own system and those of classmates.  Don't add all their nodes, just one.
