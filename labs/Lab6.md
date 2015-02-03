@@ -1,4 +1,4 @@
-# Lab 5: Event-Based Programming
+# Lab 6: Event-Based Programming
 
 The purpose of this lab is to gain experience in programming event-based systems. 
 
@@ -32,7 +32,7 @@ The purpose of this lab is to gain experience in programming event-based systems
 
 5. Write a second ruleset that contains a rule that also responds to the ```echo:message``` event with an attribute ```input```. This rule should return a directive named ```sing``` with the option ```song``` set to the value of the ```input``` attribute.
 
-6. Repeat the test you ran in (4) above. 
+6. Repeat the test you ran in (5) above. 
 
 # Deliverables for Part 1
 
@@ -43,9 +43,9 @@ The purpose of this lab is to gain experience in programming event-based systems
 
 ## Questions for Part 1
 
-0. What was the output of the test you ran in (4)?  How many directives were returned? How many rules do you think ran? 
+0. What was the output of the test you ran in (5)?  How many directives were returned? How many rules do you think ran? 
 
-1. What was the output of the test you ran in (6)?  How many directives were returned? How many rules do you think ran? 
+1. What was the output of the test you ran in (7)?  How many directives were returned? How many rules do you think ran? 
 
 2. How do you account for the difference? 
 
