@@ -54,7 +54,7 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 5</td>
-    <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
+    <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://research.google.com/archive/mapreduce.html'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
 </tr>

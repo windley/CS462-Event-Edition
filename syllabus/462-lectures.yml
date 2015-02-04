@@ -61,7 +61,7 @@ Lectures:
     reading:
       - title: "MapReduce: simplified data processing on large clusters"
         author: Jeffrey Dean, Sanjay Ghemawat
-        url: http://dl.acm.org/citation.cfm?id=1327452.1327492&coll=DL&dl=GUIDE
+        url: http://research.google.com/archive/mapreduce.html
       - title: "Amazon Elastic MapReduce"
         author: "Amazon Web Services, Inc."
         url: http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html
