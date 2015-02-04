@@ -25,10 +25,12 @@
 
 ## Questions
 
-1. What is the role of the master? 
+1. What is the role of the master?
+2. What is the role of the mapper?
+2. How does the mapper role differ from the role of the reducer? 
+4. Why is there one grouper?
 2. What work happened independently?
 3. What work was dependent on other work?
-4. Why is there one grouper?
 5. How much longer would it take to count all the occurrences of every proper noun in the Book of Mormon, assuming you had enough workers to assign a chapter to each and increase the reducers proportionally?
 6. How would you apply this method to
 	1. Grouping words by length
