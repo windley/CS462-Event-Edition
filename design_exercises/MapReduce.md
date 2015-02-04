@@ -30,3 +30,7 @@
 3. What work was dependent on other work?
 4. Why is there one grouper?
 5. How much longer would it take to count all the occurrences of every proper noun in the Book of Mormon, assuming you had enough workers to assign a chapter to each and increase the reducers proportionally?
+6. How would you apply this method to
+	1. Grouping words by length
+	2. Find all verses that mention a specific word
+	3. Count URL accesses for a large Web site with 1000s of servers
