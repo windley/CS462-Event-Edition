@@ -16,7 +16,7 @@ The purpose of this lab is to make you familiar with MapReduce as an example of 
 # Running the Word Count Sample 
 
 0. Create a bucket in S3 using ```byu.<netID>``` as the name where ```<netID>``` is replaced by your net ID.
-0. Follow the Amazon EMR instructions to run the sample "word count" application. Be sure to use your bucket for output and logging. Also, please configure the job to auto-terminate.
+0. Follow the Amazon EMR instructions to run the sample ["word count"](http://aws.amazon.com/articles/2273) application. Be sure to use your bucket for output and logging. Also, please configure the job to auto-terminate.
 0. Use the Monitor to watch your job run.  The status will change to "Waiting" after the job has completed.
 0. Ensure the cluster terminates (i.e. the status should be "terminated") since these are large (and hence, expensive) servers.
 
