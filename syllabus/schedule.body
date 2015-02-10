@@ -56,6 +56,11 @@ completed. </em>
 <tr><td valign="top" align="right">Feb 5</td>
     <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://research.google.com/archive/mapreduce.html'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
     <td valign="top"></td>
+    <td valign="top"></td>
+</tr>
+<tr><td valign="top" align="right">Feb 7</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab3.md">Lab 3: APIs and OAuth</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 10</td>
@@ -106,7 +111,7 @@ completed. </em>
 <tr><td valign="top" align="right">Mar 12</td>
     <td valign="top">Distributed Transactions: Transactions in RESTful systems<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></div></td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab6.md">Lab 6: Event-Based Programming</a></td>
 </tr>
 <tr><td valign="top" align="right">Mar 17</td>
     <td valign="top">Memory Coherence<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?doid=75104.75105'>Memory Coherence in Shared Virtual Memory Systems </a></div></td>

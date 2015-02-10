@@ -32,3 +32,11 @@ The purpose of this lab is to make you familiar with MapReduce as an example of 
 
 0. Note that the most frequent words are mostly uninteresting. These are called [stop words](https://en.wikipedia.org/wiki/Stop_words). Use this [list of English stop words](https://github.com/windley/CS462-Event-Edition/blob/master/code/mapreduce/stop-words) to modify the scripts once more so that they don't count stop words.
 0. Now that your script sorts and removes stop words, run it on the text of a largish document such as one of the [books at Project Gutenberg](https://www.gutenberg.org/)
+
+# Deliverables
+
+0. Compare the time it took to run (1) above and to run it on the command line (2). Why does the command line seem so much faster?
+
+1. Provide your code for (2) and (3) above (you may also supply links).
+
+2. Discuss the results of (4). Why do you think you got the results you did? 
