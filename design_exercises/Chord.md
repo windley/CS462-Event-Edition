@@ -10,7 +10,7 @@ Answer the following questions:
 
 1. Draw the chords of looking up key 12 from node 21 before and after the change in (1) above.
 
-2. If we insert a node into a Chord system, so all of the affected finger tables need to be instantly updated?  justify your answer.
+2. If we insert a node into a Chord system, do all of the affected finger tables need to be instantly updated?  justify your answer.
 
 
 [fig54]: figures/tanenbaum-5.4.png
