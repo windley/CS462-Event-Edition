@@ -31,6 +31,10 @@ Message IDs will consist of two parts (for reasons that will become clear in a m
 0. A unique *origin ID*. Use a UUID. You'll need a UUID library for whatever language you're using. If no UUID library is available, you can make do with a long random number for this lab, although that would not be a good solution in a production system. 
 1. A *sequence number* that distinguishes successive messages from a given origin. Each chat node will assign sequence numbers to chat messages consecutively starting with 0.
 
+We'll separate the two parts with a colon, so a complete message ID might look like this:
+
+    ABCD-1234-ABCD-1234-ABCD-1234:5
+
 Message IDs made in this way make it easy for peers to compare notes on which messages from which other peers they have or have not yet received. For example, if A has seen messages originating from C up to sequence number 5, and compares notes with B who has seen C's messages only up to sequence number 3, then A knows that it should propagate C's messages 4 and 5 to B.
 
 There are two kinds of messages:
@@ -44,7 +48,7 @@ There are two kinds of messages:
 
 	Here's an example:
 
-            {"Rumor" : {"MessageID": "ABCD-1234-ABCD-1234-ABCD-1234" ,
+            {"Rumor" : {"MessageID": "ABCD-1234-ABCD-1234-ABCD-1234:5" ,
                         "Originator": "Phil",
                         "Text": "Hello World!"
 						},
@@ -54,7 +58,7 @@ There are two kinds of messages:
 * __Want Message:__ summarizes the set of messages the sending peer has seen so far. The message is a JSON object containing the following fields:
     * ```Want```&mdash;a JSON object with the following fields:
 		* ```<OriginID>```&mdash;the keys are the origin IDs that the sender knows about. The value associated with each key is a numeric value of the highest sequence value from this ```OriginID``` that the sender has seen. 
-	* ```EndPoint```&mdash;URL of the node propagating the rumor
+	* ```EndPoint```&mdash;URL of the node propagating the rumor; you'll need this for part II below. 
 
 	Here's an example:
 
@@ -95,7 +99,7 @@ Each node will also provide an HTTP endpoint that responds to POST of valid mess
 The functions can be described as follows:
 
 * ```getPeer()```&mdash;selects a neighbor from a list of peers. 
-* ```prepareMessage()```&mdash;return a message to propagate to a specific neighbor; randomly choose message type
+* ```prepareMessage()```&mdash;return a message to propagate to a specific neighbor; randomly choose message type (```rumor``` or ```want```) and which message. 
 * ```update()```&mdash; update state of who has been send what. 
 * ```send()```&mdash;make HTTP POST to send message
 
@@ -103,7 +107,7 @@ The functions can be described as follows:
 
 You will need a Web page for entering and displaying chat messages. A simple TEXTAREA for entering a messages followed by a list of messages received would be enough.
 
-When the user submits a new message, you will need to add it to list of messages for this node and increment the sequence number. Note that you *don't* need to actually propagate the rumor. That will be done by the first algorithm shown above. 
+When the user submits a new message, you will need to add it to list of messages for this node and increment the sequence number. Note that you *don't* need to actually propagate the rumor. That will be done by the first algorithm shown above. You cloud have  way to "poke" it and wake it up depending on how you've implemented it. 
 
 # Deliverables for Part 1
 

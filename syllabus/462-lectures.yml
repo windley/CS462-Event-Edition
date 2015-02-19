@@ -82,13 +82,14 @@ Lectures:
         url: "http://dl.acm.org/citation.cfm?id=638336"
   -
     title: CAP Theorem
+    topics: safety, liveness, reliability, availability, consistency, partitioning, atomicity
     reading:
       - title: "A plain English introduction to CAP theorem"
         author: Kaushik Sathupadi
         url: "http://ksat.me/a-plain-english-introduction-to-cap-theorem/"
       - title: "Perspectives on the CAP Theorem"
         author: Seth Gilbert, Nancy A. Lynch
-        url: "http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html"
+        url: "http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer2.pdf"
   -
     title: "Event Driven Systems: Event Expressions"
     reading:
@@ -127,12 +128,24 @@ Lectures:
     - title: "How to GET a Cup of Coffee"
       author: Jim Webber
       url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
-  -
-    title: Memory Coherence
-    reading:
-      - title: "Memory Coherence in Shared Virtual Memory Systems "
-        author:
-        url: "http://dl.acm.org/citation.cfm?doid=75104.75105"
+  # -
+  #   title: Partitioning 
+  #   reading:
+  #     - title: "Disconnected operation in the Coda File System"
+  #       author: James J. Kistler, M. Satyanarayanan
+  #       url: "http://dl.acm.org/citation.cfm?doid=146941.146942"
+  #     - title: "Managing update conflicts in Bayou, a weakly connected replicated storage system"
+  #       author: D. B. Terry, M. M. Theimer, Karin Petersen, A. J. Demers, M. J. Spreitzer, C. H. Hauser
+  #       url: "http://dl.acm.org/citation.cfm?doid=224056.224070"
+  #     - title: "Spanner: Google's globally-distributed database"
+  #       author: James C. Corbett, et. al.
+  #       url: "https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf"
+  # -
+  #   title: Memory Coherence
+  #   reading:
+  #     - title: "Memory Coherence in Shared Virtual Memory Systems "
+  #       author:
+  #       url: "http://dl.acm.org/citation.cfm?doid=75104.75105"
   -
     title: "Consensus: Paxos"
     reading:
@@ -143,6 +156,8 @@ Lectures:
         author: Leslie Lamport
         url: "http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf"
   -
+    title: "Guest Lecture: Alen Peacock, Vivint"
+  -
     title: "Consensus: Blockchain"
     reading:
       - title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
@@ -151,18 +166,6 @@ Lectures:
       - title: "How the Bitcoin protocol actually works"
         author: Michael Nielsen
         url: "http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/"
-  -
-    title: Partitioning 
-    reading:
-      - title: "Disconnected operation in the Coda File System"
-        author: James J. Kistler, M. Satyanarayanan
-        url: "http://dl.acm.org/citation.cfm?doid=146941.146942"
-      - title: "Managing update conflicts in Bayou, a weakly connected replicated storage system"
-        author: D. B. Terry, M. M. Theimer, Karin Petersen, A. J. Demers, M. J. Spreitzer, C. H. Hauser
-        url: "http://dl.acm.org/citation.cfm?doid=224056.224070"
-      - title: "Spanner: Google's globally-distributed database"
-        author: James C. Corbett, et. al.
-        url: "https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf"
   -
     title: Micoservices
     reading:
@@ -179,9 +182,11 @@ Lectures:
         author: John Wetherill
         url: "http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv"
   -
-    title: Design Exercise II
+    title: Design Exercise II, part I
   -
-    title: Guest Lecture
+    title: Design Exercise II, part II
+  -
+    title: "Guest Lecture: Tom Creighton, Family Search"
   -
     title: Guest Lecture
   -

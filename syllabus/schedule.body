@@ -79,7 +79,7 @@ completed. </em>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab4.md">Lab 4: MapReduce</a></td>
 </tr>
 <tr><td valign="top" align="right">Feb 19</td>
-    <td valign="top">CAP Theorem<div style='margin-top: 5px'><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://www.computer.org/csdl/mags/co/2012/02/mco2012020030-abs.html'>Perspectives on the CAP Theorem</a></div></td>
+    <td valign="top">CAP Theorem<div style='margin-top: 5px'><a href='http://ksat.me/a-plain-english-introduction-to-cap-theorem/'>A plain English introduction to CAP theorem</a><br/><a href='http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer2.pdf'>Perspectives on the CAP Theorem</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -91,12 +91,12 @@ completed. </em>
 <tr><td valign="top" align="right">Feb 26</td>
     <td valign="top">Introduction to KRL<div style='margin-top: 5px'>The Live Web, Chapter 5<br/><a href='http://developer.kynetx.com/display/docs/Quickstart'>KRL Quickstart</a><br/><a href='http://developer.kynetx.com/display/docs/Tips+for+Developers'>Tips for KRL Developers</a><br/><a href='http://developer.kynetx.com/display/docs/Sorting+It+All+Out%3A+SquareTag%2C+CloudOS%2C+and+KRL'>Sorting It All Out: SquareTag, CloudOS, and KRL</a></div></td>
     <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md">Lab 5: Gossip-Protocol Chat System</a></td>
+    <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 3</td>
     <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)<div style='margin-top: 5px'></div></td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md">Lab 5: Gossip-Protocol Chat System</a></td>
 </tr>
 <tr><td valign="top" align="right">Mar 5</td>
     <td valign="top">Event Driven Systems: Event Processing Patterns<div style='margin-top: 5px'>The Live Web, Chapters 11-14</div></td>
@@ -111,15 +111,15 @@ completed. </em>
 <tr><td valign="top" align="right">Mar 12</td>
     <td valign="top">Distributed Transactions: Transactions in RESTful systems<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></div></td>
     <td valign="top"></td>
-    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab6.md">Lab 6: Event-Based Programming</a></td>
+    <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 17</td>
-    <td valign="top">Memory Coherence<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?doid=75104.75105'>Memory Coherence in Shared Virtual Memory Systems </a></div></td>
+    <td valign="top">Consensus: Paxos<div style='margin-top: 5px'><a href='http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf'>The Part-Time Parliament</a><br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf'>Paxos Made Simple</a></div></td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab6.md">Lab 6: Event-Based Programming</a></td>
 </tr>
 <tr><td valign="top" align="right">Mar 19</td>
-    <td valign="top">Consensus: Paxos<div style='margin-top: 5px'><a href='http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf'>The Part-Time Parliament</a><br/><a href='http://cseweb.ucsd.edu/classes/sp11/cse223b/papers/paxos-simple.pdf'>Paxos Made Simple</a></div></td>
+    <td valign="top">Guest Lecture: Alen Peacock, Vivint<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -129,22 +129,22 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 26</td>
-    <td valign="top">Partitioning<div style='margin-top: 5px'><a href='http://dl.acm.org/citation.cfm?doid=146941.146942'>Disconnected operation in the Coda File System</a><br/><a href='http://dl.acm.org/citation.cfm?doid=224056.224070'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a><br/><a href='https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf'>Spanner: Google's globally-distributed database</a></div></td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-</tr>
-<tr><td valign="top" align="right">Mar 31</td>
     <td valign="top">Micoservices<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Microservices and PaaS - Part I</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii'>Microservices and PaaS - Part II</a><br/><a href='http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii'>Microservices and PaaS - Part III</a><br/><a href='http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv'>Microservices and PaaS - Part IV</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
+<tr><td valign="top" align="right">Mar 31</td>
+    <td valign="top">Design Exercise II, part I<div style='margin-top: 5px'>No assigned reading</div></td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+</tr>
 <tr><td valign="top" align="right">Apr 2</td>
-    <td valign="top">Design Exercise II<div style='margin-top: 5px'>No assigned reading</div></td>
+    <td valign="top">Design Exercise II, part II<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Apr 7</td>
-    <td valign="top">Guest Lecture<div style='margin-top: 5px'>No assigned reading</div></td>
+    <td valign="top">Guest Lecture: Tom Creighton, Family Search<div style='margin-top: 5px'>No assigned reading</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
