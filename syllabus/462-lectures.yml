@@ -96,6 +96,16 @@ Lectures:
       - title: The Live Web, Chapters 1-4
         author: Phillip J. Windley
   -
+    title: "Event Driven Systems: Persistent Compute Objects (picos)"
+    reading:
+      - title: 
+        author: 
+  -
+    title: "Event Driven Systems: Event Processing Patterns"
+    reading:
+      - title: The Live Web, Chapters 11-14
+        author: Phillip J. Windley
+  -
     title: "Introduction to KRL"
     reading:
       - title: The Live Web, Chapter 5
@@ -106,16 +116,6 @@ Lectures:
         url: http://developer.kynetx.com/display/docs/Tips+for+Developers
       - title: "Sorting It All Out: SquareTag, CloudOS, and KRL"
         url: http://developer.kynetx.com/display/docs/Sorting+It+All+Out%3A+SquareTag%2C+CloudOS%2C+and+KRL
-  -
-    title: "Event Driven Systems: Persistent Compute Objects (picos)"
-    reading:
-      - title: 
-        author: 
-  -
-    title: "Event Driven Systems: Event Processing Patterns"
-    reading:
-      - title: The Live Web, Chapters 11-14
-        author: Phillip J. Windley
   -
     title: "Transactions in MVC"
     topics: transactions, two-phase commit, transaction monitors
