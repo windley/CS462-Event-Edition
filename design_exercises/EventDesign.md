@@ -16,7 +16,7 @@ Assume the following event streams:
 
 0. Twitter stream (```tweet:received```) with attributes ```body``` and ```from```
 0. Email IMAP account (```email:received```, ```email:sent```, ```email:forwarded```) with attributes, ```to```, ```from```, ```subj```, and ```body```
-0. Stock price update stream (```stock:update```) with attribute ```ticker```, ```price```, ```change```, ```percent```, and ```name```)
+0. Stock price update stream (```stock:update```) with attributes ```ticker```, ```price```, ```change```, ```percent```, and ```name```
 0. Web pageview (```web:pageview```) with attributes ```url```, ```title```, and ```referer```.
 
 Write event expressions that select the following:
