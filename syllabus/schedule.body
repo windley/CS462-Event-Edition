@@ -89,17 +89,17 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 26</td>
-    <td valign="top">Introduction to KRL<div style='margin-top: 5px'>The Live Web, Chapter 5<br/><a href='http://developer.kynetx.com/display/docs/Quickstart'>KRL Quickstart</a><br/><a href='http://developer.kynetx.com/display/docs/Tips+for+Developers'>Tips for KRL Developers</a><br/><a href='http://developer.kynetx.com/display/docs/Sorting+It+All+Out%3A+SquareTag%2C+CloudOS%2C+and+KRL'>Sorting It All Out: SquareTag, CloudOS, and KRL</a></div></td>
+    <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)<div style='margin-top: 5px'><a href='http://www.windley.com/archives/2013/10/fundamental_features_of_persistent_compute_objects.shtml'>Fundamental Features of Persistent Compute Objects</a><br/><a href='http://www.windley.com/archives/2013/12/pico_apis_events_and_queries.shtml'>Pico APIs: Events and Queries</a><br/><a href='http://www.windley.com/archives/2013/04/pot_holes_and_picos.shtml'>Pot Holes and Picos</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 3</td>
-    <td valign="top">Event Driven Systems: Persistent Compute Objects (picos)<div style='margin-top: 5px'></div></td>
+    <td valign="top">Event Driven Systems: Event Processing Patterns<div style='margin-top: 5px'>The Live Web, Chapters 11-14</div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md">Lab 5: Gossip-Protocol Chat System</a></td>
 </tr>
 <tr><td valign="top" align="right">Mar 5</td>
-    <td valign="top">Event Driven Systems: Event Processing Patterns<div style='margin-top: 5px'>The Live Web, Chapters 11-14</div></td>
+    <td valign="top">Introduction to KRL<div style='margin-top: 5px'>The Live Web, Chapter 5<br/><a href='http://developer.kynetx.com/display/docs/Quickstart'>KRL Quickstart</a><br/><a href='http://developer.kynetx.com/display/docs/Tips+for+Developers'>Tips for KRL Developers</a><br/><a href='http://developer.kynetx.com/display/docs/Sorting+It+All+Out%3A+SquareTag%2C+CloudOS%2C+and+KRL'>Sorting It All Out: SquareTag, CloudOS, and KRL</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

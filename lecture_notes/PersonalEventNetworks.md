@@ -7,7 +7,7 @@ The lectures discusses
 
 ## Entity Variables
 
-The form-submit example ([a16x69.krl](/lecture_notes/krl/form_submit/a16x69.krl)) shows the following:
+The form-submit example ([a16x69.krl](../code/krl/form_submit/a16x69.krl)) shows the following:
 
 * initialize and populate rule pattern
 * entity storage
@@ -22,9 +22,9 @@ The form-submit example ([a16x69.krl](/lecture_notes/krl/form_submit/a16x69.krl)
 
 The following rulesets all listen for the <tt>thermostat:temperature</tt> event:
 
-* [CT30 Thermostat service](/lecture_notes/krl/CT30_Thermostat_Service/a16x149.krl)
-* [Temperature app](/lecture_notes/krl/Temperature_app/a16x164.krl)
-* [Light Controller](/lecture_notes/krl/Hue_app/a16x166.krl)
+* [CT30 Thermostat service](../code/krl/CT30_Thermostat_Service/a16x149.krl)
+* [Temperature app](../code/krl/Temperature_app/a16x164.krl)
+* [Light Controller](../code/krl/Hue_app/a16x166.krl)
 
 What's important:
 

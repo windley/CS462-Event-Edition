@@ -22,7 +22,7 @@ Assume the following event streams:
 Write event expressions that select the following:
 
 0. Tweets containing the keyword "healthcare"
-0. Emails with a body containing the words "BYU" and "football" in any order
+0. Emails received with a body containing the words "BYU" and "football" in any order
 0. Four tweets with the keyword "healthcare" within 4 hours
 0. Tweet with keyword "healthcare" followed by an email with "healthcare" in the body or subject
 0. More than five emails from the same person within a 20 minute period

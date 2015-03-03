@@ -98,8 +98,12 @@ Lectures:
   -
     title: "Event Driven Systems: Persistent Compute Objects (picos)"
     reading:
-      - title: 
-        author: 
+      - title: Fundamental Features of Persistent Compute Objects
+        url: http://www.windley.com/archives/2013/10/fundamental_features_of_persistent_compute_objects.shtml
+      - title: "Pico APIs: Events and Queries"
+        url: http://www.windley.com/archives/2013/12/pico_apis_events_and_queries.shtml
+      - title: Pot Holes and Picos
+        url: http://www.windley.com/archives/2013/04/pot_holes_and_picos.shtml
   -
     title: "Event Driven Systems: Event Processing Patterns"
     reading:
