@@ -39,6 +39,10 @@ See form-submit example ([a16x69.krl](../code/krl/form_submit/a16x69.krl)). Also
 		    }
 		}
 
+## Rule Sequencing
+
+The preceding example also show rule sequencing since it only fires when the new fleet has been initialized AND the profile is complete. 
+
 ## Abstract Events
 
 - Add meaning to an event
