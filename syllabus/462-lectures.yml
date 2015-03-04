@@ -123,6 +123,13 @@ Lectures:
   -
     title: "Transactions in MVC"
     topics: transactions, two-phase commit, transaction monitors
+    reading:
+    - title: "ACID"
+      author: Wikipedia
+      url: "https://en.wikipedia.org/wiki/ACID"
+    - title: "Isolation"
+      author: Wikipedia
+      url: "https://en.wikipedia.org/wiki/Isolation_(database_systems)"
   -
     title: "Distributed Transactions: Transactions in RESTful systems"
     reading:
