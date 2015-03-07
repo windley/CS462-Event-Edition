@@ -1,7 +1,5 @@
 # Lab 6: Event-Based Programming
 
-__*This lab is NOT finished. Don't start working on it yet*__
-
 The purpose of this lab is to gain experience in programming event-based systems. 
 
 # Reading
