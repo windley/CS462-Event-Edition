@@ -114,7 +114,7 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 12</td>
-    <td valign="top">Distributed Transactions: Transactions in RESTful systems<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>How to GET a Cup of Coffee</a></div></td>
+    <td valign="top">Distributed Transactions: Transactions in RESTful systems<div style='margin-top: 5px'><a href='http://www.eaipatterns.com/docs/IEEE_Software_Design_2PC.pdf'>Starbucks Does Not Use Two-Phase Commit</a><br/><a href='http://www.infoq.com/articles/webber-rest-workflow'>How to GET a Cup of Coffee</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

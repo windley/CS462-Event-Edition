@@ -135,10 +135,10 @@ Lectures:
     reading:
     - title: "Starbucks Does Not Use Two-Phase Commit"
       author: Gregor Hohpe
-      url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+      url: "http://www.eaipatterns.com/docs/IEEE_Software_Design_2PC.pdf"
     - title: "How to GET a Cup of Coffee"
       author: Jim Webber
-      url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+      url: "http://www.infoq.com/articles/webber-rest-workflow"
   # -
   #   title: Partitioning 
   #   reading:
