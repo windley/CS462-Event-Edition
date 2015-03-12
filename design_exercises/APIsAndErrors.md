@@ -32,7 +32,7 @@ Design a response in keeping with the ideas in [How to GET a Cup of Coffee][get_
 
 3. The response body
 
-Ensure that the response body includes information about how the client can make forward progress where applicable. If you use relationship attributes (```rel```) be sure to define what they mean. 
+Ensure that the response body includes information about how the client can make forward progress where applicable. If you use relationship attributes (```rel```) be sure to define what they mean.  In contemplating this, ask yourself "what are the reasonable next states in this process?"
 
 
 
