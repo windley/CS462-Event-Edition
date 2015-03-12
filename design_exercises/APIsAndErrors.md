@@ -1,5 +1,5 @@
 
-# APIs and Errors
+# APIs and Error Conditions
 
 Suppose you are designing an API to process class adds and drops for BYU. The basic form of the URL is
 
@@ -20,7 +20,12 @@ In most cases, the system will return a ```200``` status code signifying that th
 
 Consider the following scenarios:
 
-1. A ```POST``` is made to add a class for which the student doesn't have the proper prerequisites. In this case, the add cannot happen. 
+1. A ```POST``` is made to add a class for which
+
+	1. the student doesn't have the proper prerequisites.
+    2. the class is full and the student needs an add code
+
+	In these cases, the add cannot happen. 
 
 2. A ```DEL``` is made to drop a class that is a prerequisite for a course that the student has already registered for the next semester. In this case, the drop can happen only after the postrequisite course is dropped.
 
@@ -32,7 +37,7 @@ Design a response in keeping with the ideas in [How to GET a Cup of Coffee][get_
 
 3. The response body
 
-Ensure that the response body includes information about how the client can make forward progress where applicable. If you use relationship attributes (```rel```) be sure to define what they mean.  In contemplating this, ask yourself "what are the reasonable next states in this process?"
+*Ensure that the response body includes information about how the client can make forward progress* where applicable. If you use relationship attributes (```rel```) be sure to define what they mean.  In contemplating this, ask yourself "what are the reasonable next states in this process?"
 
 
 
