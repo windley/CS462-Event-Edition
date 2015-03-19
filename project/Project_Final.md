@@ -6,7 +6,7 @@
 
 - Your group must have at least two and not more than three people
 - You must use at least two APIs listed at [ProgrammableWeb](http://programmableweb.com)
-- Your architecture must be primarily event-driven (push not pull)
+- Your architecture must a significant event-driven (push not pull) element
 - You must get your project idea approved by the TA and Dr. Windley before you begin
 
 ## Accommodations
@@ -32,26 +32,25 @@ We will judge your proposal for
 - Completeness
 - Appropriate use of events to create a non-hierarchical, distributed solution
 
-__Option:__ If you can't think of something to do, you may build the flower delivery system described in [Lab 3](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab3.md) and [Lab 4](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab4.md) of last year's project. 
+__Option:__ If you can't think of something to do, you may build the flower delivery system described in these documents [Consuming and Processing Events](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab3.md) and [Event Intermediaries](https://github.com/windley/CS462-Event-Edition/blob/master/project-2013/Lab4.md). 
 
 ## Deliverables
 
-You will present your project to class during the final two class periods. You presentation should include at least:
+<!-- You will present your project to class during the final two class periods. You presentation should include at least: -->
+
+You will present your project to the TA sometime before the last day of classes. You should be prepared to discuss the problem you're solving and give a convincing demonstration that your project solves it. A few slides with pictures. might help. You should plan on the TA presentation taking no more than 10 minutes total. 
+
+You will also submit your code and a written document about your project. That is due on the last day of class and will be graded separately from your presentation.
+
+The description should include:
 
 - Statement of the problem you were solving
 - List of component APIs and why you chose them
 - Description of event generators and consumers
 - Description of the events
 - Architectural diagram and explanation
-- A demonstration of your system 
 - Methods used in constructing your solution (language, libraries, servers, etc., and their configuration). 
 - Analysis of why events were or were not a good solution to the problem you chose. Give pros and cons. 
-
-You will also submit your code and a writeup describing the foregoing points. That is due on the last day of class and will be graded separately from your presentation.
-
-A demo is nice, but not required for the presentation. Anything you can do to show how this works is a plus. 
-
-Your group will have seven minutes to make your presentation including set-up. 
 
 Ideally, you should use the class computer to access an online presentation of your project to cut down on setup time. Google presentation, Presi, Slideshare, or even just plain old Web pages will work. 
 
@@ -64,8 +63,8 @@ Grading for this lab in in three portions:
 - **Proposal** (10%)
   - Pass or fail: Submit the written proposal by the deadline and have it approved
   - Architectural diagram and explanation 
-- **Presentation** (35%)
-  - Score will be determined by Dr. Windley and the TA based on the quality of your presentation and demonstration
+- **TA Presentation** (35%)
+  - Score will be determined by TA based on the quality of your presentation and demonstration
 - **Final submission** (55%)
 	- 7% &mdash; Statement of the problem
 	- 12% &mdash; APIs you chose and why
@@ -76,4 +75,4 @@ Grading for this lab in in three portions:
 
 ## Submission
 
-Instructions on submitting the final project will be given to you by the TA before the end of the semester.
+Email your write up and link to your code to the TA before 11:59pm on  the last day of classes. 
