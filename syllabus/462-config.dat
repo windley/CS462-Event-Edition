@@ -53,6 +53,10 @@ $special{"$year,2,17"} = "<a href=\"https://github.com/windley/CS462-Event-Editi
 $special{"$year,3,7"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab5.md\">Lab 5: Gossip-Protocol Chat System</a>";
 $special{"$year,3,24"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab6.md\">Lab 6: Event-Based Programming</a>";
 
+$special{"$year,3,30"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md\">Project Proposals Due</a>";
+
+$special{"$year,4,14"} = "<a href=\"https://github.com/windley/CS462-Event-Edition/blob/master/project/Project_Final.md\">Project Due</a>";
+
 $special{"$year,4,18"} = "Final Exam; 7:00am";
 
 # lecture names

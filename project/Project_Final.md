@@ -6,7 +6,7 @@
 
 - Your group must have at least two and not more than three people
 - You must use at least two APIs listed at [ProgrammableWeb](http://programmableweb.com)
-- Your architecture must a significant event-driven (push not pull) element
+- Your architecture must primarily event-driven (push not pull) 
 - You must get your project idea approved by the TA and Dr. Windley before you begin
 
 ## Accommodations
