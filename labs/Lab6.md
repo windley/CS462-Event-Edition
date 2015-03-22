@@ -94,7 +94,7 @@ Do the following:
 
    1.  A rule named ```collect_songs``` that looks for ```explicit:sung``` events and stores the ```song``` and a timestamp in an entity variable. The entity variable should contain all the songs that have been sung.
    2. A rule named ```collect_hymns``` that looks for ```explicit:found_hymn``` events and stores the hymn and a timestamp in a different entity variable that collects hymns.
-   3. A rule named ```clear_songs``` that looks for a ```song:clear``` event and resets both of the entity variables from the rules in (1) and (2).
+   3. A rule named ```clear_songs``` that looks for a ```song:reset``` event and resets both of the entity variables from the rules in (1) and (2).
 
 2. Add three  functions to the global block of the ```song_store``` ruleset:
 
