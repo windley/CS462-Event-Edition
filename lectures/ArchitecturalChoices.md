@@ -1,6 +1,23 @@
 
 # Architectural Choices
 
+# Factors
+
+* Matching user experience requirements
+
+* Understand the load pattern of your application:
+    * flat
+    * spikey
+    * smooth rolling changes
+    * periodicity (daily, weekly, monthly, seasonal)
+
+* Understand the user identity/session characteristics of your application. Lots of user data implies complicated business logic.
+
+* What is the nature of your data? Can it be sharded? 
+
+* What is the transactional nature of the site?
+
+* Is your culture up to the architectural choices you're making?
 
 ##  Logical architecture
 
@@ -44,16 +61,3 @@
 * Reliability
 * Deployment
 
-## Other Factors
-
-* Understand the load pattern of your application:
-    * flat
-    * spikey
-    * smooth rolling changes
-    * periodicity (daily, weekly, monthly, seasonal)
-
-* Understand the user identity/session characteristics of your application. Lots of user data implies complicated business logic.
-
-* What is the transactional nature of the site?
-
-* Is your culture up to the architectural choices you're making?
