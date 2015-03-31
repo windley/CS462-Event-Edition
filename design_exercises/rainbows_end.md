@@ -7,7 +7,7 @@ This exercise covers two days.
 On the first day, do the following:
 
 1. Break into groups of 2-3 people.
-2. Pick one chapter from Rainbows End and list and briefly describe 20 technologies from the chapter that don't exist today. 
+2. Pick one chapter from Rainbows End and list and briefly describe 10 technologies from the chapter that don't exist today but are reasonable extensions of exisiting technology. 
 3. With your group, discuss one of technologies you listed above. Specifically, consider the following:
 	- Implications for society such as security, privacy, social interaction
 	- Foundational technologies that you would assume have to exist before yours could come into existence. 
