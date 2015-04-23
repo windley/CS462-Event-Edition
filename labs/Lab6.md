@@ -4,7 +4,7 @@ The purpose of this lab is to gain experience in programming event-based systems
 
 # Reading
 
-* [KRL Manual](http://developer.kynetx.com/display/docs/Manual)
+* [KRL Manual](http://developer.kynetx.com/display/docs/KRL+Manual)
 * [Tips for Developers](http://developer.kynetx.com/display/docs/Tips+for+Developers)
 * [Creating an Echo Server](http://developer.kynetx.com/display/docs/Creating+an+Echo+Server)
 
