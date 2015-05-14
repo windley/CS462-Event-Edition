@@ -22,7 +22,7 @@ Students who successfully complete CS462 will understand the following concepts:
 
 ### Computational Theory
 
-Students will understand the proper use of distributed and decentralized algorithms including
+Students will understand the proper use of distributed and decentralized architectures and algorithms including
 
 - RESTful APIs
 - Hierarchical vs heterarchical system architectures
