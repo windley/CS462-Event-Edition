@@ -14,7 +14,7 @@ Students who successfully complete CS462 will understand the following concepts:
 
 ### Computational Practice
 
-- Students can implement significant programming projects that display knowledge of a variety of distributed system architectural styles.
+- Students can implement programming projects that display knowledge of a variety of distributed system architectural styles. Some of these assignments represent significant programming projects with wide leeway in design and implementation choices. 
 - Students will analyze problems, determine solutions within the architectural style, and successfully implement those solutions.
 - Students will program both individually and as part of a team.
 - Students will use cloud-based systems to run and implement assignments
