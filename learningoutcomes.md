@@ -54,7 +54,7 @@ Students will be presented with societal outcomes of technological choices in di
 
 ### Lab Assignments
 
-Lab assignments give students an opportunity to demonstrate their knowledge of how course concepts are applied in solving problems that call for diistributed or decentralized solutions.
+Lab assignments give students an opportunity to demonstrate their knowledge of how course concepts are applied in solving problems that call for distributed or decentralized solutions.
 
 ### Quizzes
 
@@ -62,4 +62,4 @@ Quizzes are designed for students to demonstrate mastery and understanding of re
 
 ### In-class Exercises
 
-In-class exercises give students the opporunity to demonstrate synthesis and analysis of course concepts and present their understanding in small groups and in front of the class. 
+In-class exercises give students the opportunity to demonstrate synthesis and analysis of course concepts and present their understanding in small groups and in front of the class. 
