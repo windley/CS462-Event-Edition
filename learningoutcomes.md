@@ -48,3 +48,18 @@ Students will interact with peers in meaningful discussion, lead discussions in 
 ### Ethics and Computing
 
 Students will be presented with societal outcomes of technological choices in distributed and decentralized systems, analyze those outcomes, explore possible alternatives from different choices, and present their findings in small groups. 
+
+
+# Evidence of Learning
+
+### Lab Assignments
+
+Lab assignments give students an opportunity to demonstrate their knowledge of how course concepts are applied in solving problems that call for diistributed or decentralized solutions.
+
+### Quizzes
+
+Quizzes are designed for students to demonstrate mastery and understanding of reading material. 
+
+### In-class Exercises
+
+In-class exercises give students the opporunity to demonstrate synthesis and analysis of course concepts and present their understanding in small groups and in front of the class. 
