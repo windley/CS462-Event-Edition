@@ -23,6 +23,7 @@ Students who successfully complete CS462 will understand the following concepts:
 ### Computational Theory
 
 Students will understand the proper use of distributed and decentralized algorithms including
+
     - RESTful APIs
     - Hierarchical vs heterarchical system architectures
 	- MapReduce
@@ -31,6 +32,7 @@ Students will understand the proper use of distributed and decentralized algorit
 	- Peer-to-peer architectures including Paxos, gossip protocols, and blockchain
 
 Students will understand theoretical concepts and limitations of distributed systems including
+
     - network practicalities such as latency, bandwidth, topology, cost, heterogeneity, security
     - CAP theorem
 	- distributed transactions
