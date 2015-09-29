@@ -5,7 +5,7 @@
 Students who successfully complete CS462 will understand the following concepts:
 
 - Principles and concepts of designing and building distributed systems.
-- Introduction to architectures for distributed computation including map-reduce, client-server, peer to peer, and event-driven.
+- Introduction to architectures for distributed computation including map-reduce, client-server, peer-to-peer, and event-driven.
 - Cloud computing and APIs.
 - Reliability, availability, and scalability of large applications.
 

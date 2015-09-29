@@ -22,25 +22,14 @@ Lectures:
         author: Adriana Lukas
         url: https://www.youtube.com/watch?v=mNwn49YuFa0
   -
-    title: Identity and Naming
-    topics: Identity, OAuth, OpenID, URIs, DNS
+    title: Integrity, Non-Repudiation, and Confidentiality
     reading:
       - title: Draft chapter on Learning Suite
         author: 
         url: 
   -
-    title: Serialization
-    topics: XML And Schemas & JSON
-    reading:
-      - title: Serialization (Wikipedia)
-        url: https://en.wikipedia.org/wiki/Serialization
-      - title: Comparison of data serialization formats
-        url: https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
-      - title: Discovering JavaScript Object Notation
-        author: Douglas Crockford
-        url: https://www.youtube.com/watch?v=kc8BAR7SHJI
-  -
-    title: Integrity, Non-Repudiation, and Confidentiality
+    title: Identity and Naming
+    topics: Identity, OAuth, OpenID, URIs, DNS
     reading:
       - title: Draft chapter on Learning Suite
         author: 
@@ -54,6 +43,17 @@ Lectures:
       - title: Teach a Dog to REST
         author: Brian Mulloy
         url: https://www.youtube.com/watch?v=o-4mibDn_aU#t=23
+  -
+    title: Serialization
+    topics: XML And Schemas & JSON
+    reading:
+      - title: Serialization (Wikipedia)
+        url: https://en.wikipedia.org/wiki/Serialization
+      - title: Comparison of data serialization formats
+        url: https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
+      - title: Discovering JavaScript Object Notation
+        author: Douglas Crockford
+        url: https://www.youtube.com/watch?v=kc8BAR7SHJI
   -
     title: Design Exercise I
   -
@@ -93,6 +93,9 @@ Lectures:
   -
     title: "Event Driven Systems: Event Expressions"
     reading:
+      - title: What is Reactive Programming?
+        url: https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc
+        author: Kevin Webber
       - title: The Live Web, Chapters 1-4
         author: Phillip J. Windley
   -
@@ -177,21 +180,27 @@ Lectures:
       - title: "How the Bitcoin protocol actually works"
         author: Michael Nielsen
         url: "http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/"
+      - title: A Social Operating System
+        url: https://medium.com/ursium-blog/a-social-operating-system-e768072e1b84
+        author: Stephan Tual
   -
     title: Micoservices
     reading:
-      - title: Microservices and PaaS - Part I
-        author: John Wetherill
-        url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
-      - title: "Microservices and PaaS - Part II"
-        author: John Wetherill
-        url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii"
-      - title: "Microservices and PaaS - Part III"
-        author: John Wetherill
-        url: "http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii"
-      - title: "Microservices and PaaS - Part IV"
-        author: John Wetherill
-        url: "http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv"
+      - title: Microservices
+        author: James Lewis and Martin Fowler
+        url: "http://martinfowler.com/articles/microservices.html"
+      # - title: Microservices and PaaS - Part I
+      #   author: John Wetherill
+      #   url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"
+      # - title: "Microservices and PaaS - Part II"
+      #   author: John Wetherill
+      #   url: "http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii"
+      # - title: "Microservices and PaaS - Part III"
+      #   author: John Wetherill
+      #   url: "http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii"
+      # - title: "Microservices and PaaS - Part IV"
+      #   author: John Wetherill
+      #   url: "http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv"
   -
     title: Design Exercise II, part I
   -
