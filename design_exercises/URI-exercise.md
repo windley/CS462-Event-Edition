@@ -2,7 +2,7 @@
 
 _This exercise depends on each group having access to the Internet._
 
-Complete the following in your supergroup. You will have 20-30 minutes.
+Complete the following as an individual or a group. The exercise should take 30-60 minutes. 
 
 1. Review the axioms in http://www.w3.org/DesignIssues/Axioms.html and cool URIs in http://www.w3.org/Provider/Style/URI
 2. Go to Amazon.com. Observe the URLs as you click through the site. Critique the URL design.
