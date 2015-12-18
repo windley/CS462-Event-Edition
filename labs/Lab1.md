@@ -9,6 +9,7 @@ You may find these resources helpful:
 - [HTTP Headers for Dummies](http://code.tutsplus.com/tutorials/http-headers-for-dummies--net-8039)
 - [List of HTTP header fields](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
 - [List of HTTP status codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+- [Python CGI on Amazon AWS EC2 micro-instance — a how-to!](http://serverfault.com/questions/232227/python-cgi-on-amazon-aws-ec2-micro-instance-a-how-to)
 
 # Lab Requirements
 
