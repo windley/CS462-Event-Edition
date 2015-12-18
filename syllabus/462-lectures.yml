@@ -62,7 +62,7 @@ Lectures:
       - title: "MapReduce: simplified data processing on large clusters"
         author: Jeffrey Dean, Sanjay Ghemawat
         url: http://research.google.com/archive/mapreduce.html
-      - title: "Amazon Elastic MapReduce"
+      - title: "Amazon Elastic MapReduce (PDF)"
         author: "Amazon Web Services, Inc."
         url: http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html
   -
@@ -76,7 +76,7 @@ Lectures:
     reading:
       - title: "Intro to Distributed Hash Tables (DHTs)"
         author: real 
-        url: "http://www.freedomlayer.org/articles/dht_intro.html"
+        url: "https://www.newtolife.net/intro-to-distributed-hash-tables-dhts.html"
       - title: "Chord: a scalable peer-to-peer lookup protocol for internet applications"
         author: Ion Stoica, et. al.
         url: "http://dl.acm.org/citation.cfm?id=638336"

@@ -13,15 +13,15 @@ The purpose of this lab is to create a base server confirmation that will be use
 - Create a custom AMI with your basic server configuration
 - Add a bootstrapping procedure based on the User Data script supplied at launch
 
-# Log-in info 
-- Website: https://289357741533.signin.aws.amazon.com/console
-- Credentials will be supplied to you by the TA
+# Get Your AWS Educate Account
 
-*Note: you are responsible for protecting your credentials. Their loss could result in substantial charges at Amazon which BYU would be responsible for covering. If your credentials are responsible for a breach, you will lose your Amazon privileges and have to find some other way to complete class requirements.*
+You will need to [sign up for an AWS Educate account](https://www.awseducate.com/Application). Even if you already have an AWS account, this will get you $100 of free credit. 
+
+*Note: you are responsible for protecting your credentials. Their loss could result in substantial charges at Amazon which you will be responsible for covering. If your credentials are responsible for a breach, you may lose your Amazon privileges and have to find some other way to complete class requirements.*
 
 *In particular, be sure that your AWS secret and password are __never__ hard coded into a file that will be stored in any public server. This is especially true of code you upload to Github.*
 
-*Please remember to stop your instances when you are not using them. When the TA passes you off he will start your instance and stop it so you won't need to worry about leaving it running. *
+*Please remember to stop your instances when you are not using them.*
 
 # Passoff Procedure 
 - your instance should have a basic web server running, serving a web page with your name, AMI ID and a copy of your User Data script. 

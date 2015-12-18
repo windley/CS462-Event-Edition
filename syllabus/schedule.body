@@ -29,22 +29,22 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 20</td>
-    <td valign="top">Identity and Naming<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
+    <td valign="top">Integrity, Non-Repudiation, and Confidentiality<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab1.md">Lab 1: HTTP CGI, Headers, and Return Codes</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 22</td>
-    <td valign="top">Serialization<div style='margin-top: 5px'><a href='https://en.wikipedia.org/wiki/Serialization'>Serialization (Wikipedia)</a><br/><a href='https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats'>Comparison of data serialization formats</a><br/><a href='https://www.youtube.com/watch?v=kc8BAR7SHJI'>Discovering JavaScript Object Notation</a></div></td>
+    <td valign="top">Identity and Naming<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Jan 27</td>
-    <td valign="top">Integrity, Non-Repudiation, and Confidentiality<div style='margin-top: 5px'>Draft chapter on Learning Suite</div></td>
+    <td valign="top">RESTful APIs<div style='margin-top: 5px'><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab2.md">Lab 2: Hashing, Signing, and Encrypting</a></td>
 </tr>
 <tr><td valign="top" align="right">Jan 29</td>
-    <td valign="top">RESTful APIs<div style='margin-top: 5px'><a href='http://restful-api-design.readthedocs.org/en/latest/'>Thoughts on RESTful API Design</a><br/><a href='https://www.youtube.com/watch?v=o-4mibDn_aU#t=23'>Teach a Dog to REST</a></div></td>
+    <td valign="top">Serialization<div style='margin-top: 5px'><a href='https://en.wikipedia.org/wiki/Serialization'>Serialization (Wikipedia)</a><br/><a href='https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats'>Comparison of data serialization formats</a><br/><a href='https://www.youtube.com/watch?v=kc8BAR7SHJI'>Discovering JavaScript Object Notation</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -54,7 +54,7 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 5</td>
-    <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://research.google.com/archive/mapreduce.html'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce</a></div></td>
+    <td valign="top">MapReduce<div style='margin-top: 5px'><a href='http://research.google.com/archive/mapreduce.html'>MapReduce: simplified data processing on large clusters</a><br/><a href='http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-get-started-count-words.html'>Amazon Elastic MapReduce (PDF)</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -69,7 +69,7 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 12</td>
-    <td valign="top">Distributed Hash Tables<div style='margin-top: 5px'><a href='http://www.freedomlayer.org/articles/dht_intro.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></div></td>
+    <td valign="top">Distributed Hash Tables<div style='margin-top: 5px'><a href='https://www.newtolife.net/intro-to-distributed-hash-tables-dhts.html'>Intro to Distributed Hash Tables (DHTs)</a><br/><a href='http://dl.acm.org/citation.cfm?id=638336'>Chord: a scalable peer-to-peer lookup protocol for internet applications</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -84,7 +84,7 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Feb 24</td>
-    <td valign="top">Event Driven Systems: Event Expressions<div style='margin-top: 5px'>The Live Web, Chapters 1-4</div></td>
+    <td valign="top">Event Driven Systems: Event Expressions<div style='margin-top: 5px'><a href='https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc'>What is Reactive Programming?</a><br/>The Live Web, Chapters 1-4</div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>
@@ -129,12 +129,12 @@ completed. </em>
     <td valign="top"></td>
 </tr>
 <tr><td valign="top" align="right">Mar 24</td>
-    <td valign="top">Consensus: Blockchain<div style='margin-top: 5px'><a href='https://bitcoin.org/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a><br/><a href='http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/'>How the Bitcoin protocol actually works</a></div></td>
+    <td valign="top">Consensus: Blockchain<div style='margin-top: 5px'><a href='https://bitcoin.org/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a><br/><a href='http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/'>How the Bitcoin protocol actually works</a><br/><a href='https://medium.com/ursium-blog/a-social-operating-system-e768072e1b84'>A Social Operating System</a></div></td>
     <td valign="top"></td>
     <td valign="top"><a href="https://github.com/windley/CS462-Event-Edition/blob/master/labs/Lab6.md">Lab 6: Event-Based Programming</a></td>
 </tr>
 <tr><td valign="top" align="right">Mar 26</td>
-    <td valign="top">Micoservices<div style='margin-top: 5px'><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i'>Microservices and PaaS - Part I</a><br/><a href='http://www.activestate.com/blog/2014/08/microservices-and-paas-part-ii'>Microservices and PaaS - Part II</a><br/><a href='http://www.activestate.com/blog/2014/09/microservices-and-paas-part-iii'>Microservices and PaaS - Part III</a><br/><a href='http://www.activestate.com/blog/2014/10/microservices-and-paas-part-iv'>Microservices and PaaS - Part IV</a></div></td>
+    <td valign="top">Micoservices<div style='margin-top: 5px'><a href='http://martinfowler.com/articles/microservices.html'>Microservices</a></div></td>
     <td valign="top"></td>
     <td valign="top"></td>
 </tr>

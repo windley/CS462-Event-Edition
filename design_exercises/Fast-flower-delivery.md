@@ -18,26 +18,19 @@ The profile also indicates whether the store wants the system to assign drivers 
 
 # Do This
 
-For each of the following steps, use whatever documentation technique that you think will communicate your plans. Appoint one member of your group as the scribe and have that person record your architecture.
+For each of the following steps, use whatever documentation technique that you think will communicate your design. 
 
-- Describe the use cases. That is, what are the roles that users of the system will have? What functionality is available to each of the roles? Which are the primary use cases.
-- Describe the data model. What data needs to be stored and how is it structured?
-- Describe the user interface for the primary use cases. You should produce a page flow diagram.
-- What external APIs or services will you use?
-- What internal API will you deliver?
-
-***Note:*** You don't have to do these in the order I have here. You may want to do them some other way.
+1. Write down four primary user stories for Fast Flower Delivery. A user story is one sentence that describes someone doing something to something or someone else. For example, a user story for an ecommerce Web site might be "Customer adds item to shopping cart." Avoid generic names like "user" and use specific names like "customer" instead. Do not do any user stories for logging in, logging out, etc. 
+2. Describe a data model that supports the user stories you created in (1). What data needs to be stored and how is it structured?
+3. Design an API for the data model and user stories in (2) and (3). Note that this doesn't have to be a complete API, just enough to support your user stories. 
 
 # Deliverables
 
-Put the following on a single poster page for display:
+Turn in
 
-- Describe the primary use cases.
-- Diagram your data model
-- Show the page flow for the primary use cases.
-- List and briefly describe the business logic functions.
+1. Your user stories. 
+2. A diagram of the model. 
+3. A Swagger file for the API you designed above. You should use the Swagger editor at swagger.io to create it.
 
-# Activity
 
-The instructor will give this to you at the appropriate time.
 

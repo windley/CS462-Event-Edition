@@ -1,10 +1,10 @@
-# HTTP CGI, Headers, and Return Codes
+# HTTP Methods, Headers, and Return Codes
 
 The purpose of this lab is to increase your familiarity with HTTP.
 
 # Reading
 
-You may find these helpful:
+You may find these resources helpful:
 
 - [HTTP Headers for Dummies](http://code.tutsplus.com/tutorials/http-headers-for-dummies--net-8039)
 - [List of HTTP header fields](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
@@ -13,8 +13,8 @@ You may find these helpful:
 # Lab Requirements
 
 - Learn how to use a browser plugin that allows you to see details of HTTP requests and responses
-- Write a CGI script that users headers and status codes
-- Use ```curl``` to exercise the CGI script you wrote
+- Write a Web script that users headers and status codes
+- Use ```curl``` to exercise the Web script you wrote
 
 # Part 0: HTTP Requests and Responses
 
@@ -38,9 +38,11 @@ For this part of the lab, explore the developer tools in your favorite browser.
 
 Hint: look at the response headers. 
 
-# Part 2: CGI Script
+# Part 2:  Web Script
 
-For this part of the lab, you will write several CGI scripts on a Web server. You can use the Amazon server you set up in [Lab0](https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md) or one of your own. You're welcome to use any language you like.
+For this part of the lab, you will create executables that are accessed through a Web server. I don't care what Web server you use. There are many you could choose from including Apache, NGINX, or lighttpd. You don't have to do this on an EC2 instance. You could use AWS Beanstalk. 
+
+You're welcome to use the EC2 instance you create in [Lab0](https://github.com/windley/CS462-Event-Edition/blob/master/project/Lab0.md) or one of your own. You're can use any programming language you like.
 
 0. Create a script that prints the headers in the request, any query string parameters, and the value of anything sent in the body of a POST. Use ```curl``` to show that it works.
 0. Create a script that generates a redirect to one of several Websites based on the value of the query string. The mapping between the query string value and the URL to redirect to can be hard coded into the script. For example, a GET to ```http://my.domain.name/my_redirect_script?foo``` would  redirect to ```http://google.com``` if there was a mapping set up in the script between the keyword ```foo`` and Google's URL.
