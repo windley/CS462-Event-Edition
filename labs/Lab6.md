@@ -1,5 +1,7 @@
 # Lab 6: Event-Based Programming
 
+# Objectives
+
 The purpose of this lab is to gain experience in programming event-based systems. 
 
 # Reading
@@ -8,7 +10,7 @@ The purpose of this lab is to gain experience in programming event-based systems
 * [Tips for Developers](http://developer.kynetx.com/display/docs/Tips+for+Developers)
 * [Creating an Echo Server](http://developer.kynetx.com/display/docs/Creating+an+Echo+Server)
 
-# Lab Notes
+# Implementation Notes
 
 * The best way to use the KRL documentation is to search since you may not always appreciate how it's organized (or isn't).
 * You will need to work through the [KRL Quickstart](http://developer.kynetx.com/display/docs/Quickstart) before beginning this lab.

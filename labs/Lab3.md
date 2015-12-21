@@ -4,7 +4,7 @@
 
 Build a web application on your AWS server that does the following:
 
-- Has multiple accounts with a profile page for each user. This includes the ability to create accounts, log in, and log out.
+- Has multiple accounts (sessions) with a profile page for each user. This includes the ability to create accounts, log in, and log out.
 - Support SSL requests.
 - Allows a user to authorize the application to access their account on Foursquare using OAuth.
 - Retrieves user checkin information from Foursquare.
@@ -12,7 +12,7 @@ Build a web application on your AWS server that does the following:
 - When the user is logged out and is viewing their own profile, display only the most recent checkin.
 - Whether the user is logged in or out and is viewing the profile of any other user on the system, display only the most recent checkin.
 
-# Foursquare API
+# Reading
 
 The Foursquare API documentation is here:
 - [OAuth](https://developer.foursquare.com/overview/auth)
@@ -20,7 +20,9 @@ The Foursquare API documentation is here:
 
 # Implementation notes
 
-You may use any language (e.g., Ruby, Python, PHP, C#, Racket, Perl, or assembly), framework, or libraries you wish. 
+You may use any language (e.g., Ruby, Python, PHP, C#, Racket, Perl, or assembly), framework, or libraries you wish.
+
+Accounts don't need authentication (i.e. no passwords).  Your account will use a cookie to know which user is logged in. How you do this depends on what language you use. 
 
 All requests between your server and the Foursquare API must go over HTTPS. Make sure your server supports it for incoming requests, and ensure that you make all requests that way.
 

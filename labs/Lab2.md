@@ -1,5 +1,7 @@
 # Lab 2: Hashing, Signing, and Encrypting
 
+# Objective
+
 The purpose of this lab is to gain experience using public-key (asymmetric) cryptography tools.
 
 # Reading

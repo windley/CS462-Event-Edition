@@ -1,5 +1,7 @@
 # Lab 5: Gossip Protocols
 
+# Objectives
+
 The purpose of this lab is to gain experience in peer-to-peer messaging using a gossip protocol by building a simple chat system. 
 
 # Reading
@@ -12,7 +14,7 @@ large-scale distributed systems](http://sbrc2010.inf.ufrgs.br/resources/presenta
 Protocol](http://www.cs.cornell.edu/~asdas/research/dsn02-SWIM.pdf)
 - [Using Gossip Protocols For Failure Detection, Monitoring, Messaging And Other Good Things](http://highscalability.com/blog/2011/11/14/using-gossip-protocols-for-failure-detection-monitoring-mess.html)
 
-# Lab Notes
+# Implementation Notes
 
 * This lab builds upon the work you did in Lab 3. 
 

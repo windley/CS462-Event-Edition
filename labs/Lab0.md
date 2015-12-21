@@ -1,4 +1,6 @@
-# Lab 0:
+# Lab 0: AWS Introduction
+
+# Objective
 
 The purpose of this lab is to create a base server confirmation that will be used in future labs. You will modify an existing AMI (Amazon Machine Image) and configure it with a web server and a bootstrapping mechanism.
 
@@ -22,11 +24,6 @@ You will need to [sign up for an AWS Educate account](https://www.awseducate.com
 *In particular, be sure that your AWS secret and password are __never__ hard coded into a file that will be stored in any public server. This is especially true of code you upload to Github.*
 
 *Please remember to stop your instances when you are not using them.*
-
-# Passoff Procedure 
-- your instance should have a basic web server running, serving a web page with your name, AMI ID and a copy of your User Data script. 
-- Email the TA with your instance ID and any URL exstenstion needed to veiw your webpage, please include any notes needed to view your page. Please place in the email subject line "Lab 0 passoff".
--The TA will start your instance and verify your work by visiting your webpage and reviewing your custom AMI.  
 
 # Booting an AMI 
 
@@ -76,7 +73,7 @@ With your instance running, right-click on it in the AWS Console and choose "Cre
 
 Make note of your AMI ID, since you will need it for the passoff procedure.
 
-# Notes 
+# Implementation Notes 
 You may find it useful to put your code in a Subversion or Git repository and have your bootstrap script copy the code from there to your server. This makes it very easy to update your server.
 
 ## Security Credentials
@@ -105,4 +102,13 @@ This is found in the top right corner of the Security Credentials page. When you
 You can log in to the AWS Portal with the username and password given in class.
 Contact the TA if you need help.
 You can find more information on the [AWS docs](http://docs.amazonwebservices.com/AWSSecurityCredentials/1.0/AboutAWSCredentials.html#AccessKeys).
+
+# Deliverables
+
+- your instance should have a basic web server running, serving a web page with your name, AMI ID and a copy of your User Data script. 
+- Email the TA with your instance ID and any URL exstenstion needed to veiw your webpage, please include any notes needed to view your page. Please place in the email subject line "Lab 0 passoff".
+- The TA will verify your work by visiting your webpage and reviewing your custom AMI.
+
+
+
 

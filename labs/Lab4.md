@@ -1,5 +1,7 @@
 # Lab 4: Map Reduce
 
+# Objectives
+
 The purpose of this lab is to make you familiar with MapReduce as an example of a distributed system.
 
 # Reading

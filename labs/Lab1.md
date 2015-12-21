@@ -1,5 +1,7 @@
 # HTTP Methods, Headers, and Return Codes
 
+# Objective
+
 The purpose of this lab is to increase your familiarity with HTTP.
 
 # Reading
@@ -63,7 +65,7 @@ You're welcome to use the EC2 instance you create in [Lab0](https://github.com/w
 	- Use ```curl``` to ensure your script functions correctly.
 
 
-#Deliverable
+# Deliverables
 
 Turn into the TA:
 
