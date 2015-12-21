@@ -13,7 +13,7 @@ The purpose of this lab is to gain experience using public-key (asymmetric) cryp
 
 - Install GPG
 - Create a public/private key pair.
-- Publish your public key on ```hkp://pgp.mit.edu```
+- Publish your public key on [```http://pgp.mit.edu```](http://pgp.mit.edu)
 - Use the key server to find the public key of one or more class members.
 	- Validate the keyID.
 	- What is their key's fingerprint
@@ -27,7 +27,7 @@ You should have received an invitation from Dr. Windley to sign up for Keybase.i
 
 - Sign up and create an account
 - Download and install keybase.io
-- Push the public key you created in the GPG portion of this lab to Keybase
+- Push the *public key* you created in the GPG portion of this lab to Keybase
 - Add one of more identity proofs (for a Website you control, a Twitter account you own, etc.)
 - Track Dr. Windley and the TA
 - Track at least three other people you know
@@ -45,7 +45,7 @@ Send the following to the TA:
 5. Answer the following questions:
 	0. What is a key signing party?
 	1. What is a personal digital certificate?
-	2.  What is the purpose of Keybase.io (i.e. what problem is it solving)?
+	2. What is the purpose of Keybase.io (i.e. what problem is it solving)?
 	3. How does Keybase.io accomplish social proof (i.e. knowing you've got the right public key)?
 	4. What are the advantages and disadvantages of the Keybase approach compared with PGP and Certificates?
 

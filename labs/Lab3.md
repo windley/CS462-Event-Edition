@@ -1,4 +1,4 @@
-# APIs and OAuth
+# Multi-Tenanted APIs and OAuth
 
 # Objective
 
@@ -20,9 +20,9 @@ The Foursquare API documentation is here:
 
 # Implementation notes
 
-You may use any language (e.g., Ruby, Python, PHP, C#, Racket, Perl, or assembly), framework, or libraries you wish. You need not learn KRL for this lab.
+You may use any language (e.g., Ruby, Python, PHP, C#, Racket, Perl, or assembly), framework, or libraries you wish. 
 
-All requests to the Foursquare API must go over HTTPS. Make sure your server supports it for incoming requests, and ensure that you make all requests that way.
+All requests between your server and the Foursquare API must go over HTTPS. Make sure your server supports it for incoming requests, and ensure that you make all requests that way.
 
 You will only be requesting data from Foursquare, not posting any data.
 
