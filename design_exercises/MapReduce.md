@@ -4,7 +4,7 @@
 ## Roles
 
 * __master__--class instructor
-* __grouper__--class TA
+* __grouper__--five students
 * __mappers__--twenty two students who need a laptop, tablet or phone and a pencil or pen. Each mapper will have a number between 1 and 22.
 * __reducers__--five students who need a pencil or pen
 
@@ -12,7 +12,7 @@
 
 1. Mapper N will
 	1. Find the text for First Nephi Chapter N online
-	2. Find all proper nouns in First Nephi Chapter N
+	2. Find all proper nouns in First Nephi Chapter N (do *not* count pronouns).
 	3. Write each proper noun on an index card. One word per card. I.e. If Nephi occurs 20 times in your chapter, you will have 20 index cards with Nephi written on them. 
 3. The Grouper will
 	1. Get cards from the mappers
