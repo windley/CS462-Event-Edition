@@ -4,9 +4,9 @@
 ## Roles
 
 * __master__--class instructor
-* __grouper__--five students
+* __groupers__--five or more students
 * __mappers__--twenty two students who need a laptop, tablet or phone and a pencil or pen. Each mapper will have a number between 1 and 22.
-* __reducers__--five students who need a pencil or pen
+* __reducers__--five or more students who need a pencil or pen
 
 ## Algorithm
 
@@ -29,7 +29,7 @@
 1. What is the role of the master?
 2. What is the role of the mapper?
 2. How does the mapper role differ from the role of the reducer? 
-4. Why is there one grouper?
+4. Why is the work of the grouper tough in this exercise?
 2. What work happened independently?
 3. What work was dependent on other work?
 5. How much longer would it take to count all the occurrences of every proper noun in the Book of Mormon, assuming you had enough workers to assign a chapter to each and increase the reducers proportionally?
