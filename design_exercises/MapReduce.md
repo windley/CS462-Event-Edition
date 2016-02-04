@@ -17,8 +17,9 @@
 3. The Grouper will
 	1. Get cards from the mappers
 	2. Collate the cards into piles, one pile per proper noun. I.e. a pile for Nephi, a pile for Lehi, etc. 
-	3. Distribute complete piles to reducers round robin
-4. Reducers will
+	3. Distribute complete piles to reducers. All piles for a given noun go to same reducer. 
+	4. No need to wait for all cards before distributing. 
+4. Reducers are responsible or words in certain range (e.g. A-E, F-J, K-O, P-T, U-Z)
 	1. Count the cards in each pile
 	2. Produce one card with a list of the words and the count of each
 	3. Give final card to the Master
